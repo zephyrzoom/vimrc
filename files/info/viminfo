@@ -17,9 +17,9 @@
 $kind1
 
 # Command Line History (newest to oldest):
+:q
 :wq
 :r 3.31.cpp
-:q
 :w
 :r 3.20.cpp
 :r 3.16.cpp
@@ -103,18 +103,20 @@ $kind1
 	 
 
 # File marks:
-'0  18  23  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'1  38  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'2  20  16  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'3  29  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'4  135  14  ~/Documents/Cpp-primer/chapter03/Makefile
-'5  17  4  ~/Documents/Cpp-primer/chapter03/3.31.cpp
-'6  14  16  ~/Documents/Cpp-primer/chapter03/3.31.cpp
-'7  134  14  ~/Documents/Cpp-primer/chapter03/Makefile
-'8  18  12  ~/Documents/Cpp-primer/chapter03/3.31.cpp
-'9  3  14  ~/Documents/Cpp-primer/chapter03/test.cpp
+'0  3  0  ~/.vim/.netrwhist
+'1  18  23  ~/Documents/Cpp-primer/chapter03/3.32.cpp
+'2  38  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
+'3  20  16  ~/Documents/Cpp-primer/chapter03/3.32.cpp
+'4  29  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
+'5  135  14  ~/Documents/Cpp-primer/chapter03/Makefile
+'6  17  4  ~/Documents/Cpp-primer/chapter03/3.31.cpp
+'7  14  16  ~/Documents/Cpp-primer/chapter03/3.31.cpp
+'8  134  14  ~/Documents/Cpp-primer/chapter03/Makefile
+'9  18  12  ~/Documents/Cpp-primer/chapter03/3.31.cpp
 
 # Jumplist (newest first):
+-'  3  0  ~/.vim/.netrwhist
+-'  1  0  ~/.vim/.netrwhist
 -'  18  23  ~/Documents/Cpp-primer/chapter03/3.32.cpp
 -'  1  0  ~/Documents/Cpp-primer/chapter03/3.32.cpp
 -'  38  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
@@ -212,9 +214,11 @@ $kind1
 -'  12  56  ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/disassembler.m
 -'  1590  23  ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/disassembler.m
 -'  14  50  ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/disassembler.m
--'  291  4  ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/disassembler.m
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/.netrwhist
+	"	3	0
 
 > ~/Documents/Cpp-primer/chapter03/3.32.cpp
 	"	18	23
@@ -1780,19 +1784,3 @@ $kind1
 
 > ~/Documents/danmu_diange/bili/bili/level.json
 	"	1	0
-
-> ~/Documents/danmu_diange/bili/test.py
-	"	10	15
-	^	10	16
-	.	10	15
-	+	4	34
-	+	6	32
-	+	7	15
-	+	1	21
-	+	4	15
-	+	8	4
-	+	3	9
-	+	5	15
-	+	10	39
-	+	11	21
-	+	10	15

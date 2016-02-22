@@ -1,0 +1,20 @@
+/*
+ * @author 707<707472783@qq.com>
+ * This program is let user input two numbers and print the numbers between them.
+ */
+
+#include <iostream>
+int main()
+{
+    std::cout << "Enter two numbers: " << std::endl;
+    int little = 0;
+    int big = 0;
+    std::cin >> little >> big;
+    while (little <= big)
+    {
+        std::cout << little << " ";
+        little++;
+    }
+    std::cout << std::endl;
+    return 0;
+}

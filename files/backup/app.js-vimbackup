@@ -1,0 +1,88 @@
+var http = require('http');
+var net = require('net');
+var Player = require('player');
+var player = new Player();
+var fs = require('fs');
+var https = require('https');
+var decoder = require('lame').Decoder();
+var Speaker = require('speaker');
+
+http.get('http://www.panda.tv/ajax_chatinfo?roomid=88911', function(res) {
+    res.setEncoding('utf8');
+    res.on('data', function(chunk) {
+        console.log(chunk);
+        var json = JSON.parse(chunk);
+        var jsonData = json.data;
+        var chatAddr = jsonData.chat_addr_list[0];
+        var socketIP = chatAddr.split(':')[0];
+        var socketPort = chatAddr.split(':')[1];
+        var rid = jsonData.rid;
+        var appid = jsonData.appid;
+        var authtype = jsonData.authtype;
+        var sign = jsonData.sign;
+        var ts = jsonData.ts;
+
+        //console.log(socketIP, socketPort, rid, appid, authtype, sign, ts);
+
+        var msg = 'u:' + rid + '@' + appid + '\nk:1\nt:300\nts:' + ts + '\nsign:' + sign + '\nauthtype:' + authtype;
+
+        var len = msg.length;
+
+        len = '\x00' + String.fromCharCode(len);
+        //console.log(len);
+
+        msg = '\x00\x06\x00\x02' + len + msg;
+        //console.log(msg);
+        var s = net.connect({
+            port: socketPort,
+            host: socketIP
+        }, function() {
+            console.log('connect success');
+            s.write(msg);
+        });
+        s.on('data', function(chunk) {
+            //console.log(chunk);
+            var checkInfo = chunk.toString();
+            if (checkInfo[0] == '\x00' & checkInfo[1] == '\x06' & checkInfo[2] == '\x00' & checkInfo[3] == '\x06') {
+                console.log('connect success');
+                s.write('\x00\x06\x00\x00');
+            };
+            if (checkInfo[0] == '\x00' & checkInfo[1] == '\x06' & checkInfo[2] == '\x00' & checkInfo[3] == '\x03') {
+                var danmu = checkInfo.substring(31);
+                var start = danmu.indexOf('{\"type\"');
+                var end = danmu.indexOf('}}');
+
+                while (end != -1) {
+                    var sliceDanmu = danmu.substring(start, end + 2);
+                    try {
+                        var json = JSON.parse(sliceDanmu);
+                        console.log(json.data.from.nickName + ':' + json.data.content);
+                        //var soundUrl = 'http://tsn.baidu.com/text2audio?tex=707我爱你&lan=zh&cuid=00000000&ctp=1&tok=24.4ad9b4902755d0db23181f82f6511f5c.2592000.1454863713.282335-7609921';
+                        //console.log("url: ", soundUrl);
+                        //http.get(soundUrl, function(res) {
+                        //    var voice = '';
+                        //    res.pipe(decoder).pipe(new Speaker());
+                        //});
+
+                    } catch (e) {
+                        console.log(sliceDanmu);
+                        console.log(e);
+                    }
+                    //console.log(json);
+                    danmu = danmu.substring(end + 2);
+                    start = danmu.indexOf('{\"type\"');
+                    end = danmu.indexOf('}}');
+                }
+
+            }
+        });
+        s.on('error', function(e) {
+            console.log('error occurs');
+            console.log(e);
+        });
+
+        setInterval(function() {
+            s.write('\x00\x06\x00\x00');
+        }, 300000);
+    })
+});

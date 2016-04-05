@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import json
+danmu = []
+with open('bili/level.json', 'r') as f:
+    global danmu
+    danmu = json.loads(f.read())
+    print(danmu)
+with open('bili/level.json', 'w') as f:
+    global danmu
+    danmu.append({"name": 123, "lvl":123})
+    json.dump(danmu, f)

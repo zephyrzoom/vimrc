@@ -37,8 +37,6 @@ set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
 
-set nu
-
 set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
@@ -68,3 +66,6 @@ set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
+" My settings
+set nu

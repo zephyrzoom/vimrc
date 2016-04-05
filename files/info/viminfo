@@ -107,8 +107,8 @@ $kind1
 	 
 
 # File marks:
-'0  67  0  ~/.vim/vimrc
-'1  66  12  ~/.vim/vimrc
+'0  66  0  ~/.vim/vimrc
+'1  67  0  ~/.vim/vimrc
 '2  1  0  ~/.vim/vimrc
 '3  70  0  ~/.vim/vimrc
 '4  49  0  ~/.vim/vimrc
@@ -119,9 +119,9 @@ $kind1
 '9  114  0  ~/Documents/shortest-path/src/short_path.cpp
 
 # Jumplist (newest first):
--'  67  0  ~/.vim/vimrc
+-'  66  0  ~/.vim/vimrc
 -'  1  0  ~/.vim/vimrc
--'  66  12  ~/.vim/vimrc
+-'  67  0  ~/.vim/vimrc
 -'  70  0  ~/.vim/vimrc
 -'  49  0  ~/.vim/vimrc
 -'  77  0  ~/.vim/files/info/viminfo
@@ -215,13 +215,11 @@ $kind1
 -'  29698  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
 -'  28653  34  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
 -'  25602  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  24806  29  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  21506  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	"	67	0
+	"	66	0
 	^	40	6
 	.	40	5
 	+	71	0

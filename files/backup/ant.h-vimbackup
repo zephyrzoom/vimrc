@@ -1,0 +1,25 @@
+/*
+ * @author 707<707472783@qq.com>
+ * This header defines class ant.
+ */
+
+class Ant
+{
+private:
+    vector<int> tabu;        
+    vector<int> allowed;
+    const int MAX_VERTEX = 600;
+    int delta[MAX_VERTEX];
+    const double alpha = 1.0;
+    const double beta = 2.0;
+    const double rho = 0.5;
+    const double Q = 1;
+    int cost;
+    vector<int> path;
+public:
+    Ant(vector<int> nodes):allowed(nodes) {};
+    void init();
+    void selectNext();
+    void updatePhermone();
+
+};

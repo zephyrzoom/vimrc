@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+#include <fstream>
+using std::ifstream;
+using std::ofstream;
+using std::cout;
+using std::endl;
+int main(int argc, char *argv[])
+{
+    if (argc == 3 && strcmp(argv[1], "-e")) {
+        ifstream in(argv[2]);
+        cout << in << endl;
+        ofstream out("o.sss");
+    } else {
+        cout << "err" << endl;
+    }
+}

@@ -1,0 +1,19 @@
+#include <vector>
+#include <math>
+
+#include "pheromone.h"
+
+using std::vector;
+Ant::selectNext(vector<Pheromone> pher)
+{
+    vector<float> prop;
+    float sumProp;
+    for (auto i : allowed)
+    {
+        sumProp += pow(pher[*i]) * pow();
+    }
+}
+
+Ant::updatePheromone()
+{
+}

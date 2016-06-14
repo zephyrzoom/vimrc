@@ -1,3 +1,1 @@
-# vimrc
-vim configuration
-swap file need to be created urself.
+使用qmake出现找不到目录的在pro文件中加入QT+=widgets.

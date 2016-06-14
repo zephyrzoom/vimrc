@@ -1,0 +1,623 @@
+#include "route.h"
+#include "lib_record.h"
+#include <stdio.h>
+
+#include <iostream>
+#include <cstdint>
+#include <climits>
+#include <math.h>
+#include <time.h>
+#include <vector>
+#include <unordered_map>
+#include <algorithm>    
+using namespace std;
+
+#define DEFINE_INF 9999
+
+#define maxNum 600  //最大节点数 
+
+//图的信息
+typedef struct Graph{
+	vector<int> V; //节点集合
+	int vNum; //节点数量
+	//unordered_map<int, unordered_map<int, int>> linkIDs;	//边标识
+	//unordered_map<int, unordered_map<int, int>> edges;	//动态二维数组存储边信息，内存中存放  权值
+	int linkIDs[maxNum][maxNum];
+	int edges[maxNum][maxNum];
+}Graph;
+Graph graph;
+
+//要求
+typedef struct Demand{
+	int sourceID,destinationID;	//要求的源节点，目的节点
+	vector<int> midSet;	//要求的必经中间节点集
+}Demand;
+Demand demand;
+
+time_t t_start,t_end;
+
+//节点个数
+int N;
+//蚂蚁数量
+int M=300;
+//最大循环次数NcMax
+int NcMax=20;
+//信息启发因子，期望启发式因子，全局信息素挥发参数，局部信息素挥发参数, 状态转移公式中的q0
+double alpha = 2, beta = 3, rou = 0.1, alpha1 = 0.1,  qzero = 0.01; 
+
+//===========================================================================================================
+//局部更新时候使用的常量，它是由最近邻方法得到的一个长度
+//什么是最近邻方法?:)就是从源节点出发，每次选择一个距离最短的点来遍历所有的节点得到的路径
+//每个节点都可能作为源节点来遍历
+double Lnn;
+//矩阵表示每条边信息
+int allDistance[maxNum][maxNum];
+
+//获得经过n个节点的路径长度
+double calculateSumOfDistance(int* tour, int size)
+{
+	double sum = 0;
+	for(int i = 0; i< size; i++)
+	{
+		int row = *(tour + 2 * i);
+		int col = *(tour + 2 * i + 1);
+		sum += allDistance[row][col];
+	}
+	return sum;
+}
+
+class ACSAnt;
+
+class AntColonySystem
+{
+private:	
+	double info[maxNum][maxNum], visible[maxNum][maxNum];//节点之间的信息素强度,节点之间的能见度
+public:	
+	AntColonySystem()
+	{
+	}
+	//计算当前节点到下一节点转移的概率
+	double Transition(int i, int j);	
+	//局部更新规则
+	void UpdateLocalPathRule(int i, int j);	
+	//初始化
+	void InitParameter(double value);	
+	//全局信息素更新
+	void UpdateGlobalPathRule(int* bestTour, int globalBestLength, int globalBestSize);
+
+	double passEdge[maxNum][maxNum];	// 过必经结点的边
+	void setPassEdge(vector<int> passed);
+
+	double mustPassEdge[maxNum][maxNum];
+	void setMustPassEdge(vector<int> passed);
+};
+
+void AntColonySystem::setMustPassEdge(vector<int> passed)
+{
+	passed.push_back(demand.destinationID);
+	for (vector<int>::iterator j = passed.begin(); j != passed.end(); j++)
+	{
+		for (int i = 0; i < N; i++)
+		{
+			if (allDistance[i][*j] < DEFINE_INF)
+			{
+				mustPassEdge[i][*j] = 1;
+			}
+		}
+	}
+}
+
+void AntColonySystem::setPassEdge(vector<int> passed)
+{
+	for (vector<int>::iterator j = passed.begin(); j != passed.end(); j++)
+	{
+		for (int i = 0; i < N; i++)
+		{
+			if (allDistance[i][*j] < DEFINE_INF)
+			{
+				passEdge[i][*j] = 1;
+			}
+		}
+	}
+}
+
+//计算当前节点到下一节点转移的概率
+double AntColonySystem::Transition(int i, int j)
+{
+	if (i != j)
+	{
+		return (pow(info[i][j],alpha) * pow(visible[i][j], beta));
+	}
+	else
+	{
+		return 0.0;
+	}	
+}
+//局部更新规则  alpha1局部信息素挥发系数
+void AntColonySystem::UpdateLocalPathRule(int i, int j)
+{
+	info[i][j] = (1.0 - alpha1) * info[i][j] + alpha1 * (1.0 / (N * Lnn));
+	if (mustPassEdge[i][j] == 1)
+	{
+		info[i][j] += 0.001;
+	}
+}
+//初始化
+void AntColonySystem::InitParameter(double value)
+{
+	setMustPassEdge(demand.midSet);
+	setPassEdge(graph.V);
+	//初始化路径上的信息素强度tao0
+	for(int i = 0; i < N; i++)
+	{
+		for(int j = 0; j < N; j++)
+		{				
+			if (mustPassEdge[i][j])
+			{
+				info[i][j] = value + 0.001;
+			}
+			else
+			{
+				info[i][j] = value;
+			}
+			if (i != j)
+			{
+				visible[i][j] = 1.0 / allDistance[i][j];
+			}
+		}
+	}	
+}
+
+//全局信息素更新 rou全局信息素挥发系数
+void AntColonySystem::UpdateGlobalPathRule(int* bestTour, int globalBestLength, int globalBestSize)
+{
+	for(int i = 0; i < globalBestSize; i++)
+	{
+		int row = *(bestTour + 2 * i);
+		int col = *(bestTour + 2 * i + 1);
+		info[row][col] = (1.0 - rou) * info[row][col] + rou * (1.0 / globalBestLength);
+	}
+}
+
+class ACSAnt
+{
+private:
+	AntColonySystem* antColony;
+public:
+	int startNode, currentNode, destinationNode;//初始节点编号，当前节点编号，终止节点编号
+	int allowed[maxNum];//禁忌表	
+	int Tour[maxNum][2];//当前路径
+	int currentTourIndex;//当前路径索引，从0开始，存储蚂蚁经过的节点
+public:	
+	ACSAnt(AntColonySystem* acs, int start, int end)
+	{
+		antColony = acs; 
+		startNode = start;
+		destinationNode = end;
+	}	
+	//开始搜索
+	int* Search();
+	//选择下一节点
+	int Choose();
+	//移动到下一节点
+	void MoveToNextCity(int nextNode);
+
+};
+
+//开始搜索
+int* ACSAnt::Search()
+{
+	currentNode = startNode;
+	int toNode;
+	currentTourIndex = 0;
+	for(int i  = 0; i < N; i++)
+	{
+		allowed[i] = 1;
+	}
+	allowed[currentNode] = 0;
+
+	int endNode;
+	do
+	{
+		endNode = currentNode;
+		toNode = Choose();	//选择下一节点
+		if (toNode >= 0)
+		{			
+			MoveToNextCity(toNode); //移到下一节点
+			//终止条件，如果当前节点已经是 目标节点 直接停止
+			if(toNode == destinationNode){
+				break;
+			}
+			antColony->UpdateLocalPathRule(endNode, toNode); //更新局部信息素
+			currentNode = toNode;
+		}		
+	}while(toNode >= 0);
+	//有可能出现toNode=-1，但是endNode！= destinationNode
+	if(currentNode!=destinationNode){
+		return NULL;
+	}
+	return *Tour;
+}
+
+//选择下一节点
+int ACSAnt::Choose()
+{
+	int nextNode = -1;		
+	double q = rand()/(double)RAND_MAX;
+	//如果 q <= q0,按先验知识，否则则按概率转移，
+	if (q <= qzero)
+	{
+		double probability = -1.0;//转移到下一节点的概率
+		for(int i = 0; i < N; i++)
+		{
+			//去掉禁忌表中已走过的节点,从剩下节点中选择 最大概率 的可行节点
+			if (1 == allowed[i] && antColony->passEdge[currentNode][i] == 1)
+			{
+				double prob = antColony->Transition(currentNode, i);
+				if (prob  > probability)
+				{
+					nextNode = i;
+					probability = prob;
+				}
+			}
+		}
+	}
+	else
+	{
+		//按概率转移			
+		double p = rand()/(double)RAND_MAX;//生成一个随机数,用来判断落在哪个区间段
+		double sum = 0.0;			
+		double probability = 0.0;//概率的区间点，p 落在哪个区间段，则该点是转移的方向
+		//计算概率公式的 分母 的值
+		for(int i = 0; i < N; i++)
+		{
+			if (1 == allowed[i] && antColony->passEdge[currentNode][i] == 1)
+			{
+				sum += antColony->Transition(currentNode, i);
+			}
+		}
+		for(int j = 0; j < N; j++)
+		{
+			if (1 == allowed[j] && sum > 0 && antColony->passEdge[currentNode][j] == 1)
+			{
+				probability += antColony->Transition(currentNode, j)/sum;
+				if (probability >= p || (p > 0.9999 && probability > 0.9999))
+				{
+					nextNode = j;
+					break;
+				}
+			}
+		}	
+	}	
+	return nextNode;
+}
+
+//移动到下一节点
+void ACSAnt::MoveToNextCity(int nextNode)
+{
+	allowed[nextNode]=0;
+	Tour[currentTourIndex][0] = currentNode;
+	Tour[currentTourIndex][1] = nextNode;
+	currentTourIndex++;
+	currentNode = nextNode;
+}
+
+//--------------------------------------------下面两个方法用来计算Lnn-------------------------------
+//选择下一个节点，配合下面的函数来计算的长度
+int ChooseNextNode(int currentNode, int visitedNode[])
+{
+	int nextNode = -1;		
+	double shortDistance = 0.0;
+	for(int i = 0; i < N; i++)
+	{
+		//去掉已走过的节点,从剩下节点中选择距离最近的节点
+		if (1 == visitedNode[i])
+		{			
+			if (shortDistance == 0.0)
+			{
+				shortDistance = allDistance[currentNode][i];
+				nextNode = i;
+			}
+			if(shortDistance < allDistance[currentNode][i])
+			{
+				nextNode = i;
+			}
+		}
+	}
+	return nextNode;
+}
+
+//给一个节点由最近邻距离方法计算长度
+double CalAdjacentDistance(int node)
+{
+	double sum = 0.0;
+	int visitedNode[maxNum];
+	for(int j = 0; j < N; j++)
+	{
+		visitedNode[j] = 1; 
+	}
+	visitedNode[node] = 0;
+	int currentNode = node;
+	int nextNode;
+	do
+	{
+		nextNode = ChooseNextNode(currentNode, visitedNode);
+		if (nextNode >= 0)
+		{
+			sum += allDistance[currentNode][nextNode];
+			currentNode= nextNode;
+			visitedNode[currentNode] = 0;
+		}		
+	}while(nextNode >= 0);
+	sum += allDistance[currentNode][node]; //起点开始，跑一圈最后回到起点，加上最后一个点和起点之间的距离
+	return sum;
+}
+//---------------------------------结束---------------------------------------------
+
+
+void getShortPath()
+{
+	time_t timer;
+	//产生随机数种子
+	time(&timer);
+	unsigned long seed = timer;
+	seed %= 56000;
+	srand((unsigned int)seed);
+
+	//蚁群系统对象
+	AntColonySystem* acs = new AntColonySystem();
+	ACSAnt* ants[maxNum];
+	//蚂蚁均匀分布在城市上
+	for(int k = 0; k < M; k++)
+	{
+		ants[k] = new ACSAnt(acs, demand.sourceID, demand.destinationID);
+	}
+	//随机选择一个节点计算由最近邻方法得到的一个长度
+	//int node = rand() % N;
+	//Lnn = CalAdjacentDistance(node); //Lnn初始化之后就不变了，初始化是否要卡为经过所有必经节点就行了
+	Lnn = 1;
+	
+	//各条路径上初始化的信息素强度
+	double initInfo = 1 / (N * Lnn);
+	acs->InitParameter(initInfo);	
+	
+	bool isFind = false;
+	//全局最优路径
+	int globalTour[maxNum][2];
+	//全局最优长度
+	double globalBestLength = 0.0;	
+	//全局最优tourSize
+	int globalBestSize = 0;
+	for(int i = 0; i < NcMax; i++)
+	{
+		//局部最优路径
+		int localBestTour[maxNum][2];
+		//局部最优长度
+		double localBestLength = 0.0;
+		//局部最优tourSize
+		int localBestSize = 0;
+		//当前路径长度
+		double tourLength;
+		for(int j = 0; j < M; j++)
+		{
+			//局部路径
+			int localTour[maxNum][2];
+
+			int* tourPath = ants[j]->Search();
+			if(tourPath == NULL){
+				continue;
+			}
+			vector<int> TourPathTemp;
+			vector<int> orderMidSet;
+			TourPathTemp.clear();
+			orderMidSet = demand.midSet;
+			sort(orderMidSet.begin(),orderMidSet.end());
+			int tourSize = ants[j]->currentTourIndex;
+			tourLength = calculateSumOfDistance(tourPath,tourSize);	//每一只蚂蚁爬出来的路径长度	
+
+
+
+			//保存每只蚂蚁爬的路径到localTour[N][2]
+			for(int m = 0; m< tourSize; m++)
+			{
+				int row = *(tourPath + 2 * m);
+				int col = *(tourPath + 2* m + 1);
+				localTour[m][0] = row;
+				localTour[m][1] = col;
+				TourPathTemp.push_back(row);
+				if(m==tourSize-1){
+					TourPathTemp.push_back(col);
+				}
+			}
+			sort(TourPathTemp.begin(),TourPathTemp.end());
+
+			////输出每只蚂蚁的路径
+			//cout<<"第 "<<i + 1<<" 迭代 第 "<<j + 1<<" 只蚂蚁的路径:"<<tourLength<<"|";
+			//for(int m = 0; m< tourSize; m++)
+			//{
+			//	cout<<localTour[m][0]<<"->";
+			//	if(m==tourSize-1){
+			//		cout<<localTour[m][1];
+			//	}
+			//}
+			//cout<<endl;
+
+			//局部路径判断是否包含必经节点集
+			if(includes(TourPathTemp.begin(),TourPathTemp.end(),orderMidSet.begin(),orderMidSet.end())){
+				//局部比较，并记录路径和长度
+				if(tourLength < localBestLength || abs(localBestLength - 0.0) < 0.000001)
+				{	
+					//满足条件，保存蚂蚁爬的最优路径到localBestTour[N][2]
+					for(int m = 0; m< tourSize; m++)
+					{
+						int row = *(tourPath + 2 * m);
+						int col = *(tourPath + 2* m + 1);
+						localBestTour[m][0] = row;
+						localBestTour[m][1] = col;
+					}
+					localBestLength = tourLength;
+					localBestSize = tourSize;
+				}
+				t_end = time(NULL);
+				if(t_end - t_start >=9.9 && localBestLength > 0){
+					isFind = true;
+					break;
+				}
+			}
+		}
+		//全局比较，并记录路径和长度
+		if(localBestLength > 0 && (localBestLength < globalBestLength || abs(globalBestLength - 0.0) < 0.000001))
+		{				
+			//满足条件，保存局部最优到全局最优
+			for(int m = 0; m< localBestSize; m++)
+			{
+				globalTour[m][0] = localBestTour[m][0];
+				globalTour[m][1] = localBestTour[m][1];
+			}
+			globalBestLength = localBestLength;	
+			globalBestSize = localBestSize;
+		}
+		if(isFind == true){
+			break;
+		}
+		acs->UpdateGlobalPathRule(*globalTour, globalBestLength, globalBestSize);
+		////输出所有蚂蚁循环一次后的迭代最优路径
+		//cout<<"第 "<<i + 1<<" 迭代最优路径:"<<localBestLength<<"|";
+		//for(int m = 0; m< localBestSize; m++)
+		//{
+		//	cout<<localBestTour[m][0]<<"->";
+		//	if(m==localBestSize-1){
+		//		cout<<localBestTour[m][1];
+		//	}
+		//}
+		//cout<<endl<<"--------------------------------------------------"<<endl;	
+	}	
+	//cout<<"========================================================="<<endl;
+	////输出全局最优路径
+	//cout<<"全局最优路径长度:"<<globalBestLength<<"|";	
+	//cout<<"全局最优路径:";
+	//for(int m = 0; m< globalBestSize; m++)
+	//{
+	//	cout<<globalTour[m][0]<<"->";
+	//	if(m==globalBestSize-1){
+	//		cout<<globalTour[m][1];
+	//	}
+	//}
+	//cout<<endl<<"========================================================="<<endl;
+
+	for(int m = 0; m< globalBestSize; m++)
+	{
+		int row = globalTour[m][0];
+		int col = globalTour[m][1];
+		record_result(graph.linkIDs[row][col]);
+	}
+}
+
+//初始化图以及要求信息
+void initInfo(char *topo[5000], int edge_num, char *cond) {
+	//初始化allDistance数组
+	for(int i=0;i<maxNum;i++){
+		for(int j=0;j<maxNum;j++){
+			allDistance[i][j]=DEFINE_INF;
+		}
+	}
+	for (int i = 0; i < edge_num; i++) {
+		char* line = topo[i];
+		int index = 0;
+		//获取LinkID
+		int linkId = 0;
+		while (line[index]!=','){
+			linkId = linkId * 10 + line[index++] - '0';
+		}
+		index++;
+		//获取SourceID
+		int sourceId = 0;
+		while (line[index] != ','){
+			sourceId = sourceId * 10 + line[index++] - '0';
+		}
+		index++;
+		//获取DestinationID
+		int destinationId = 0;
+		while (line[index] != ','){
+			destinationId = destinationId * 10 + line[index++] - '0';
+		}
+		index++;
+		//获取Cost
+		int cost = 0;
+		while (line[index] && line[index] != '\n'){
+			cost = cost * 10 + line[index++] - '0';
+		}
+
+		//存储节点集
+		if(!(find(graph.V.begin(),graph.V.end(),sourceId) != graph.V.end())){
+			graph.V.push_back(sourceId);
+		}
+		if(!(find(graph.V.begin(),graph.V.end(),destinationId) != graph.V.end())){
+			graph.V.push_back(destinationId);
+		}
+
+		//设置图信息
+		graph.linkIDs[sourceId][destinationId] = linkId;
+		//graph.edges[sourceId][destinationId] = graph.edges[sourceId][destinationId] == 0 ? cost : min(graph.edges[sourceId][destinationId], cost);
+		allDistance[sourceId][destinationId] = allDistance[sourceId][destinationId] == DEFINE_INF ? cost : min(allDistance[sourceId][destinationId], cost);
+	}
+	//设置节点总数
+	graph.vNum = graph.V.size();
+	N = graph.vNum;
+
+	//记录demand.csv中源节点和目标节点
+	int index = 0;
+
+	//获取源节点
+	demand.sourceID = 0;
+	while (cond[index] != ','){
+		demand.sourceID = demand.sourceID * 10 + cond[index++] - '0';
+	}
+	index++;
+
+	//获取目标节点
+	demand.destinationID = 0;
+	while (cond[index] != ','){
+		demand.destinationID = demand.destinationID * 10 + cond[index++] - '0';
+	}
+	index++;
+
+	//获取必经中间节点子集
+	while (cond[index] && cond[index] != '\n') {
+		int nodeId = 0;
+		while (cond[index] && cond[index] != '|' && cond[index] != '\n'){
+			nodeId = nodeId * 10 + cond[index++] - '0';
+		}
+		index++;
+		demand.midSet.push_back(nodeId);
+	}
+}
+
+//初始化蚂蚁数量，和迭代次数
+void initPara(){
+	if(graph.vNum <= 20){
+		M = 100;
+		NcMax = 10;
+	}
+	else if(graph.vNum <= 30){
+		M = 300;
+		NcMax = 20;
+	}
+	else if(graph.vNum <= 40){
+		M = 300;
+		NcMax = 50;
+	}
+	else{
+		M = 400;
+		NcMax = 200;
+	}
+}
+
+//你要完成的功能总入口
+void search_route(char *topo[5000], int edge_num, char *condition)
+{
+	t_start = time(NULL);
+	initInfo(topo, edge_num, condition);
+	initPara();
+	getShortPath();
+}

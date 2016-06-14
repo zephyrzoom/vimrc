@@ -1,0 +1,30 @@
+/*
+ * @author 707<707472783@qq.com>
+ * This header defines aco algorithm.
+ */
+class Ant
+{
+private:
+    vector<int> tabu;        
+    vector<int> allowed;
+    const int MAX_VERTEX = 600;
+    int delta[MAX_VERTEX];
+    double alpha;
+    double beta;
+    double rho;
+    double Q;
+    int cost;
+    vector<int> path;
+public:
+    void init();
+    void selectNext();
+    void updatePhermone();
+
+};
+
+class ACO
+{
+private:
+    int bestLength;
+    vector<int> bestTour;
+};

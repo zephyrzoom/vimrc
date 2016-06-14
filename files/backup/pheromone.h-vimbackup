@@ -1,0 +1,11 @@
+/*
+ * @author 707<707472783@qq.com>
+ * This header defines class pheromone.
+ */
+
+class Pheromone
+{
+    int start;
+    int end;
+    float value;
+};

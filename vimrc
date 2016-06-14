@@ -6,6 +6,22 @@
 " We set it explicitely to make our position clear!
 set nocompatible
 
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-airline/vim-airline'
+Plugin 'rdnetto/YCM-Generator'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()
+
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
 
@@ -67,5 +83,6 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
-" My settings
+set background=dark
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 set nu

@@ -8,57 +8,57 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/ii
+~MSle0~/forma
 
 # Last Substitute Search Pattern:
 ~MSle0&sum
 
 # Last Substitute String:
-$kind1
+$
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
 :w
-:r 3.31.cpp
-:r 3.20.cpp
-:r 3.16.cpp
 :q!
 :%!xxd
-:%!xxd -r
-:31
-:32
-:16
-:r 3.14.cpp
-:r 3.6.cpp
-:'<,'>//
-:set nohlsearch
-:r ../chapter02/2.41.cpp
-:r ../chapter01/1.11.cpp
-:r ../chapter01/1.10.cpp
-:ww
+:!ls
+:ls
+:PluginInstall
+:split _posts/2016-05-25-pe.md
+:split 2016-05-25-pip-compile-error.md
+:split .profile
+:WQ
+:!jekyll serve
+:split
+:!google-chrome price.html
+:!python steam_price.py
+:!chrome price.html
+:e price.html
+:9
+:CCGenerateConfig
 
 # Search String History (newest to oldest):
-??ii
-? \<i\>
-?/v1
-?/004430
-?/4010
-?/COFF
-?/coff
-?/PE
-?/pe
-?/nus
-?//
-?/std::
-? sum
-? price
-?/11
-?/Possi
-?/struct
+?/forma
+?/Add servi
+?/Add service
+?/Add
+?/add
+?/xxx
+?/xxxx
+?/sql
+?/afsdf
 ?/print
-?/<<
-?/express
+?/createAction
+?/sdfefg
+?/spreadsh
+?/syntax
+?/-std+11
+?/clean
+?/localTour
+?/Dij
+?/d
+?/dij
 
 # Expression History (newest to oldest):
 
@@ -68,1731 +68,1226 @@ $kind1
 
 # Registers:
 "0	CHAR	0
-	cout << "output1:" << endl;
-""1	LINE	0
-	
-"2	CHAR	0
-	
-	set backup
-	set backupdir   =$HOME/.vim/files/backup/
-	set backupext   =-vimbackup
-	set backupskip  =
-	set directory   =$HOME/.vim/files/swap//
-	set updatecount =100
-	set undofile
-	set undodir     =$HOME/.vim/files/undo/
-	set viminfo     ='100,n$HOME/.vim/files/info/viminfo
-	
+	"
+"1	LINE	0
+	707473782 fuckyou
+"2	LINE	0
+	            
 "3	LINE	0
-	
+	    
 "4	LINE	0
-	        cout << i << endl;
+	        
 "5	LINE	0
-	
-"6	CHAR	0
-	for (auto v : v7) {
-	        cout << v << endl;
-	    }
+	#include <cstring>
+"6	LINE	0
+	using std::strcmp;
 "7	CHAR	0
-	for (auto v : v6) {
-	        cout << v << endl;
-	    }
-"8	CHAR	0
-	for (auto v : v5) {
-	        cout << v << endl;
-	    }
-"9	CHAR	0
-	for (auto v : v4) {
-	        cout << v << endl;
-	    }
-"-	CHAR	0
-	 
+	这个世界
+	
+"8	LINE	0
+	import lxml
+"9	LINE	0
+	
+"q	CHAR	0
+	
+""-	CHAR	0
+	e
 
 # File marks:
-'0  3  1  ~/.vim/README.md
-'1  1  0  ~/.vim/vimrc
-'2  71  5  ~/.vim/vimrc
-'3  26  0  ~/.vim/vimrc
-'4  3  0  ~/.vim/.netrwhist
-'5  18  23  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'6  38  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'7  20  16  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'8  29  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
-'9  135  14  ~/Documents/Cpp-primer/chapter03/Makefile
+'0  88  0  ~/.vim/vimrc
+'1  3  1  ~/.vim/README.md
+'2  1  14  ~/91porn.txt
+'3  35  1  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+'4  16  0  ~/lldb-mi-log.txt
+'5  10  46  ~/Documents/sss/sss.cpp
+'6  1  0  ~/Documents/sss/sss
+'7  12  26  ~/Documents/sss/sss.cpp
+'8  1  0  ~/Documents/sss/i.sss
+'9  1  0  ~/Documents/sss/o.sss
 
 # Jumplist (newest first):
+-'  88  0  ~/.vim/vimrc
+-'  1  0  ~/.vim/vimrc
 -'  3  1  ~/.vim/README.md
 -'  1  0  ~/.vim/README.md
--'  1  0  ~/.vim/vimrc
--'  71  5  ~/.vim/vimrc
--'  3  0  ~/.vim/vimrc
--'  20  0  ~/.vim/vimrc
--'  26  0  ~/.vim/vimrc
--'  3  0  ~/.vim/.netrwhist
--'  1  0  ~/.vim/.netrwhist
--'  18  23  ~/Documents/Cpp-primer/chapter03/3.32.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.32.cpp
--'  38  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
--'  20  16  ~/Documents/Cpp-primer/chapter03/3.32.cpp
--'  29  25  ~/Documents/Cpp-primer/chapter03/3.32.cpp
--'  135  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  110  26  ~/Documents/Cpp-primer/chapter03/Makefile
--'  1  0  ~/Documents/Cpp-primer/chapter03/Makefile
--'  17  4  ~/Documents/Cpp-primer/chapter03/3.31.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.31.cpp
--'  14  16  ~/Documents/Cpp-primer/chapter03/3.31.cpp
--'  134  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  111  0  ~/Documents/Cpp-primer/chapter03/Makefile
--'  18  12  ~/Documents/Cpp-primer/chapter03/3.31.cpp
--'  12  9  ~/Documents/Cpp-primer/chapter03/3.31.cpp
--'  3  14  ~/Documents/Cpp-primer/chapter03/test.cpp
--'  6  0  ~/Documents/Cpp-primer/chapter03/test.cpp
--'  5  0  ~/Documents/Cpp-primer/chapter03/test.cpp
--'  8  16  ~/Documents/Cpp-primer/chapter03/test.cpp
--'  9  12  ~/Documents/Cpp-primer/chapter03/test.cpp
--'  140  0  ~/Documents/pandatv/panda.py
--'  1  0  ~/Documents/pandatv/panda.py
--'  19  31  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  14  23  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  133  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  104  26  ~/Documents/Cpp-primer/chapter03/Makefile
--'  10  14  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  3  40  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  8  14  ~/Documents/Cpp-primer/chapter03/3.25.cpp
--'  35  12  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  31  55  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  23  34  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  25  0  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  22  0  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  30  19  ~/Documents/Cpp-primer/chapter03/3.24.cpp
--'  132  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  101  26  ~/Documents/Cpp-primer/chapter03/Makefile
--'  131  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  98  26  ~/Documents/Cpp-primer/chapter03/Makefile
--'  31  12  ~/Documents/Cpp-primer/chapter03/3.23.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.23.cpp
--'  27  13  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  13  15  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  28  16  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  23  29  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  17  14  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  130  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  30  12  ~/Documents/Cpp-primer/chapter03/3.22.cpp
--'  129  14  ~/Documents/Cpp-primer/chapter03/Makefile
--'  92  26  ~/Documents/Cpp-primer/chapter03/Makefile
--'  22  12  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  21  13  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  13  16  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  23  38  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  60  27  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  59  20  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  53  39  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  47  39  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  42  27  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  41  20  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  1  0  ~/Documents/Cpp-primer/chapter03/3.21.cpp
--'  1052  12  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  50178  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  46264  44  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  46082  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  41986  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  37890  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  33794  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  33369  34  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  29698  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  28653  34  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  25602  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  24806  29  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  21506  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  17410  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  16401  2  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  14430  44  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  13314  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  10583  14  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  9218  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  5122  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  1026  3  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  1  0  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  3062  0  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
--'  203  0  ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
+-'  1  14  ~/91porn.txt
+-'  35  1  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  7  0  ~/Documents/zephyrzoom.github.io/NERD_tree_1
+-'  1  0  ~/Documents/zephyrzoom.github.io/NERD_tree_1
+-'  8  2  ~/Documents/zephyrzoom.github.io/NERD_tree_1
+-'  16  0  ~/lldb-mi-log.txt
+-'  1  0  ~/lldb-mi-log.txt
+-'  10  46  ~/Documents/sss/sss.cpp
+-'  1  0  ~/Documents/sss/sss.cpp
+-'  1  0  ~/Documents/sss/sss
+-'  12  26  ~/Documents/sss/sss.cpp
+-'  1  0  ~/Documents/sss/i.sss
+-'  1  0  ~/Documents/sss/o.sss
+-'  12  0  ~/Documents/sss/sss.o
+-'  1  0  ~/Documents/sss/sss.o
+-'  13  16  ~/Documents/sss/Makefile
+-'  1  0  ~/Documents/sss/Makefile
+-'  9  0  ~/Documents/qt-danmu/main.cpp
+-'  1  0  ~/Documents/qt-danmu/main.cpp
+-'  1  0  ~/Documents/qt-danmu/main
+-'  420  0  ~/Documents/danmu/bili/bili.py
+-'  51  0  ~/Documents/danmu/bili/bili.py
+-'  1  0  ~/Documents/danmu/bili/bili.py
+-'  13  0  ~/Documents/sss/sss.cpp
+-'  15  15  ~/Documents/sss/sss.cpp
+-'  80  0  ~/Documents/NERD_tree_1
+-'  85  2  ~/Documents/NERD_tree_1
+-'  1  0  ~/Documents/NERD_tree_1
+-'  4  0  ~/Documents/sss/sss.cpp
+-'  21  27  ~/.vim/vimrc
+-'  4  0  ~/Documents/sss/sss.c
+-'  1  0  ~/Documents/sss/sss.c
+-'  18  54  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  10  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  3  19  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
+-'  3  12  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  3  45  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  8  0  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
+-'  3  20  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
+-'  4  30  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
+-'  4  30  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  6  20  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  5  2  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  6  82  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
+-'  43  0  ~/Documents/steam-price/steam/steam_price.py
+-'  1  0  ~/Documents/steam-price/steam/steam_price.py
+-'  6  0  ~/Documents/steam-price/test/connect_mysql.py
+-'  1  0  ~/Documents/steam-price/test/connect_mysql.py
+-'  11  9  ~/Documents/steam-price/test/connect_mysql.py
+-'  7  0  ~/.pip/pip.log
+-'  10  0  ~/.pip/pip.log
+-'  1  0  ~/.pip/pip.log
+-'  4  17  ~/Documents/steam-price/test/redis_test.py
+-'  1  0  ~/Documents/steam-price/test/redis_test.py
+-'  1  0  ~/Documents/steam-price/test/redis.py
+-'  2  0  ~/Documents/steam-price/test/hello.py
+-'  1  0  ~/Documents/steam-price/test/hello.py
+-'  12  25  ~/Documents/zephyrzoom.github.io/_config.yml
+-'  1  0  ~/Documents/zephyrzoom.github.io/_config.yml
+-'  12  0  ~/Documents/steam-price/steam/steam_price.py
+-'  11  10  ~/Documents/steam-price/steam/steam_price.py
+-'  25  0  ~/Documents/steam-price/steam/steam_price.py
+-'  9  0  ~/Documents/steam-price/test/hello.py
+-'  22  0  ~/.profile
+-'  1  0  ~/.profile
+-'  1  0  ~/.bash_profile
+-'  1  0  ~/.bash_logout
+-'  17  0  ~/.vim/vimrc
+-'  23  23  /tmp/crontab.Excsfl/crontab
+-'  1  0  /tmp/crontab.Excsfl/crontab
+-'  75  3  ~/Documents/steam-price/steam/steam_price.py
+-'  14  0  ~/Documents/steam-price/steam/steam_price.py
+-'  5  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  76  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  28  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  20  31  ~/.vim/vimrc
+-'  88  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  68  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  63  13  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  39  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  84  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  24  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  89  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  6  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  18  0  ~/Documents/zephyrzoom.github.io/_config.yml
+-'  67  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+-'  19  13  ~/Documents/zephyrzoom.github.io/_config.yml
+-'  3  4  ~/Documents/zephyrzoom.github.io/_posts/2016-05-22-list.md
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-22-list.md
+-'  66  2  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/vimrc
+	"	88	0
+	^	21	28
+	.	21	27
+	+	89	0
+	+	89	13
+	+	89	5
+	+	25	11
+	+	26	0
+	+	26	29
+	+	25	10
+	+	25	0
+	+	23	17
+	+	25	0
+	+	15	30
+	+	22	0
+	+	16	0
+	+	16	0
+	+	16	31
+	+	22	0
+	+	89	0
+	+	22	29
+	+	89	20
+	+	89	15
+	+	89	0
+	+	22	30
+	+	89	0
+	+	87	13
+	+	87	18
+	+	89	0
+	+	87	18
+	+	89	0
+	+	22	0
+	+	17	29
+	+	87	106
+	+	89	0
+	+	88	5
+	+	22	40
+	+	87	20
+	+	87	0
+	+	87	0
+	+	22	0
+	+	87	0
+	+	87	0
+	+	22	22
+	+	86	0
+	+	31	17
+	+	31	0
+	+	22	0
+	+	87	0
+	+	20	31
+	+	21	27
+
 > ~/.vim/README.md
 	"	3	1
-	^	3	2
-	.	3	1
-	+	3	1
 
-> ~/.vim/vimrc
-	"	1	0
-	^	71	6
-	.	71	5
-	+	72	0
-	+	70	13
-	+	71	5
+> ~/91porn.txt
+	"	1	14
+	^	1	15
+	.	1	14
+	+	1	14
 
-> ~/.vim/.netrwhist
-	"	3	0
-
-> ~/Documents/Cpp-primer/chapter03/3.32.cpp
-	"	18	23
-	^	18	24
-	.	18	23
-	+	1	0
-	+	22	0
-	+	21	0
-	+	20	25
-	+	30	0
-	+	29	25
-	+	19	33
-	+	40	4
-	+	10	17
-	+	7	16
-	+	35	0
-	+	34	23
-	+	36	29
-	+	27	20
-	+	39	0
-	+	38	25
-	+	13	17
-	+	18	23
-
-> ~/Documents/Cpp-primer/chapter03/Makefile
-	"	135	14
-	^	135	15
-	.	135	14
-	+	1	0
-	+	23	0
-	+	1	17
-	+	23	24
-	+	47	0
-	+	46	21
-	+	47	18
-	+	136	4
-	+	136	0
-	+	136	0
-	+	114	20
-	+	2	15
-	+	24	26
-	+	50	19
-	+	115	22
-	+	3	11
-	+	25	26
-	+	53	19
-	+	116	22
-	+	4	11
-	+	26	26
-	+	56	19
-	+	117	22
-	+	56	30
-	+	5	6
-	+	27	16
-	+	59	15
-	+	136	0
-	+	118	12
-	+	6	6
-	+	28	16
-	+	62	14
-	+	119	12
-	+	7	6
-	+	45	0
-	+	29	16
-	+	65	14
-	+	120	12
-	+	8	6
-	+	30	16
-	+	68	14
-	+	121	12
-	+	68	25
-	+	9	6
-	+	31	16
-	+	71	25
-	+	122	12
-	+	10	7
-	+	32	18
-	+	74	26
-	+	123	14
-	+	11	7
-	+	33	18
-	+	77	16
-	+	124	14
-	+	77	26
-	+	12	7
-	+	34	18
-	+	80	26
-	+	125	14
-	+	13	7
-	+	35	18
-	+	83	26
-	+	126	14
-	+	14	7
-	+	36	18
-	+	86	26
-	+	127	14
-	+	15	7
-	+	37	18
-	+	89	26
-	+	128	14
-	+	16	7
-	+	38	18
-	+	92	26
-	+	129	14
-	+	17	7
-	+	39	18
-	+	95	26
-	+	130	14
-	+	18	7
-	+	40	18
-	+	98	26
-	+	131	14
-	+	19	7
-	+	41	18
-	+	101	26
-	+	132	14
-	+	20	7
-	+	42	18
-	+	104	26
-	+	133	14
-	+	21	7
-	+	43	18
-	+	107	26
-	+	134	14
-	+	22	7
-	+	44	18
-	+	110	26
-	+	135	14
-
-> ~/Documents/Cpp-primer/chapter03/3.31.cpp
-	"	17	4
-	^	17	5
-	.	17	0
-	+	19	0
-	+	14	0
-	+	14	0
-	+	12	0
-	+	14	0
-	+	14	25
-	+	18	12
-	+	14	16
-	+	12	33
-	+	14	0
-	+	13	16
-	+	17	0
-
-> ~/Documents/Cpp-primer/chapter03/test.cpp
-	"	3	14
-	^	3	15
-	.	3	14
-	+	30	9
-	+	22	15
-	+	26	26
-	+	30	0
-	+	27	21
-	+	23	15
-	+	29	0
-	+	20	0
-	+	15	23
-	+	19	12
-	+	11	16
-	+	5	18
-	+	11	17
-	+	16	4
-	+	17	15
-	+	10	0
-	+	7	18
-	+	9	12
-	+	8	16
-	+	6	0
-	+	1	9
-	+	4	0
-	+	3	14
-
-> ~/Documents/pandatv/panda.py
-	"	140	0
-
-> ~/Documents/Cpp-primer/chapter03/3.25.cpp
-	"	19	31
-	^	19	32
-	.	19	31
-	+	3	41
-	+	27	0
-	+	15	18
-	+	4	14
-	+	16	23
-	+	4	14
-	+	3	41
-	+	19	29
-	+	21	0
-	+	26	12
-	+	22	14
-	+	18	16
-	+	24	0
-	+	23	26
-	+	25	16
-	+	10	14
-	+	14	23
-	+	19	31
-
-> ~/Documents/Cpp-primer/chapter03/3.24.cpp
-	"	35	12
-	^	36	9
-	.	35	0
-	+	1	0
-	+	1	0
-	+	23	35
-	+	24	26
-	+	25	30
-	+	27	22
-	+	31	47
-	+	35	18
-	+	31	29
-	+	22	30
-	+	29	5
-	+	30	19
-	+	23	34
-	+	31	55
-	+	34	15
-	+	36	8
-	+	35	0
-
-> ~/Documents/Cpp-primer/chapter03/3.23.cpp
-	"	31	12
-	^	31	13
-	.	31	12
-	+	32	0
-	+	21	0
-	+	20	23
-	+	17	39
-	+	25	0
-	+	24	24
-	+	30	0
-	+	29	18
-	+	27	29
-	+	29	26
-	+	31	12
-
-> ~/Documents/Cpp-primer/chapter03/3.22.cpp
-	"	27	13
-	^	27	14
-	.	27	13
-	+	3	33
-	+	31	0
-	+	20	0
-	+	17	21
-	+	19	23
-	+	21	51
-	+	26	0
-	+	24	25
-	+	22	23
-	+	23	57
-	+	24	0
-	+	25	0
-	+	24	27
-	+	30	12
-	+	17	14
-	+	23	29
-	+	27	48
-	+	29	0
-	+	28	16
-	+	13	15
-	+	27	13
-
-> ~/Documents/Cpp-primer/chapter03/3.21.cpp
-	"	22	12
-	^	24	19
-	.	59	39
-	+	1	0
-	+	23	52
-	+	24	18
-	+	29	4
-	+	35	4
-	+	35	4
-	+	41	4
-	+	47	4
-	+	53	4
-	+	59	4
-	+	29	39
-	+	35	39
-	+	41	39
-	+	47	39
-	+	53	39
-	+	59	39
-
-> ~/VirtualBox VMs/xp/Share/nasm-2.11.08-installer.exe
-	"	1052	12
+> ~/Documents/zephyrzoom.github.io/NERD_tree_1
+	"	7	0
 	.	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
-> ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/pentium.ssl
-	"	98	0
-
-> ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/pentium.rules
-	"	7	0
-
-> ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/disassembler.m
-	"	759	9
-
-> ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/core.spec
-	"	215	53
-
-> ~/Downloads/new_boomerang/boomerang/frontend/machine/pentium/386-core.spec.sav
-	"	77	13
-
-> ~/Downloads/new_boomerang/boomerang/frontend/mips/mipsfrontend.h
-	"	49	0
-
-> ~/Downloads/new_boomerang/boomerang/frontend/mips/mipsdecoder.h
-	"	53	0
-
-> ~/Downloads/new_boomerang/boomerang/frontend/CMakeLists.txt
-	"	53	0
-
-> ~/Downloads/new_boomerang/boomerang/c/ansi-c.l
-	"	64	0
-
-> ~/Documents/decompiler/src/pe_coff.c
-	"	3	0
-	^	1	11
-	.	1	11
-	+	2	2
-	+	1	11
-
-> ~/Documents/Cpp-primer/chapter03/3.20.cpp
-	"	29	54
-	^	29	55
-	.	29	54
-	+	33	0
-	+	16	10
-	+	18	19
-	+	17	9
-	+	21	0
-	+	20	25
-	+	28	0
-	+	23	13
-	+	22	58
-	+	25	0
-	+	24	45
-	+	27	0
-	+	26	34
-	+	31	0
-	+	30	8
-	+	29	60
-	+	30	25
-	+	30	0
-	+	30	1
-	+	29	66
-	+	29	52
-	+	30	0
-	+	29	64
-	+	29	74
-	+	29	65
-	+	30	18
-	+	30	12
-	+	29	78
-	+	30	12
-	+	30	39
-	+	32	12
-	+	22	27
-	+	29	37
-	+	29	74
-	+	29	74
-	+	29	57
-	+	29	35
-	+	29	73
-	+	30	0
-	+	30	0
-	+	29	9
-	+	29	81
-	+	29	0
-	+	29	88
-	+	29	0
-	+	30	0
-	+	29	0
-	+	30	0
-	+	29	3
-	+	30	4
-	+	31	4
-	+	29	54
-
-> ~/Documents/Cpp-primer/chapter03/3.17.cpp
-	"	22	14
-	^	22	15
-	.	22	14
-	+	6	2
-	+	5	32
-	+	31	0
-	+	19	18
-	+	18	21
-	+	14	15
-	+	21	0
-	+	20	26
-	+	26	0
-	+	24	0
-	+	23	18
-	+	26	0
-	+	29	0
-	+	30	12
-	+	22	14
-
-> ~/Documents/Cpp-primer/chapter03/3.16.cpp
-	"	63	0
-	^	57	0
-	.	59	19
-	+	9	17
-	+	63	0
-	+	19	31
-	+	10	17
-	+	62	12
-	+	62	22
-	+	16	8
-	+	62	0
-	+	25	0
-	+	27	4
-	+	20	0
-	+	33	0
-	+	39	4
-	+	45	0
-	+	51	0
-	+	57	0
-	+	27	14
-	+	28	13
-	+	29	19
-	+	33	14
-	+	34	13
-	+	35	19
-	+	39	14
-	+	40	13
-	+	41	19
-	+	45	14
-	+	46	13
-	+	47	19
-	+	51	14
-	+	52	13
-	+	53	19
-	+	57	14
-	+	58	13
-	+	59	19
-
-> ~/Documents/Cpp-primer/chapter03/3.15.cpp
-	"	18	4
-	^	15	17
-	.	19	18
-	+	7	0
-	+	7	0
-	+	11	17
-	+	14	9
-	+	15	16
-	+	14	11
-	+	16	18
-	+	15	19
-	+	17	8
-	+	19	18
-
-> ~/Documents/Cpp-primer/chapter03/3.14.cpp
-	"	21	16
-	^	21	17
-	.	21	16
-	+	23	0
-	+	15	17
-	+	13	9
-	+	14	17
-	+	17	0
-	+	16	23
-	+	22	12
-	+	5	14
-	+	11	17
-	+	6	16
-	+	10	0
-	+	20	0
-	+	21	16
-
-> ~/Documents/Cpp-primer/chapter03/3.14
-	"	1	0
-
-> ~/Documents/Cpp-primer/chapter03/3.10.cpp
-	"	21	15
-	^	21	16
-	.	21	15
-	+	4	3
-	+	27	0
-	+	15	5
-	+	16	8
-	+	14	50
-	+	22	0
-	+	16	17
-	+	3	38
-	+	17	7
-	+	16	7
-	+	17	34
-	+	14	26
-	+	18	13
-	+	19	29
-	+	25	0
-	+	22	0
-	+	26	12
-	+	9	17
-	+	14	5
-	+	15	20
-	+	16	21
-	+	15	0
-	+	14	4
-	+	16	23
-	+	23	8
-	+	21	15
-
-> ~/Documents/Cpp-primer/chapter03/3.7.cpp
-	"	18	12
-	^	17	13
-	.	17	12
-	+	6	0
-	+	7	0
-	+	6	0
-	+	17	12
-
-> ~/Documents/Cpp-primer/chapter03/3.6.cpp
-	"	10	17
-	^	10	18
-	.	10	17
-	+	21	0
-	+	16	55
-	+	18	0
-	+	17	8
-	+	16	18
-	+	17	7
-	+	16	14
-	+	17	14
-	+	20	12
-	+	9	16
-	+	10	17
-
-> ~/Documents/Cpp-primer/chapter03/3.5.cpp
-	"	27	0
-	^	15	6
-	.	19	4
-	+	27	0
-	+	18	0
-	+	17	8
-	+	14	15
-	+	17	15
-	+	26	12
-	+	25	23
-	+	16	0
-	+	15	4
-	+	16	4
-	+	17	4
-	+	18	4
-	+	19	4
-
-> ~/Documents/Cpp-primer/chapter03/3.3.cpp
-	"	41	0
-	^	39	5
-	.	39	0
-	+	6	2
-	+	5	34
-	+	8	5
-	+	41	0
-	+	18	10
-	+	16	13
-	+	27	12
-	+	28	41
-	+	29	5
-	+	40	12
-	+	32	20
-	+	31	29
-	+	39	0
-
-> ~/Documents/Cpp-primer/chapter03/3.2.cpp
-	"	19	23
-	^	19	24
-	.	19	23
+> ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
+	"	35	1
+	^	35	69
+	.	35	60
 	+	5	2
-	+	4	3
-	+	13	1
-	+	15	21
-	+	14	12
-	+	15	16
-	+	20	12
-	+	10	14
-	+	11	15
-	+	16	20
-	+	18	15
-	+	17	15
-	+	19	23
-
-> ~/Documents/Cpp-primer/chapter03/3.1_2.41.cpp
-	"	93	4
-	^	100	21
-	.	93	0
-	+	1	0
-	+	12	4
-	+	9	15
-	+	10	18
-	+	15	4
-	+	24	24
-	+	25	4
-	+	26	4
-	+	27	4
-	+	28	4
-	+	26	24
-	+	31	58
-	+	36	23
-	+	37	11
-	+	43	27
-	+	46	4
-	+	49	41
-	+	56	23
-	+	57	11
-	+	85	45
-	+	89	4
-	+	92	45
-	+	93	4
-	+	96	45
-	+	97	4
-	+	100	45
-	+	90	20
-	+	91	20
-	+	92	20
-	+	94	20
-	+	95	20
-	+	96	20
-	+	98	20
-	+	99	20
-	+	100	20
-	+	97	0
-	+	93	0
-
-> ~/Documents/Cpp-primer/chapter03/3.1_1.11.cpp
-	"	23	12
-	^	9	16
-	.	23	12
-	+	1	0
-	+	9	15
-	+	14	4
-	+	15	4
-	+	16	4
-	+	17	4
-	+	20	8
-	+	23	12
-
-> ~/Documents/Cpp-primer/chapter03/3.1_1.10.cpp
-	"	17	12
-	^	8	16
-	.	17	12
-	+	1	0
-	+	8	15
-	+	17	12
-
-> ~/Documents/Cpp-primer/chapter03/3.1_1.9.cpp
-	"	20	0
-
-> ~/Documents/Cpp-primer/chapter03/3.1.cpp
-	"	18	51
-	^	8	16
-	.	18	51
-	+	1	0
-	+	8	15
-	+	18	51
-
-> ~/Documents/Cpp-primer/chapter02/2.42.cpp
-	"	63	0
-	^	6	23
-	.	6	22
-	+	1	0
-	+	3	49
-	+	8	0
-	+	5	0
-	+	6	22
-
-> ~/Documents/Cpp-primer/chapter02/Makefile
-	"	41	15
-	^	55	15
-	.	41	15
-	+	3	0
-	+	1	13
-	+	3	16
-	+	13	0
-	+	45	0
-	+	56	0
-	+	14	13
-	+	15	14
-	+	46	12
-	+	1	19
-	+	4	16
-	+	18	14
-	+	47	12
-	+	1	26
-	+	5	18
-	+	21	15
-	+	48	14
-	+	1	33
-	+	6	18
-	+	24	15
-	+	49	14
-	+	1	40
-	+	7	18
-	+	27	15
-	+	56	0
-	+	50	14
-	+	27	26
-	+	1	47
-	+	8	18
-	+	30	22
-	+	51	14
-	+	1	42
-	+	2	14
-	+	1	42
-	+	9	18
-	+	33	16
-	+	52	14
-	+	2	21
-	+	10	18
-	+	36	15
-	+	53	14
-	+	36	26
-	+	2	28
-	+	11	18
-	+	39	16
-	+	54	14
-	+	39	26
-	+	2	35
-	+	12	18
-	+	42	26
-	+	55	14
-	+	41	15
-
-> ~/Documents/Cpp-primer/chapter02/Sales_data.h
-	"	11	0
-	^	11	6
-	.	11	5
-	+	4	0
-	+	3	16
-	+	11	5
-
-> ~/Documents/Cpp-primer/chapter02/2.41.cpp
-	"	97	0
-	^	81	60
-	.	97	0
-	+	25	33
-	+	29	0
-	+	17	10
-	+	97	0
-	+	30	0
-	+	31	17
-	+	30	19
-	+	35	22
-	+	33	79
-	+	34	0
-	+	32	0
-	+	35	0
-	+	32	0
-	+	33	0
-	+	35	26
-	+	42	0
-	+	42	0
-	+	40	0
-	+	41	0
-	+	35	27
-	+	33	67
-	+	38	19
-	+	36	22
-	+	37	28
-	+	42	31
-	+	43	39
-	+	42	29
-	+	44	29
-	+	45	37
-	+	97	0
-	+	48	4
-	+	47	10
-	+	53	11
-	+	84	0
-	+	84	0
-	+	35	0
-	+	39	0
-	+	84	12
-	+	51	17
-	+	84	0
-	+	58	0
-	+	58	0
-	+	62	55
-	+	57	16
-	+	60	0
-	+	63	0
-	+	60	16
-	+	63	16
-	+	64	0
-	+	83	0
-	+	69	43
-	+	75	12
-	+	75	0
-	+	71	0
-	+	75	0
-	+	83	0
-	+	80	0
-	+	76	0
-	+	80	20
-	+	82	0
-	+	81	16
-	+	71	20
-	+	72	20
-	+	73	20
-	+	74	20
-	+	76	20
-	+	77	20
-	+	78	20
-	+	79	20
-	+	85	0
-	+	89	0
-	+	93	0
-	+	85	0
-	+	89	0
-	+	93	0
-	+	85	22
-	+	89	22
-	+	93	18
-	+	85	0
-	+	86	25
-	+	87	25
-	+	88	25
-	+	89	33
-	+	90	31
-	+	91	31
-	+	92	31
-	+	93	33
-	+	94	31
-	+	95	31
-	+	96	31
-	+	90	25
-	+	91	25
-	+	92	25
-	+	94	25
-	+	95	25
-	+	96	25
-	+	48	0
-	+	81	59
-	+	97	0
-	+	97	0
-
-> ~/Documents/Cpp-primer/chapter02/2.41
-	"	1	0
-
-> ~/Documents/Cpp-primer/chapter02/2.40.cpp
-	"	17	0
-	^	17	1
-	.	17	0
-	+	18	0
-	+	9	21
-	+	8	19
-	+	12	1
-	+	5	18
-	+	17	0
-
-> ~/Documents/Cpp-primer/chapter02/2.39.cpp
-	"	6	13
-	^	6	14
-	.	6	13
-	+	10	0
-	+	6	13
-
-> ~/Documents/Cpp-primer/chapter02/2.35.cpp
-	"	14	4
-	.	14	0
-	+	21	0
-	+	13	30
-	+	18	32
-	+	20	12
-	+	19	4
-	+	14	0
-
-> ~/Documents/Cpp-primer/chapter02/2.34.cpp
-	"	1	0
-	^	32	6
-	.	32	5
-	+	5	1
-	+	3	53
-	+	41	0
-	+	16	16
-	+	17	16
-	+	18	39
-	+	19	39
-	+	20	39
-	+	21	39
-	+	22	39
-	+	40	12
-	+	32	10
-	+	33	22
-	+	34	25
-	+	35	25
-	+	36	25
-	+	37	25
-	+	38	25
-	+	31	17
-	+	27	15
-	+	29	21
-	+	28	5
-	+	30	5
-	+	32	5
-
-> ~/Documents/Cpp-primer/chapter02/2.34
-	"	1	0
-
-> ~/Documents/Cpp-primer/chapter02/2.
-	"	1	0
-
-> ~/Documents/Cpp-primer/chapter02/test.cpp
-	"	5	14
-	^	5	15
-	.	5	14
+	+	6	20
+	+	4	30
+	+	3	12
+	+	17	2
+	+	16	8
+	+	13	7
 	+	7	0
-	+	6	12
-	+	4	5
-	+	5	14
-
-> ~/Documents/Cpp-primer/chapter02/2.18.cpp
-	"	13	31
-	^	13	32
-	.	13	31
-	+	15	0
-	+	10	37
-	+	14	12
-	+	10	27
-	+	13	31
-
-> ~/Documents/Cpp-primer/chapter02/2.17.cpp
-	"	13	0
-	^	4	3
-	.	9	0
-	+	3	31
-	+	3	0
-	+	4	2
-	+	8	0
-	+	9	0
-
-> ~/Documents/Cpp-primer/chapter02/t.cpp
-	"	8	30
-	^	1	19
-	.	8	30
-	+	14	0
-	+	12	17
-	+	10	0
-	+	9	11
-	+	9	12
-	+	9	10
-	+	9	10
-	+	9	0
-	+	8	44
-	+	1	18
-	+	6	4
-	+	8	30
-
-> ~/Documents/Cpp-primer/chapter02/2.8.cpp
-	"	12	12
-	^	12	13
-	.	12	12
-	+	13	0
-	+	12	12
-
-> ~/Documents/Cpp-primer/chapter02/2.4.cpp
-	"	17	12
-	^	17	13
-	.	17	12
-	+	3	0
+	+	18	54
+	+	18	106
+	+	18	143
+	+	18	106
 	+	18	0
-	+	17	12
+	+	36	0
+	+	18	102
+	+	24	46
+	+	21	0
+	+	22	45
+	+	23	29
+	+	24	47
+	+	32	2
+	+	33	41
+	+	35	60
 
-> ~/Documents/Cpp-primer/README.md
+> ~/lldb-mi-log.txt
+	"	16	0
+
+> ~/Documents/sss/sss.cpp
+	"	10	46
+	^	10	47
+	.	10	46
+	+	1	14
+	+	10	4
+	+	8	30
+	+	14	0
+	+	14	0
+	+	10	41
+	+	2	10
+	+	8	17
+	+	2	10
+	+	8	0
+	+	2	10
+	+	8	0
+	+	14	8
+	+	10	42
+	+	2	10
+	+	14	0
+	+	14	12
+	+	10	43
+	+	14	0
+	+	11	8
+	+	10	70
+	+	11	26
+	+	10	33
+	+	3	17
+	+	5	19
+	+	11	27
+	+	13	29
+	+	16	0
+	+	15	29
+	+	7	15
+	+	10	39
+	+	12	26
+	+	10	46
+
+> ~/Documents/sss/sss
+	"	1	0
+
+> ~/Documents/sss/i.sss
 	"	1	0
 	^	1	1
 	.	1	0
-	+	2	0
 	+	1	0
-	+	2	0
 	+	1	0
 
-> ~/Documents/Cpp-primer/chapter01/1.23.cpp
-	"	33	25
-	^	33	26
-	.	33	25
-	+	6	0
-	+	4	37
-	+	44	0
-	+	11	19
-	+	8	22
-	+	39	0
-	+	27	0
-	+	26	12
-	+	26	31
-	+	22	0
-	+	21	41
-	+	23	48
-	+	24	0
-	+	27	0
-	+	42	35
-	+	17	48
-	+	20	0
-	+	43	12
-	+	23	37
-	+	16	18
-	+	15	25
-	+	25	47
-	+	37	0
-	+	38	0
-	+	31	0
-	+	29	0
-	+	28	27
-	+	32	28
-	+	29	28
-	+	28	23
-	+	36	0
-	+	30	25
-	+	33	25
-
-> ~/Documents/Cpp-primer/chapter01/Makefile
-	"	60	22
-	^	60	23
-	.	60	22
-	+	78	0
-	+	20	0
-	+	21	16
-	+	64	6
-	+	20	4
-	+	21	12
-	+	4	15
-	+	64	12
-	+	62	1
-	+	62	0
-	+	26	1
-	+	18	0
-	+	1	11
-	+	4	13
-	+	20	9
-	+	21	9
-	+	64	6
-	+	1	19
-	+	5	15
-	+	24	12
-	+	64	22
-	+	4	4
-	+	5	4
-	+	22	1
-	+	26	1
-	+	26	1
-	+	26	1
-	+	1	25
-	+	6	16
-	+	26	1
-	+	25	0
-	+	26	9
-	+	27	10
-	+	64	32
-	+	1	31
-	+	7	16
-	+	30	13
-	+	64	15
-	+	65	15
-	+	66	15
-	+	1	37
-	+	8	16
-	+	33	13
-	+	68	12
-	+	1	35
-	+	8	14
-	+	32	2
-	+	33	10
-	+	68	6
-	+	1	44
-	+	9	18
-	+	36	15
-	+	69	14
-	+	1	51
-	+	10	18
-	+	39	15
-	+	70	14
-	+	1	59
-	+	11	18
-	+	71	14
-	+	42	15
-	+	1	65
-	+	12	18
-	+	45	15
-	+	72	14
-	+	2	39
-	+	13	18
-	+	48	15
-	+	73	14
-	+	3	7
-	+	19	0
-	+	14	18
-	+	51	15
-	+	74	14
-	+	3	14
-	+	15	18
-	+	54	15
-	+	75	14
-	+	3	21
-	+	16	18
-	+	57	15
-	+	76	14
-	+	3	28
-	+	17	18
-	+	60	15
-	+	77	14
-	+	60	22
-
-> ~/Documents/Cpp-primer/chapter01/Sales_item.h
-	"	71	0
-
-> ~/Documents/Cpp-primer/chapter01/1.22.cpp
-	"	12	4
-	^	19	4
-	.	12	0
-	+	1	0
-	+	3	38
-	+	11	18
-	+	15	27
-	+	18	0
-	+	14	0
-	+	15	0
-	+	17	0
-	+	16	24
-	+	18	17
-	+	20	0
-	+	18	65
-	+	11	0
-	+	10	19
-	+	12	0
-
-> ~/Documents/Cpp-primer/chapter01/1.21.cpp
-	"	3	42
-	^	3	40
-	.	3	42
-	+	18	0
-	+	16	43
-	+	17	12
-	+	7	22
-	+	3	42
-
-> ~/Documents/Cpp-primer/chapter01/1.20.cpp
-	"	15	12
-	^	15	13
-	.	15	12
-	+	16	0
-	+	11	15
-	+	7	22
-	+	15	0
-	+	11	28
-	+	14	0
-	+	13	38
-	+	15	12
-
-> ~/Documents/Cpp-primer/chapter01/1.19.cpp
-	"	16	21
-	^	16	22
-	.	16	22
-	+	27	0
-	+	27	0
-	+	1	0
-	+	5	0
-	+	4	13
-	+	17	0
-	+	24	4
-	+	18	0
-	+	16	22
-
-> ~/Documents/Cpp-primer/chapter01/1.11.cpp
-	"	17	0
-	^	14	20
-	.	14	19
-	+	2	32
-	+	22	0
-	+	15	0
-	+	9	14
-	+	10	11
-	+	19	0
-	+	17	34
-	+	18	16
-	+	20	26
-	+	21	12
-	+	9	0
-	+	11	42
-	+	12	23
-	+	14	19
-
-> ~/Documents/Cpp-primer/chapter01/1.10.cpp
-	"	17	0
-	^	13	14
-	.	13	13
-	+	3	49
-	+	17	0
-	+	17	0
-	+	14	0
-	+	12	31
-	+	16	12
-	+	13	13
-
-> ~/Documents/Cpp-primer/chapter01/1.16.cpp
-	"	16	0
-	^	15	60
-	.	15	59
-	+	16	0
-	+	14	0
-	+	13	8
-	+	11	15
-	+	13	18
-	+	15	59
-
-> ~/Documents/Cpp-primer/chapter01/1.13.cpp
-	"	5	0
-	^	34	22
-	.	34	21
-	+	8	1
-	+	36	0
-	+	9	13
-	+	11	41
-	+	14	0
-	+	13	18
-	+	10	15
-	+	15	61
-	+	17	13
-	+	21	5
-	+	20	35
-	+	28	11
-	+	26	0
-	+	27	0
-	+	28	40
-	+	33	5
-	+	32	34
-	+	34	21
-
-> ~/Downloads/voice/hack_audio_captcha/split_loud_voice.py
-	"	18	0
-
-> ~/Downloads/voice/split_loud_voice.py
-	"	41	0
-	.	15	16
-	+	15	16
-
-> ~/Downloads/split_loud_voice.py
-	"	43	4
-
-> /usr/share/vim/vim74/doc/autocmd.txt
-	"	44	0
-
-> ~/Documents/Cpp-primer/chapter01/1.9.cc
-	"	14	13
-	^	14	14
-	.	14	13
-	+	18	0
-	+	9	17
-	+	15	0
-	+	10	15
-	+	13	18
-	+	16	60
-	+	17	12
-	+	14	13
-
-> ~/Documents/Cpp-primer/chapter01/1.5.cc
-	"	4	2
-	^	4	3
-	.	4	2
-	+	21	0
-	+	21	0
-	+	9	1
-	+	21	0
-	+	9	4
-	+	14	20
-	+	15	25
-	+	16	20
-	+	17	24
-	+	18	25
-	+	14	5
-	+	15	14
-	+	16	7
-	+	17	5
-	+	18	6
-	+	19	14
-	+	15	0
-	+	14	0
-	+	16	0
-	+	14	13
-	+	15	13
-	+	16	13
-	+	17	13
-	+	18	13
-	+	19	13
-	+	13	34
-	+	14	19
-	+	15	24
-	+	16	19
-	+	17	23
-	+	18	24
-	+	6	0
-	+	5	0
-	+	4	2
-	j	16	6
-
-> ~/Documents/Cpp-primer/chapter01/1.4.cc
-	"	9	0
-	^	6	12
-	.	6	11
-	+	6	0
-	+	3	26
-	+	15	0
-	+	13	92
-	+	14	12
-	+	3	41
-	+	6	11
-
-> ~/Documents/Cpp-primer/chapter01/1.3.cc
-	"	9	44
-	^	10	13
-	.	10	12
-	+	5	0
-	+	11	0
-	+	10	12
-
-> ~/Documents/Cpp-primer/chapter01/1.2.cc
-	"	6	2
-	^	6	3
-	.	6	2
-	+	2	32
-	+	5	3
-	+	6	2
-
-> ~/Documents/C-programming/chapter02/01.c
+> ~/Documents/sss/o.sss
 	"	1	0
 
-> ~/Documents/Cpp-primer/chapter01/1.1.cc
-	"	3	0
-	^	4	1
+> ~/Documents/sss/sss.o
+	"	12	0
+
+> ~/Documents/sss/Makefile
+	"	13	16
+	^	13	17
+	.	13	16
+	+	13	16
+
+> ~/Documents/qt-danmu/main.cpp
+	"	9	0
+
+> ~/Documents/qt-danmu/main
+	"	1	0
+
+> ~/Documents/danmu/bili/bili.py
+	"	420	0
+
+> ~/Documents/NERD_tree_1
+	"	80	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/sss/sss.c
+	"	4	0
+	^	4	0
 	.	4	0
+	+	5	0
 	+	4	0
 
-> ~/Documents/C-programming/chapter02/Makefile
-	"	31	0
+> ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
+	"	3	19
+	^	3	22
+	.	3	22
+	+	6	82
+	+	4	30
+	+	3	22
 
-> ~/Documents/C-programming/README.md
+> ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
+	"	3	45
+	^	88	9
+	.	3	45
+	+	1	3
+	+	6	2
+	+	12	0
+	+	9	33
+	+	3	20
+	+	13	0
+	+	3	21
+	+	13	141
+	+	15	113
+	+	27	0
+	+	26	0
+	+	25	10
+	+	22	14
+	+	17	3
+	+	27	1
+	+	46	2
+	+	45	0
+	+	37	23
+	+	43	4
+	+	42	13
+	+	44	10
+	+	47	95
+	+	49	22
+	+	89	0
+	+	50	196
+	+	52	27
+	+	52	69
+	+	52	0
+	+	52	52
+	+	44	0
+	+	52	28
+	+	52	52
+	+	52	31
+	+	52	28
+	+	52	52
+	+	52	27
+	+	52	51
+	+	89	0
+	+	52	48
+	+	13	57
+	+	11	35
+	+	12	5
+	+	11	0
+	+	12	0
+	+	11	188
+	+	66	2
+	+	65	0
+	+	62	4
+	+	62	0
+	+	61	20
+	+	63	14
+	+	64	14
+	+	89	0
+	+	54	18
+	+	84	108
+	+	54	6
+	+	82	2
+	+	83	0
+	+	81	0
+	+	78	4
+	+	77	13
+	+	80	14
+	+	89	4
+	+	89	6
+	+	69	0
+	+	67	0
+	+	69	0
+	+	89	0
+	+	69	0
+	+	67	12
+	+	89	0
+	+	55	0
+	+	54	27
+	+	68	0
+	+	86	30
+	+	88	90
+	+	87	0
+	+	88	9
+	+	3	45
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
+	"	8	0
+	^	9	56
+	.	3	20
+	+	7	1
+	+	9	0
+	+	7	1
+	+	9	48
+	+	7	1
+	+	9	1
+	+	7	0
+	+	9	0
+	+	8	0
+	+	13	0
+	+	10	0
+	+	11	90
+	+	9	53
+	+	3	20
+
+> ~/Documents/steam-price/steam/steam_price.py
+	"	43	0
+	^	40	1
+	.	40	0
+	+	17	4
+	+	21	0
+	+	26	0
+	+	14	15
+	+	19	14
+	+	22	6
+	+	14	15
+	+	19	0
+	+	18	15
+	+	22	9
+	+	12	11
+	+	30	20
+	+	33	15
+	+	40	15
+	+	32	18
+	+	36	15
+	+	40	30
+	+	40	0
+	+	48	15
+	+	40	12
+	+	42	18
+	+	44	9
+	+	63	38
+	+	68	29
+	+	83	61
+	+	65	0
+	+	69	46
+	+	63	11
+	+	63	0
+	+	63	0
+	+	63	14
+	+	63	30
+	+	64	11
+	+	64	0
+	+	70	31
+	+	63	24
+	+	70	24
+	+	82	0
+	+	63	0
+	+	63	0
+	+	64	0
+	+	70	0
+	+	63	0
+	+	64	0
+	+	63	0
+	+	63	18
+	+	70	19
+	+	81	20
+	+	56	18
+	+	50	41
+	+	50	0
+	+	50	0
+	+	50	22
+	+	69	0
+	+	50	0
+	+	50	11
+	+	50	0
+	+	56	0
+	+	56	19
+	+	70	0
+	+	63	0
+	+	50	0
+	+	56	0
+	+	50	0
+	+	50	0
+	+	56	67
+	+	50	53
+	+	52	14
+	+	51	9
+	+	53	22
+	+	54	53
+	+	54	22
+	+	54	0
+	+	53	58
+	+	53	27
+	+	53	58
+	+	53	0
+	+	53	77
+	+	56	77
+	+	63	0
+	+	56	78
+	+	56	69
+	+	58	37
+	+	61	24
+	+	62	0
+	+	59	35
+	+	54	19
+	+	51	19
+	+	74	0
+	+	78	0
+	+	77	3
+	+	53	0
+	+	54	0
+	+	16	31
+	+	54	0
+	+	41	0
+	+	83	0
+	+	11	0
+	+	40	0
+
+> ~/Documents/steam-price/test/connect_mysql.py
+	"	6	0
+	^	11	10
+	.	11	9
+	+	11	9
+
+> ~/.pip/pip.log
+	"	7	0
+
+> ~/Documents/steam-price/test/redis_test.py
+	"	4	17
+	^	4	18
+	.	4	17
+	+	2	22
+	+	4	17
+
+> ~/Documents/steam-price/test/redis.py
 	"	1	0
 
-> ~/Desktop/a
-	"	8	0
+> ~/Documents/steam-price/test/hello.py
+	"	2	0
 
-> ~/mongodb.txt
-	"	1	20
-	^	1	21
-	.	1	20
-	+	1	20
+> ~/Documents/zephyrzoom.github.io/_config.yml
+	"	12	25
+	.	12	16
+	+	10	22
+	+	9	9
+	+	14	32
+	+	15	17
+	+	19	0
+	+	12	8
+	+	12	25
+	+	12	14
+	+	19	0
+	+	12	25
+	+	14	0
+	+	12	16
 
-> ~/Documents/pandatv-node/README.md
+> ~/.bash_profile
+	"	1	34
+	^	1	35
+	.	1	34
+	+	1	34
+
+> ~/.profile
+	"	22	0
+
+> ~/.bash_logout
+	"	1	0
+
+> /tmp/crontab.Excsfl/crontab
+	"	23	23
+	^	23	18
+	.	23	17
+	+	23	17
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-05-22-list.md
+	"	3	4
+	^	3	5
+	.	3	4
+	+	3	4
+
+> ~/Documents/zephyrzoom.github.io/index.html
+	"	1	0
+	^	14	8
+	.	14	6
+	+	31	0
+	+	7	33
+	+	30	0
+	+	21	15
+	+	21	42
+	+	23	42
+	+	24	52
+	+	29	6
+	+	21	7
+	+	23	0
+	+	21	7
+	+	21	0
+	+	25	7
+	+	22	5
+	+	23	6
+	+	24	6
+	+	28	6
+	+	34	7
+	+	29	5
+	+	30	5
+	+	31	5
+	+	32	5
+	+	33	5
+	+	11	74
+	+	11	146
+	+	11	85
+	+	11	151
+	+	11	81
+	+	11	6
+	+	11	10
+	+	12	71
+	+	13	77
+	+	14	6
+
+> ~/Documents/pandatv/panda.py
+	"	128	36
+	^	126	43
+	.	126	42
+	+	124	35
+	+	124	59
+	+	124	104
+	+	124	75
+	+	124	59
+	+	124	38
+	+	124	81
+	+	124	26
+	+	124	59
+	+	124	37
+	+	124	27
+	+	124	24
+	+	124	59
+	+	124	68
+	+	124	27
+	+	124	55
+	+	124	0
+	+	124	42
+	+	126	0
+	+	124	34
+	+	126	30
+	+	124	51
+	+	126	39
+	+	124	42
+	+	126	68
+	+	10	8
+	+	125	23
+	+	124	38
+	+	124	25
+	+	124	11
+	+	124	11
+	+	124	36
+	+	125	4
+	+	127	8
+	+	125	30
+	+	124	37
+	+	126	12
+	+	125	12
+	+	125	12
+	+	124	42
+	+	125	12
+	+	126	12
+	+	124	0
+	+	123	13
+	+	124	34
+	+	126	42
+
+> ~/Downloads/libsrpos_plugin-0.5/install-sh
+	"	96	0
+
+> ~/Downloads/libsrpos_plugin-0.5/README
+	"	18	0
+
+> ~/Downloads/libsrpos_plugin-0.5/INSTALL
+	"	137	0
+
+> /etc/default/acpi-support
+	"	130	15
+	^	130	25
+	.	130	15
+	+	130	15
+
+> ~/Documents/zephyrzoom.github.io/_img/stackoverflow.png
+	"	1	0
+
+> ~/Documents/pandatv/init.properties
+	"	1	0
+
+> ~/Documents/test/test.c
+	"	4	0
+	^	3	15
+	.	3	12
+	+	4	2
+	+	3	12
+
+> ~/Documents/tmp/test.c
+	"	22	19
+	^	20	10
+	.	22	19
+	+	14	0
+	+	7	0
+	+	6	19
+	+	10	0
+	+	9	19
+	+	13	0
+	+	12	19
+	+	24	0
+	+	23	0
+	+	22	28
+	+	20	9
+	+	22	19
+
+> ~/Desktop/paypal.txt
+	"	1	30
+	^	1	31
+	.	1	30
+	+	1	30
+
+> ~/Desktop/bundlestar.txt
+	"	1	30
+	^	1	31
+	.	1	30
+	+	1	30
+
+> ~/Documents/zephyrzoom.github.io/_includes/header.html
+	"	19	0
+
+> ~/Documents/zephyrzoom.github.io/_layouts/page.html
+	"	6	0
+
+> ~/Documents/zephyrzoom.github.io/_layouts/default.html
+	"	9	0
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-第一次使用Jekyll.md
+	"	3	24
+	^	7	71
+	.	7	70
+	+	3	21
+	+	8	0
+	+	7	82
+	+	7	70
+
+> ~/Documents/zephyrzoom.github.io/about.md
+	"	7	48
+	^	7	51
+	.	7	48
+	+	3	10
+	+	8	0
+	+	7	48
+
+> ~/Documents/zephyrzoom.github.io/_includes/head.html
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_includes/footer.html
+	"	28	0
+	.	7	0
+	+	20	0
+	+	14	0
+	+	5	0
+	+	6	14
+	+	6	0
+	+	7	0
+
+> ~/Documents/zephyrzoom.github.io/css/main.scss
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_layouts/post.html
+	"	12	0
+
+> ~/Documents/zephyrzoom.github.io/README.md
+	"	1	0
+	^	1	1
+	.	1	1
+	+	1	1
+
+> ~/Documents/myblog/_config.yml
+	"	14	0
+
+> ~/Documents/myblog/.gitignore
+	"	3	0
+
+> ~/Documents/myblog/index.html
+	"	10	0
+
+> ~/Documents/myblog/feed.xml
+	"	10	0
+
+> ~/Documents/steam-price/steam/steam.sql
+	"	39	0
+
+> ~/Documents/steam-price/steam/price.html
+	"	3107	0
+
+> ~/Documents/steam-price/steam/a
+	"	5	0
+	^	5	0
+	.	5	0
+	+	1	11
+	+	5	0
+
+> ~/Documents/git/kernels/staging/.config
+	"	7941	0
+
+> ~/Documents/starting-qt/spreadsheet/mainwindow.cpp
+	"	364	0
+	^	7	2
+	.	7	1
+	+	164	34
+	+	168	0
+	+	167	56
+	+	174	0
+	+	173	21
+	+	172	20
+	+	183	0
+	+	182	0
+	+	181	26
+	+	204	0
+	+	202	0
+	+	197	0
+	+	196	25
+	+	201	0
+	+	200	24
+	+	203	15
+	+	218	0
+	+	217	0
+	+	216	0
+	+	215	30
+	+	231	0
+	+	226	0
+	+	225	20
+	+	230	15
+	+	243	0
+	+	238	0
+	+	237	23
+	+	242	0
+	+	241	32
+	+	256	0
+	+	251	0
+	+	250	20
+	+	255	15
+	+	269	1
+	+	261	40
+	+	266	0
+	+	265	20
+	+	268	29
+	+	282	0
+	+	281	0
+	+	276	23
+	+	280	23
+	+	299	0
+	+	295	0
+	+	294	33
+	+	298	36
+	+	304	0
+	+	303	45
+	+	335	0
+	+	316	0
+	+	315	0
+	+	314	22
+	+	333	0
+	+	328	0
+	+	327	50
+	+	332	0
+	+	331	51
+	+	334	55
+	+	347	0
+	+	346	0
+	+	345	0
+	+	344	47
+	+	367	0
+	+	362	0
+	+	361	46
+	+	366	32
+	+	379	0
+	+	377	0
+	+	376	39
+	+	378	17
+	+	371	46
+	+	409	0
+	+	383	27
+	+	408	0
+	+	405	34
+	+	407	59
+	+	406	8
+	+	385	17
+	+	386	0
+	+	420	0
+	+	419	31
+	+	430	0
+	+	429	66
+	+	431	0
+	+	446	0
+	+	445	44
+	+	452	0
+	+	451	19
+	+	47	16
+	+	46	14
+	+	48	66
+	+	53	44
+	+	54	0
+	+	13	0
+	+	26	38
+	+	5	0
+	+	3	33
+	+	4	24
+	+	6	17
+	+	7	1
+
+> ~/Documents/starting-qt/spreadsheet/mainwindow.h
+	"	44	0
+	^	59	16
+	.	60	15
+	+	66	1
+	+	15	0
+	+	42	0
+	+	41	20
+	+	43	0
+	+	42	7
+	+	65	26
+	+	61	0
+	+	68	5
+	+	59	19
+	+	60	20
+	+	59	15
+	+	60	15
+
+> ~/Documents/starting-qt/spreadsheet/spreadsheet.h
+	"	1	0
+
+> ~/Documents/starting-qt/spreadsheet/main.cpp
+	"	23	1
+	^	23	2
+	.	23	1
+	+	29	0
+	+	28	21
+	+	24	39
+	+	24	12
+	+	23	26
+	+	24	11
+	+	26	17
+	+	27	0
+	+	2	23
+	+	20	1
+	+	23	1
+
+> ~/Documents/starting-qt/spreadsheet/spreadsheet.pro
+	"	14	12
+	^	14	13
+	.	14	12
+	+	5	0
+	+	16	26
+	+	14	12
+
+> ~/Documents/starting-qt/spreadsheet/images/gotocell.png
+	"	1	0
+
+> ~/Documents/starting-qt/spreadsheet/spreadsheet.qrc
+	"	3	0
+	^	4	36
+	.	4	35
+	+	6	5
+	+	5	11
+	+	4	35
+
+> ~/.vim/bundle/solarized/vim-colors-solarized/autoload/togglebg.vim
+	"	55	0
+
+> ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim
+	"	1093	0
+
+> ~/.vim/files/info/viminfo
+	"	1789	1
+
+> ~/Documents/starting-qt/spreadsheet/mainwindow.
+	"	1	0
+
+> ~/Documents/starting-qt/spreadsheet/Makefile
+	"	251	0
+
+> ~/Documents/starting-qt/hello/hello.cpp
+	"	6	0
+
+> ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
+	"	84	0
+
+> /usr/bin/clang
+	"	1	0
+
+> ~/.vim/bundle/solarized/README.md
+	"	105	0
+
+> ~/.vim/[Vundle] Installer
+	"	2	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/starting-qt/spreadsheet/README.md
 	"	2	30
 	^	2	33
 	.	2	30
-	+	1	1
-	+	3	0
-	+	1	2
-	+	3	0
-	+	1	1
-	+	3	0
+	+	1	83
 	+	2	30
 
-> ~/Documents/subl/panda_node/package.json
-	"	12	2
-	.	12	0
-	+	11	0
-	+	12	0
-
-> ~/Documents/subl/panda_node/app.js
+> ~/Documents/starting-qt/hello/README.md
 	"	1	0
-	.	3	0
+	^	2	34
+	.	2	33
+	+	2	0
+	+	1	2
+	+	2	33
+
+> ~/Documents/starting-qt/hello/hello.pro
+	"	1	0
+
+> ~/Documents/starting-qt/.gitignore
+	"	1	0
+
+> ~/Documents/starting-qt/hello/Makefile
+	"	478	0
+
+> /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
+	"	1	0
+	.	1	0
+	+	4	0
 	+	3	0
-	+	3	1
-	+	3	0
-	+	3	0
-	+	3	9
-	+	3	138
-	+	3	174
-	+	3	34
-	+	3	34
-	+	54	25
-	+	54	48
-	+	54	48
-	+	54	48
-	+	54	48
-	+	54	48
-	+	3	1
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	5
-	+	3	0
-	+	3	0
-	+	54	23
-	+	54	0
-	+	3	0
+	+	1	0
+	+	1	0
 
-> ~/Documents/subl/panda_node/.gitignore
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
+> ~/Documents/starting-qt/README.md
+	"	1	0
 
-> ~/Documents/subl/panda_node/panda_websocket.html
-	"	82	0
-
-> ~/Documents/subl/panda_node/websocket.html
-	"	66	0
-
-> ~/Documents/subl/panda_node/test.html
-	"	57	0
-
-> ~/Documents/subl/panda_node/pymp3.py
-	"	4	0
-
-> ~/Documents/material-design-lite/README.md
-	"	105	0
-
-> ~/Downloads/dasm/CrackMe.exe
-	"	120	23
+> ~/Downloads/BiliDanmaku.exe
+	"	16	29
 	.	1	0
 	+	1	0
 
-> ~/VirtualBox VMs/xp/Share/hello.exe
-	"	361	29
-	.	1	0
-	+	1	0
-	+	1	0
+> ~/Downloads/BiliDanmaku.
+	"	1	0
 
-> ~/Documents/danmu-data/README.md
-	"	8	18
-	^	8	21
-	.	8	18
-	+	3	12
-	+	4	63
-	+	5	24
-	+	6	12
-	+	7	12
-	+	8	18
+> /bin/ls
+	"	422	0
 
-> ~/Documents/danmu-data/danmu.json
-	"	1	99
-	^	2	15
-	.	2	14
-	+	1	1
-	+	3	0
+> ~/Documents/HUAWEI/SDK-gcc-1.0/future_net/CMakeLists.txt
+	"	15	0
+	^	15	1
+	.	15	0
+	+	15	0
+	+	14	28
+	+	15	0
+
+> ~/Documents/HUAWEI/SDK-gcc-1.0/future_net/route.cpp
+	"	426	4
+	^	426	5
+	.	426	4
+	+	406	0
+	+	419	0
+	+	419	24
+	+	421	0
+	+	422	4
+	+	422	0
+	+	422	32
+	+	424	0
+	+	417	0
+	+	404	4
+	+	425	4
+	+	426	4
+
+> ~/Documents/shortest-path/src/ant.cpp
+	"	13	29
+	^	13	30
+	.	13	29
+	+	7	11
+	+	7	1
+	+	15	0
+	+	19	0
+	+	7	10
+	+	7	4
+	+	7	26
+	+	7	17
+	+	7	16
+	+	7	4
+	+	7	22
+	+	7	20
+	+	7	0
+	+	7	4
+	+	7	27
+	+	7	0
+	+	7	36
+	+	9	3
+	+	4	21
+	+	7	27
+	+	17	15
+	+	10	0
+	+	5	0
+	+	1	17
+	+	7	16
+	+	7	17
+	+	11	26
+	+	14	0
+	+	14	0
+	+	13	18
 	+	2	14
+	+	7	0
+	+	6	19
+	+	13	0
+	+	6	16
+	+	13	29
 
-> ~/Documents/danmu-data/panda.py
-	"	134	63
-	.	134	63
-	+	39	0
-	+	38	37
-	+	151	10
-	+	158	31
-	+	152	17
-	+	149	20
-	+	149	0
-	+	158	22
-	+	42	22
-	+	154	26
-	+	158	57
-	+	158	0
-	+	42	0
-	+	40	0
-	+	124	0
-	+	128	0
-	+	38	48
-	+	103	28
-	+	121	19
-	+	128	0
-	+	126	18
-	+	94	0
-	+	95	0
-	+	97	31
-	+	91	29
-	+	99	74
-	+	85	45
-	+	132	0
-	+	131	22
-	+	146	0
+> ~/Documents/shortest-path/src/pheromone.h
+	"	8	6
+	^	8	7
+	.	8	6
+	+	12	0
 	+	9	0
-	+	9	13
-	+	142	0
-	+	9	0
-	+	26	18
-	+	32	35
-	+	123	108
-	+	122	41
-	+	122	0
-	+	127	0
-	+	127	0
-	+	135	0
-	+	135	0
-	+	134	15
-	+	123	62
-	+	127	61
-	+	134	65
-	+	133	30
-	+	148	27
-	+	145	17
-	+	146	0
-	+	148	30
-	+	158	0
-	+	155	0
-	+	157	46
-	+	22	0
-	+	27	11
-	+	32	19
-	+	108	19
-	+	144	0
-	+	148	23
-	+	33	19
-	+	29	12
-	+	33	0
-	+	153	14
-	+	144	14
-	+	146	0
-	+	148	23
-	+	3	0
-	+	3	0
-	+	3	0
-	+	3	0
-	+	144	3
-	+	145	16
-	+	3	0
-	+	2	12
-	+	1	0
-	+	32	0
-	+	27	9
-	+	108	0
-	+	1	0
-	+	27	9
-	+	148	21
-	+	146	28
-	+	8	0
-	+	123	108
-	+	127	0
-	+	134	0
-	+	127	0
-	+	148	29
-	+	146	23
-	+	148	0
-	+	127	59
-	+	134	63
+	+	12	1
+	+	11	15
+	+	8	6
 
-> ~/Documents/danmu-data/.gitignore
-	"	1	4
-	^	1	12
-	.	1	11
-	+	1	11
+> ~/Documents/shortest-path/src/ant.h
+	"	21	15
+	^	20	44
+	.	20	43
+	+	6	0
+	+	4	2
+	+	5	0
+	+	13	9
+	+	14	9
+	+	15	9
+	+	16	9
+	+	13	25
+	+	14	26
+	+	13	27
+	+	15	25
+	+	16	21
+	+	19	0
+	+	20	43
+
+> ~/Documents/shortest-path/src/aco.h
+	"	1	0
+	^	29	25
+	.	6	0
+	+	5	0
+	+	5	1
+	+	5	1
+	+	5	8
+	+	5	0
+	+	5	20
+	+	4	2
+	+	5	23
+	+	5	24
+	+	5	30
+	+	5	12
+	+	31	0
+	+	5	0
+	+	5	12
+	+	5	20
+	+	30	1
+	+	28	19
+	+	29	24
+	+	6	0
+	+	25	0
+	+	6	0
+
+> ~/Documents/shortest-path/src/aco.
+	"	1	0
+
+> ~/Documents/shortest-path/src/aco.cpp
+	"	1	0
+
+> ~/Documents/shortest-path/src/short_path.h
+	"	34	0
+
+> ~/Documents/shortest-path/src/short_path.cpp
+	"	97	0
+	^	10	18
+	.	10	17
+	+	353	0
+	+	318	0
+	+	304	36
+	+	307	0
+	+	306	42
+	+	313	0
+	+	312	24
+	+	317	0
+	+	316	24
+	+	352	5
+	+	332	0
+	+	331	0
+	+	330	29
+	+	347	0
+	+	340	0
+	+	339	44
+	+	346	0
+	+	345	28
+	+	351	0
+	+	350	17
+	+	299	5
+	+	14	19
+	+	17	15
+	+	14	18
+	+	10	17
+
+> ~/Documents/dijkstras-algorithm/dijkstras.cpp
+	"	83	0

@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/forma
+~MSle0~/syntax
 
 # Last Substitute Search Pattern:
 ~MSle0&sum
@@ -17,14 +17,15 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
 :q
+:wq
+:PluginInstall
 :w
 :q!
+:!%xxd
 :%!xxd
 :!ls
 :ls
-:PluginInstall
 :split _posts/2016-05-25-pe.md
 :split 2016-05-25-pip-compile-error.md
 :split .profile
@@ -36,9 +37,11 @@ $
 :!chrome price.html
 :e price.html
 :9
-:CCGenerateConfig
 
 # Search String History (newest to oldest):
+?/syntax
+?/group_id
+?/Brow
 ?/forma
 ?/Add servi
 ?/Add service
@@ -52,13 +55,10 @@ $
 ?/createAction
 ?/sdfefg
 ?/spreadsh
-?/syntax
 ?/-std+11
 ?/clean
 ?/localTour
 ?/Dij
-?/d
-?/dij
 
 # Expression History (newest to oldest):
 
@@ -70,157 +70,155 @@ $
 "0	CHAR	0
 	"
 "1	LINE	0
-	707473782 fuckyou
+	Plugin 'altercation/vim-colors-solarized'
 "2	LINE	0
-	            
+	    "net": "^1.0.2"
 "3	LINE	0
-	    
+	    "http": "0.0.0",
 "4	LINE	0
-	        
+	707473782 fuckyou
 "5	LINE	0
-	#include <cstring>
+	            
 "6	LINE	0
-	using std::strcmp;
-"7	CHAR	0
-	这个世界
-	
+	    
+"7	LINE	0
+	        
 "8	LINE	0
-	import lxml
+	#include <cstring>
 "9	LINE	0
-	
+	using std::strcmp;
 "q	CHAR	0
 	
 ""-	CHAR	0
-	e
+	"
 
 # File marks:
-'0  1  9  ~/.vim/.gitignore
-'1  88  0  ~/.vim/vimrc
-'2  3  1  ~/.vim/README.md
-'3  1  14  ~/91porn.txt
-'4  35  1  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
-'5  16  0  ~/lldb-mi-log.txt
-'6  10  46  ~/Documents/sss/sss.cpp
-'7  1  0  ~/Documents/sss/sss
-'8  12  26  ~/Documents/sss/sss.cpp
-'9  1  0  ~/Documents/sss/i.sss
+'0  21  112  ~/.vim/bundle/YCM-Generator/README.md
+'1  93  4  ~/Documents/douyu/comment-douyu.py
+'2  18  0  ~/.vim/vimrc
+'3  86  0  ~/.vim/vimrc
+'4  6  0  ~/Documents/fracture/ROADMAP.md
+'5  1  3  ~/Documents/fracture/README.md
+'6  2  2  ~/Documents/cpp-primer/README.md
+'7  5  0  ~/Documents/cpp-primer/chapter08/CMakeLists.txt
+'8  2  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
+'9  8  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
 
 # Jumplist (newest first):
--'  1  9  ~/.vim/.gitignore
--'  88  0  ~/.vim/vimrc
+-'  21  112  ~/.vim/bundle/YCM-Generator/README.md
+-'  1  0  ~/.vim/bundle/YCM-Generator/README.md
+-'  93  4  ~/Documents/douyu/comment-douyu.py
+-'  35  0  ~/Documents/douyu/comment-douyu.py
+-'  1  0  ~/Documents/douyu/comment-douyu.py
+-'  18  0  ~/.vim/vimrc
 -'  1  0  ~/.vim/vimrc
--'  3  1  ~/.vim/README.md
--'  1  0  ~/.vim/README.md
--'  1  14  ~/91porn.txt
--'  35  1  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  7  0  ~/Documents/zephyrzoom.github.io/NERD_tree_1
--'  1  0  ~/Documents/zephyrzoom.github.io/NERD_tree_1
--'  8  2  ~/Documents/zephyrzoom.github.io/NERD_tree_1
--'  16  0  ~/lldb-mi-log.txt
--'  1  0  ~/lldb-mi-log.txt
--'  10  46  ~/Documents/sss/sss.cpp
--'  1  0  ~/Documents/sss/sss.cpp
--'  1  0  ~/Documents/sss/sss
--'  12  26  ~/Documents/sss/sss.cpp
+-'  86  0  ~/.vim/vimrc
+-'  2  0  ~/.vim/vimrc
+-'  6  0  ~/Documents/fracture/ROADMAP.md
+-'  1  0  ~/Documents/fracture/ROADMAP.md
+-'  1  3  ~/Documents/fracture/README.md
+-'  2  2  ~/Documents/cpp-primer/README.md
+-'  1  0  ~/Documents/cpp-primer/README.md
+-'  5  0  ~/Documents/cpp-primer/chapter08/CMakeLists.txt
+-'  1  0  ~/Documents/cpp-primer/chapter08/CMakeLists.txt
+-'  2  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
+-'  1  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
+-'  8  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
+-'  21  0  ~/Documents/cpp-primer/chapter08/8.1.cpp
+-'  1  0  ~/Documents/cpp-primer/chapter08/8.1.cpp
+-'  1  0  ~/Documents/cpp-primer/chapter08/8.1.
+-'  35  0  ~/Documents/douyu/electron/app/main.js
+-'  6  0  ~/Documents/douyu/electron/NERD_tree_1
+-'  1  0  ~/Documents/douyu/electron/NERD_tree_1
+-'  7  2  ~/Documents/douyu/electron/NERD_tree_1
+-'  2  0  ~/Documents/test/README.md
+-'  6  0  ~/Documents/NERD_tree_1
+-'  1  0  ~/Documents/NERD_tree_1
+-'  90  18  ~/.vim/vimrc
+-'  27  0  ~/.vim/vimrc
+-'  26  0  ~/.vim/vimrc
+-'  88  5  ~/.vim/vimrc
+-'  21  27  ~/.vim/vimrc
+-'  84  0  ~/.vim/vimrc
+-'  39  0  ~/.vim/vimrc
+-'  2  18  ~/Public/electron/package.json
+-'  1  0  ~/Public/electron/package.json
+-'  9  0  ~/Documents/sss/i.sss
 -'  1  0  ~/Documents/sss/i.sss
 -'  1  0  ~/Documents/sss/o.sss
--'  12  0  ~/Documents/sss/sss.o
--'  1  0  ~/Documents/sss/sss.o
--'  13  16  ~/Documents/sss/Makefile
--'  1  0  ~/Documents/sss/Makefile
--'  9  0  ~/Documents/qt-danmu/main.cpp
--'  1  0  ~/Documents/qt-danmu/main.cpp
--'  1  0  ~/Documents/qt-danmu/main
--'  420  0  ~/Documents/danmu/bili/bili.py
--'  51  0  ~/Documents/danmu/bili/bili.py
--'  1  0  ~/Documents/danmu/bili/bili.py
--'  13  0  ~/Documents/sss/sss.cpp
--'  15  15  ~/Documents/sss/sss.cpp
--'  80  0  ~/Documents/NERD_tree_1
--'  85  2  ~/Documents/NERD_tree_1
--'  1  0  ~/Documents/NERD_tree_1
--'  4  0  ~/Documents/sss/sss.cpp
--'  21  27  ~/.vim/vimrc
--'  4  0  ~/Documents/sss/sss.c
--'  1  0  ~/Documents/sss/sss.c
--'  18  54  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  10  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  3  19  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
--'  3  12  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  3  45  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  8  0  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
--'  3  20  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
--'  4  30  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
--'  4  30  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  6  20  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  5  2  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pe.md
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  6  82  ~/Documents/zephyrzoom.github.io/_posts/2016-05-25-pip-compile-error.md
--'  43  0  ~/Documents/steam-price/steam/steam_price.py
--'  1  0  ~/Documents/steam-price/steam/steam_price.py
--'  6  0  ~/Documents/steam-price/test/connect_mysql.py
--'  1  0  ~/Documents/steam-price/test/connect_mysql.py
--'  11  9  ~/Documents/steam-price/test/connect_mysql.py
--'  7  0  ~/.pip/pip.log
--'  10  0  ~/.pip/pip.log
--'  1  0  ~/.pip/pip.log
--'  4  17  ~/Documents/steam-price/test/redis_test.py
--'  1  0  ~/Documents/steam-price/test/redis_test.py
--'  1  0  ~/Documents/steam-price/test/redis.py
--'  2  0  ~/Documents/steam-price/test/hello.py
--'  1  0  ~/Documents/steam-price/test/hello.py
--'  12  25  ~/Documents/zephyrzoom.github.io/_config.yml
--'  1  0  ~/Documents/zephyrzoom.github.io/_config.yml
--'  12  0  ~/Documents/steam-price/steam/steam_price.py
--'  11  10  ~/Documents/steam-price/steam/steam_price.py
--'  25  0  ~/Documents/steam-price/steam/steam_price.py
--'  9  0  ~/Documents/steam-price/test/hello.py
--'  22  0  ~/.profile
--'  1  0  ~/.profile
--'  1  0  ~/.bash_profile
--'  1  0  ~/.bash_logout
--'  17  0  ~/.vim/vimrc
--'  23  23  /tmp/crontab.Excsfl/crontab
--'  1  0  /tmp/crontab.Excsfl/crontab
--'  75  3  ~/Documents/steam-price/steam/steam_price.py
--'  14  0  ~/Documents/steam-price/steam/steam_price.py
--'  5  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  76  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  28  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  20  31  ~/.vim/vimrc
--'  88  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  68  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  63  13  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  39  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  84  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  24  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  89  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  6  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  18  0  ~/Documents/zephyrzoom.github.io/_config.yml
--'  67  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-09-decompile.md
--'  19  13  ~/Documents/zephyrzoom.github.io/_config.yml
--'  3  4  ~/Documents/zephyrzoom.github.io/_posts/2016-05-22-list.md
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2016-05-22-list.md
+-'  12  0  ~/Documents/s/i.sss
+-'  1  0  ~/Documents/s/i.sss
+-'  8  1  ~/Documents/fracture/Makefile
+-'  1  0  ~/Documents/fracture/Makefile
+-'  39  0  ~/Documents/fracture/INSTALL.md
+-'  1  0  ~/Documents/fracture/INSTALL.md
+-'  31  2  ~/Documents/fracture/README.md
+-'  1  0  ~/Documents/ss/i.sss
+-'  2  0  ~/Documents/Random/README.md
+-'  1  0  ~/Documents/Random/README.md
+-'  1  0  ~/Documents/douyu/electron/js/jquery.js
+-'  1  0  ~/Public/photon-0.1.2-alpha/dist/template-app/index.html
+-'  2  3  ~/Documents/douyu/README.md
+-'  1  0  ~/Documents/douyu/README.md
+-'  13  0  ~/Documents/llvm-pass-skeleton/skeleton/Skeleton.cpp
+-'  1  0  ~/Documents/llvm-pass-skeleton/skeleton/Skeleton.cpp
+-'  6  0  ~/Downloads/llvm-3.8.0.src/README.txt
+-'  1  0  ~/Downloads/llvm-3.8.0.src/README.txt
+-'  297  0  /usr/lib/llvm-3.6/build/Makefile.config
+-'  1  0  /usr/lib/llvm-3.6/build/Makefile.config
+-'  1  0  /usr/lib/llvm-3.6/build/Makefile.co
+-'  3  30  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  1  0  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  159  0  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  158  0  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  40  0  ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+-'  237  4  ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+-'  1  0  ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+-'  55  2  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  52  0  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  157  64  /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+-'  627  4  ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+-'  174  0  ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+-'  1  0  ~/Documents/douyu/electron/main.js
+-'  1  0  ~/Public/photon-0.1.2-alpha/dist/template-app/app.js
+-'  6  0  ~/Public/photon-0.1.2-alpha/dist/template-app/app.js
+-'  217  2  ~/.vim/bundle/YouCompleteMe/README.md
+-'  1  0  ~/.vim/bundle/YouCompleteMe/README.md
+-'  249  0  ~/.vim/bundle/YouCompleteMe/README.md
+-'  660  0  ~/.vim/bundle/YouCompleteMe/README.md
+-'  34  1  ~/.vim/bundle/YouCompleteMe/README.md
+-'  3  0  ~/.vim/bundle/YouCompleteMe/install.sh
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.sh
+-'  403  0  ~/.vim/bundle/YouCompleteMe/README.md
+-'  9  0  ~/Public/photon-0.1.2-alpha/dist/template-app/app.js
+-'  2  23  ~/Documents/douyu/electron/package.json
+-'  1  0  ~/Documents/douyu/electron/package.json
+-'  21  0  ~/Documents/douyu/LICENSE
+-'  1  0  ~/Documents/douyu/LICENSE
+-'  21  0  ~/Documents/steam-price/LICENSE
+-'  1  0  ~/Documents/steam-price/LICENSE
+-'  5577  0  ~/Public/707弹幕助手/resources/electron.asar
+-'  123  0  ~/Public/707弹幕助手/resources/electron.asar
+-'  1  0  ~/Public/707弹幕助手/resources/electron.asar
+-'  114  0  ~/Documents/douyu/app.asar
+-'  1  0  ~/Documents/douyu/app.asar
+-'  4  0  ~/Documents/douyu/notification.py
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/.gitignore
-	"	1	9
-	^	1	10
-	.	1	9
-	+	1	9
+> ~/.vim/bundle/YCM-Generator/README.md
+	"	21	112
+
+> ~/Documents/douyu/comment-douyu.py
+	"	93	4
 
 > ~/.vim/vimrc
-	"	88	0
-	^	21	28
-	.	21	27
-	+	89	0
-	+	89	13
-	+	89	5
+	"	18	0
+	^	86	1
+	.	86	0
+	+	91	0
+	+	91	13
+	+	91	5
 	+	25	11
 	+	26	0
 	+	26	29
@@ -234,22 +232,22 @@ $
 	+	16	0
 	+	16	31
 	+	22	0
-	+	89	0
+	+	91	0
 	+	22	29
-	+	89	20
-	+	89	15
-	+	89	0
+	+	91	20
+	+	91	15
+	+	91	0
 	+	22	30
-	+	89	0
+	+	91	0
 	+	87	13
 	+	87	18
-	+	89	0
+	+	91	0
 	+	87	18
-	+	89	0
+	+	91	0
 	+	22	0
 	+	17	29
 	+	87	106
-	+	89	0
+	+	91	0
 	+	88	5
 	+	22	40
 	+	87	20
@@ -264,8 +262,308 @@ $
 	+	31	0
 	+	22	0
 	+	87	0
-	+	20	31
+	+	19	31
+	+	20	27
+	+	18	0
 	+	21	27
+	+	91	0
+	+	90	18
+	+	86	0
+
+> ~/Documents/fracture/ROADMAP.md
+	"	6	0
+
+> ~/Documents/fracture/README.md
+	"	1	3
+
+> ~/Documents/cpp-primer/README.md
+	"	2	2
+
+> ~/Documents/cpp-primer/chapter08/CMakeLists.txt
+	"	5	0
+
+> ~/Documents/cpp-primer/chapter08/8.2.cpp
+	"	2	0
+
+> ~/Documents/cpp-primer/chapter08/8.1.cpp
+	"	21	0
+
+> ~/Documents/cpp-primer/chapter08/8.1.
+	"	1	0
+
+> ~/Documents/douyu/electron/NERD_tree_1
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/douyu/electron/app/main.js
+	"	35	0
+
+> ~/Documents/NERD_tree_1
+	"	6	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/test/README.md
+	"	2	0
+
+> ~/Public/electron/package.json
+	"	2	18
+	^	2	19
+	.	2	18
+	+	2	18
+
+> ~/Documents/sss/i.sss
+	"	9	0
+	^	1	1
+	.	1	0
+	+	1	0
+	+	1	0
+
+> ~/Documents/sss/o.sss
+	"	1	0
+
+> ~/Documents/s/i.sss
+	"	12	0
+
+> ~/Documents/fracture/Makefile
+	"	8	1
+
+> ~/Documents/fracture/INSTALL.md
+	"	39	0
+
+> ~/Documents/ss/i.sss
+	"	1	0
+
+> ~/Documents/Random/README.md
+	"	2	0
+
+> ~/Documents/douyu/electron/js/jquery.js
+	"	1	0
+
+> ~/Public/photon-0.1.2-alpha/dist/template-app/index.html
+	"	1	0
+
+> ~/Documents/douyu/README.md
+	"	2	3
+
+> ~/Documents/llvm-pass-skeleton/skeleton/Skeleton.cpp
+	"	13	0
+
+> ~/Downloads/llvm-3.8.0.src/README.txt
+	"	6	0
+
+> /usr/lib/llvm-3.6/build/Makefile.config
+	"	297	0
+
+> /usr/lib/llvm-3.6/build/Makefile.co
+	"	1	0
+
+> /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
+	"	3	30
+	^	3	35
+	.	3	0
+	+	3	0
+
+> ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
+	"	40	0
+
+> ~/Documents/douyu/electron/main.js
+	"	1	0
+
+> ~/Public/photon-0.1.2-alpha/dist/template-app/app.js
+	"	3	18
+	^	3	19
+	.	3	18
+	+	1	36
+	+	2	20
+	+	3	18
+
+> ~/.vim/bundle/YouCompleteMe/README.md
+	"	217	2
+
+> ~/.vim/bundle/YouCompleteMe/install.sh
+	"	3	0
+
+> ~/Documents/douyu/electron/package.json
+	"	2	23
+	^	2	26
+	.	2	23
+	+	2	23
+
+> ~/Documents/douyu/LICENSE
+	"	21	0
+
+> ~/Documents/steam-price/LICENSE
+	"	21	0
+
+> ~/Public/707弹幕助手/resources/electron.asar
+	"	5577	0
+
+> ~/Documents/douyu/app.asar
+	"	114	0
+
+> ~/Documents/douyu/notification.py
+	"	4	0
+
+> ~/Downloads/get_dy_barrage/get_dy_barrage/Makefile
+	"	1	0
+
+> ~/Documents/douyu/nodejs/app.js
+	"	3	0
+	^	3	0
+	.	2	25
+	+	2	25
+
+> ~/Documents/douyu/nodejs/package.json
+	"	12	2
+	^	9	16
+	.	12	0
+	+	9	15
+	+	12	0
+
+> ~/Documents/douyu/nodejs/node_modules/http/package.json
+	"	59	0
+
+> ~/Downloads/danmu.fm-master/danmufm/client/douyu_danmu_manager.py
+	"	224	12
+
+> ~/Downloads/danmu.fm-master/danmufm/danmu.py
+	"	92	0
+
+> ~/Downloads/danmu.fm-master/sh.py
+	"	5	0
+
+> ~/Downloads/douyu-master/danmu.cc
+	"	94	0
+
+> ~/Documents/test-electron/main.js
+	"	8	21
+	^	28	3
+	.	8	26
+	+	14	0
+	+	13	6
+	+	21	0
+	+	28	2
+	+	3	12
+	+	8	26
+
+> ~/Documents/test-electron/index.html
+	"	12	10
+	^	12	11
+	.	12	10
+	+	13	6
+	+	6	0
+	+	11	79
+	+	12	10
+
+> ~/Documents/test-electron/package.json
+	"	5	0
+	^	5	1
+	.	5	0
+	+	4	21
+	+	5	0
+
+> ~/Documents/test/admin/dashboard.html
+	"	1	0
+
+> ~/Documents/test/product.rb
+	"	1	0
+
+> ~/Documents/test/extra.txt
+	"	1	0
+
+> ~/Documents/test/gerbil.html
+	"	1	0
+
+> ~/Documents/test/todo.txt
+	"	1	0
+
+> ~/Documents/test/temp.txt
+	"	1	0
+	^	1	1
+	.	1	1
+	+	1	1
+
+> ~/Documents/test/store.rb
+	"	1	0
+
+> ~/Documents/test/mv_number.c
+	"	14	0
+
+> ~/Documents/pandatv-node/app.js
+	"	75	0
+
+> ~/Downloads/electron-sample-master/script/bootstrap
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_site/css/main.css
+	"	61	0
+
+> ~/Documents/zephyrzoom.github.io/index.html
+	"	33	0
+	^	14	8
+	.	14	6
+	+	31	0
+	+	7	33
+	+	30	0
+	+	21	15
+	+	21	42
+	+	23	42
+	+	24	52
+	+	29	6
+	+	21	7
+	+	23	0
+	+	21	7
+	+	21	0
+	+	25	7
+	+	22	5
+	+	23	6
+	+	24	6
+	+	28	6
+	+	34	7
+	+	29	5
+	+	30	5
+	+	31	5
+	+	32	5
+	+	33	5
+	+	11	74
+	+	11	146
+	+	11	85
+	+	11	151
+	+	11	81
+	+	11	6
+	+	11	10
+	+	12	71
+	+	13	77
+	+	14	6
+
+> ~/Documents/zephyrzoom.github.io/_config.yml
+	"	10	0
+	.	12	16
+	+	10	22
+	+	9	9
+	+	14	32
+	+	15	17
+	+	19	0
+	+	12	8
+	+	12	25
+	+	12	14
+	+	19	0
+	+	12	25
+	+	14	0
+	+	12	16
+
+> ~/Documents/zephyrzoom.github.io/css/main.scss
+	"	53	0
+
+> ~/.vim/.gitignore
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	9
 
 > ~/.vim/README.md
 	"	3	1
@@ -353,16 +651,6 @@ $
 > ~/Documents/sss/sss
 	"	1	0
 
-> ~/Documents/sss/i.sss
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/sss/o.sss
-	"	1	0
-
 > ~/Documents/sss/sss.o
 	"	12	0
 
@@ -380,12 +668,6 @@ $
 
 > ~/Documents/danmu/bili/bili.py
 	"	420	0
-
-> ~/Documents/NERD_tree_1
-	"	80	0
-	.	1	0
-	+	1	0
-	+	1	0
 
 > ~/Documents/sss/sss.c
 	"	4	0
@@ -631,22 +913,6 @@ $
 > ~/Documents/steam-price/test/hello.py
 	"	2	0
 
-> ~/Documents/zephyrzoom.github.io/_config.yml
-	"	12	25
-	.	12	16
-	+	10	22
-	+	9	9
-	+	14	32
-	+	15	17
-	+	19	0
-	+	12	8
-	+	12	25
-	+	12	14
-	+	19	0
-	+	12	25
-	+	14	0
-	+	12	16
-
 > ~/.bash_profile
 	"	1	34
 	^	1	35
@@ -670,44 +936,6 @@ $
 	^	3	5
 	.	3	4
 	+	3	4
-
-> ~/Documents/zephyrzoom.github.io/index.html
-	"	1	0
-	^	14	8
-	.	14	6
-	+	31	0
-	+	7	33
-	+	30	0
-	+	21	15
-	+	21	42
-	+	23	42
-	+	24	52
-	+	29	6
-	+	21	7
-	+	23	0
-	+	21	7
-	+	21	0
-	+	25	7
-	+	22	5
-	+	23	6
-	+	24	6
-	+	28	6
-	+	34	7
-	+	29	5
-	+	30	5
-	+	31	5
-	+	32	5
-	+	33	5
-	+	11	74
-	+	11	146
-	+	11	85
-	+	11	151
-	+	11	81
-	+	11	6
-	+	11	10
-	+	12	71
-	+	13	77
-	+	14	6
 
 > ~/Documents/pandatv/panda.py
 	"	128	36
@@ -777,520 +1005,3 @@ $
 
 > ~/Documents/zephyrzoom.github.io/_img/stackoverflow.png
 	"	1	0
-
-> ~/Documents/pandatv/init.properties
-	"	1	0
-
-> ~/Documents/test/test.c
-	"	4	0
-	^	3	15
-	.	3	12
-	+	4	2
-	+	3	12
-
-> ~/Documents/tmp/test.c
-	"	22	19
-	^	20	10
-	.	22	19
-	+	14	0
-	+	7	0
-	+	6	19
-	+	10	0
-	+	9	19
-	+	13	0
-	+	12	19
-	+	24	0
-	+	23	0
-	+	22	28
-	+	20	9
-	+	22	19
-
-> ~/Desktop/paypal.txt
-	"	1	30
-	^	1	31
-	.	1	30
-	+	1	30
-
-> ~/Desktop/bundlestar.txt
-	"	1	30
-	^	1	31
-	.	1	30
-	+	1	30
-
-> ~/Documents/zephyrzoom.github.io/_includes/header.html
-	"	19	0
-
-> ~/Documents/zephyrzoom.github.io/_layouts/page.html
-	"	6	0
-
-> ~/Documents/zephyrzoom.github.io/_layouts/default.html
-	"	9	0
-
-> ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-第一次使用Jekyll.md
-	"	3	24
-	^	7	71
-	.	7	70
-	+	3	21
-	+	8	0
-	+	7	82
-	+	7	70
-
-> ~/Documents/zephyrzoom.github.io/about.md
-	"	7	48
-	^	7	51
-	.	7	48
-	+	3	10
-	+	8	0
-	+	7	48
-
-> ~/Documents/zephyrzoom.github.io/_includes/head.html
-	"	1	0
-
-> ~/Documents/zephyrzoom.github.io/_includes/footer.html
-	"	28	0
-	.	7	0
-	+	20	0
-	+	14	0
-	+	5	0
-	+	6	14
-	+	6	0
-	+	7	0
-
-> ~/Documents/zephyrzoom.github.io/css/main.scss
-	"	1	0
-
-> ~/Documents/zephyrzoom.github.io/_layouts/post.html
-	"	12	0
-
-> ~/Documents/zephyrzoom.github.io/README.md
-	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
-
-> ~/Documents/myblog/_config.yml
-	"	14	0
-
-> ~/Documents/myblog/.gitignore
-	"	3	0
-
-> ~/Documents/myblog/index.html
-	"	10	0
-
-> ~/Documents/myblog/feed.xml
-	"	10	0
-
-> ~/Documents/steam-price/steam/steam.sql
-	"	39	0
-
-> ~/Documents/steam-price/steam/price.html
-	"	3107	0
-
-> ~/Documents/steam-price/steam/a
-	"	5	0
-	^	5	0
-	.	5	0
-	+	1	11
-	+	5	0
-
-> ~/Documents/git/kernels/staging/.config
-	"	7941	0
-
-> ~/Documents/starting-qt/spreadsheet/mainwindow.cpp
-	"	364	0
-	^	7	2
-	.	7	1
-	+	164	34
-	+	168	0
-	+	167	56
-	+	174	0
-	+	173	21
-	+	172	20
-	+	183	0
-	+	182	0
-	+	181	26
-	+	204	0
-	+	202	0
-	+	197	0
-	+	196	25
-	+	201	0
-	+	200	24
-	+	203	15
-	+	218	0
-	+	217	0
-	+	216	0
-	+	215	30
-	+	231	0
-	+	226	0
-	+	225	20
-	+	230	15
-	+	243	0
-	+	238	0
-	+	237	23
-	+	242	0
-	+	241	32
-	+	256	0
-	+	251	0
-	+	250	20
-	+	255	15
-	+	269	1
-	+	261	40
-	+	266	0
-	+	265	20
-	+	268	29
-	+	282	0
-	+	281	0
-	+	276	23
-	+	280	23
-	+	299	0
-	+	295	0
-	+	294	33
-	+	298	36
-	+	304	0
-	+	303	45
-	+	335	0
-	+	316	0
-	+	315	0
-	+	314	22
-	+	333	0
-	+	328	0
-	+	327	50
-	+	332	0
-	+	331	51
-	+	334	55
-	+	347	0
-	+	346	0
-	+	345	0
-	+	344	47
-	+	367	0
-	+	362	0
-	+	361	46
-	+	366	32
-	+	379	0
-	+	377	0
-	+	376	39
-	+	378	17
-	+	371	46
-	+	409	0
-	+	383	27
-	+	408	0
-	+	405	34
-	+	407	59
-	+	406	8
-	+	385	17
-	+	386	0
-	+	420	0
-	+	419	31
-	+	430	0
-	+	429	66
-	+	431	0
-	+	446	0
-	+	445	44
-	+	452	0
-	+	451	19
-	+	47	16
-	+	46	14
-	+	48	66
-	+	53	44
-	+	54	0
-	+	13	0
-	+	26	38
-	+	5	0
-	+	3	33
-	+	4	24
-	+	6	17
-	+	7	1
-
-> ~/Documents/starting-qt/spreadsheet/mainwindow.h
-	"	44	0
-	^	59	16
-	.	60	15
-	+	66	1
-	+	15	0
-	+	42	0
-	+	41	20
-	+	43	0
-	+	42	7
-	+	65	26
-	+	61	0
-	+	68	5
-	+	59	19
-	+	60	20
-	+	59	15
-	+	60	15
-
-> ~/Documents/starting-qt/spreadsheet/spreadsheet.h
-	"	1	0
-
-> ~/Documents/starting-qt/spreadsheet/main.cpp
-	"	23	1
-	^	23	2
-	.	23	1
-	+	29	0
-	+	28	21
-	+	24	39
-	+	24	12
-	+	23	26
-	+	24	11
-	+	26	17
-	+	27	0
-	+	2	23
-	+	20	1
-	+	23	1
-
-> ~/Documents/starting-qt/spreadsheet/spreadsheet.pro
-	"	14	12
-	^	14	13
-	.	14	12
-	+	5	0
-	+	16	26
-	+	14	12
-
-> ~/Documents/starting-qt/spreadsheet/images/gotocell.png
-	"	1	0
-
-> ~/Documents/starting-qt/spreadsheet/spreadsheet.qrc
-	"	3	0
-	^	4	36
-	.	4	35
-	+	6	5
-	+	5	11
-	+	4	35
-
-> ~/.vim/bundle/solarized/vim-colors-solarized/autoload/togglebg.vim
-	"	55	0
-
-> ~/.vim/bundle/solarized/vim-colors-solarized/colors/solarized.vim
-	"	1093	0
-
-> ~/.vim/files/info/viminfo
-	"	1789	1
-
-> ~/Documents/starting-qt/spreadsheet/mainwindow.
-	"	1	0
-
-> ~/Documents/starting-qt/spreadsheet/Makefile
-	"	251	0
-
-> ~/Documents/starting-qt/hello/hello.cpp
-	"	6	0
-
-> ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py
-	"	84	0
-
-> /usr/bin/clang
-	"	1	0
-
-> ~/.vim/bundle/solarized/README.md
-	"	105	0
-
-> ~/.vim/[Vundle] Installer
-	"	2	0
-	.	1	0
-	+	1	0
-
-> ~/Documents/starting-qt/spreadsheet/README.md
-	"	2	30
-	^	2	33
-	.	2	30
-	+	1	83
-	+	2	30
-
-> ~/Documents/starting-qt/hello/README.md
-	"	1	0
-	^	2	34
-	.	2	33
-	+	2	0
-	+	1	2
-	+	2	33
-
-> ~/Documents/starting-qt/hello/hello.pro
-	"	1	0
-
-> ~/Documents/starting-qt/.gitignore
-	"	1	0
-
-> ~/Documents/starting-qt/hello/Makefile
-	"	478	0
-
-> /usr/lib/x86_64-linux-gnu/qt-default/qtchooser/default.conf
-	"	1	0
-	.	1	0
-	+	4	0
-	+	3	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/starting-qt/README.md
-	"	1	0
-
-> ~/Downloads/BiliDanmaku.exe
-	"	16	29
-	.	1	0
-	+	1	0
-
-> ~/Downloads/BiliDanmaku.
-	"	1	0
-
-> /bin/ls
-	"	422	0
-
-> ~/Documents/HUAWEI/SDK-gcc-1.0/future_net/CMakeLists.txt
-	"	15	0
-	^	15	1
-	.	15	0
-	+	15	0
-	+	14	28
-	+	15	0
-
-> ~/Documents/HUAWEI/SDK-gcc-1.0/future_net/route.cpp
-	"	426	4
-	^	426	5
-	.	426	4
-	+	406	0
-	+	419	0
-	+	419	24
-	+	421	0
-	+	422	4
-	+	422	0
-	+	422	32
-	+	424	0
-	+	417	0
-	+	404	4
-	+	425	4
-	+	426	4
-
-> ~/Documents/shortest-path/src/ant.cpp
-	"	13	29
-	^	13	30
-	.	13	29
-	+	7	11
-	+	7	1
-	+	15	0
-	+	19	0
-	+	7	10
-	+	7	4
-	+	7	26
-	+	7	17
-	+	7	16
-	+	7	4
-	+	7	22
-	+	7	20
-	+	7	0
-	+	7	4
-	+	7	27
-	+	7	0
-	+	7	36
-	+	9	3
-	+	4	21
-	+	7	27
-	+	17	15
-	+	10	0
-	+	5	0
-	+	1	17
-	+	7	16
-	+	7	17
-	+	11	26
-	+	14	0
-	+	14	0
-	+	13	18
-	+	2	14
-	+	7	0
-	+	6	19
-	+	13	0
-	+	6	16
-	+	13	29
-
-> ~/Documents/shortest-path/src/pheromone.h
-	"	8	6
-	^	8	7
-	.	8	6
-	+	12	0
-	+	9	0
-	+	12	1
-	+	11	15
-	+	8	6
-
-> ~/Documents/shortest-path/src/ant.h
-	"	21	15
-	^	20	44
-	.	20	43
-	+	6	0
-	+	4	2
-	+	5	0
-	+	13	9
-	+	14	9
-	+	15	9
-	+	16	9
-	+	13	25
-	+	14	26
-	+	13	27
-	+	15	25
-	+	16	21
-	+	19	0
-	+	20	43
-
-> ~/Documents/shortest-path/src/aco.h
-	"	1	0
-	^	29	25
-	.	6	0
-	+	5	0
-	+	5	1
-	+	5	1
-	+	5	8
-	+	5	0
-	+	5	20
-	+	4	2
-	+	5	23
-	+	5	24
-	+	5	30
-	+	5	12
-	+	31	0
-	+	5	0
-	+	5	12
-	+	5	20
-	+	30	1
-	+	28	19
-	+	29	24
-	+	6	0
-	+	25	0
-	+	6	0
-
-> ~/Documents/shortest-path/src/aco.
-	"	1	0
-
-> ~/Documents/shortest-path/src/aco.cpp
-	"	1	0
-
-> ~/Documents/shortest-path/src/short_path.h
-	"	34	0
-
-> ~/Documents/shortest-path/src/short_path.cpp
-	"	97	0
-	^	10	18
-	.	10	17
-	+	353	0
-	+	318	0
-	+	304	36
-	+	307	0
-	+	306	42
-	+	313	0
-	+	312	24
-	+	317	0
-	+	316	24
-	+	352	5
-	+	332	0
-	+	331	0
-	+	330	29
-	+	347	0
-	+	340	0
-	+	339	44
-	+	346	0
-	+	345	28
-	+	351	0
-	+	350	17
-	+	299	5
-	+	14	19
-	+	17	15
-	+	14	18
-	+	10	17

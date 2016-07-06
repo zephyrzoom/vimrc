@@ -19,6 +19,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-monokai'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 

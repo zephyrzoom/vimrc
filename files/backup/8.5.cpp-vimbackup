@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
-vector<std::string> storeToVector()
+std::vector<std::string> storeToVector()
 {
     std::string fileName = "8.4.cpp";
     std::ifstream in(fileName);
@@ -20,7 +20,7 @@ vector<std::string> storeToVector()
     return content;
 }
 
-int main(int argc, char const *argv[]) {
+int main() {
     std::vector<std::string> v = storeToVector();
     for (auto i : v) {
         std::cout << i << std::endl;

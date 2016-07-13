@@ -20,6 +20,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
 
 call vundle#end()
 
@@ -86,6 +88,12 @@ set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
 set background=dark
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
 set nu
 syntax enable
 colorscheme monokai
+
+" snippets
+"let g:UltiSnipsExpandTrigger="<c-tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"

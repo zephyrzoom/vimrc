@@ -20,12 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1479912128,,"wq"
 :q
 |2,0,1479304464,,"q"
 :w
 |2,0,1479304462,,"w"
-:wq
-|2,0,1479304211,,"wq"
 :q!
 |2,0,0,,"q!"
 :qq
@@ -153,38 +153,56 @@ $
 |3,0,36,0,1,0,1479304162,"false"
 
 # File marks:
-'0  2  0  ~/.vim/install.sh
-|4,48,2,0,1479304464,"~/.vim/install.sh"
-'1  3  77  ~/.vim/install.sh
-|4,49,3,77,1479304409,"~/.vim/install.sh"
-'2  1  77  ~/.vim/install.sh
-|4,50,1,77,1479304409,"~/.vim/install.sh"
-'3  13  0  ~/.Xresources
-|4,51,13,0,1479304211,"~/.Xresources"
-'4  1  0  ~/a.cpp
-|4,52,1,0,0,"~/a.cpp"
-'5  1  0  ~/Documents/leetcode/README.md
-|4,53,1,0,0,"~/Documents/leetcode/README.md"
-'6  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,54,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
-'7  1  0  ~/Documents/cpp-primer/chapter08/8.6.cpp
-|4,55,1,0,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
-'8  1  23  ~/.bash_profile
-|4,56,1,23,0,"~/.bash_profile"
-'9  1  0  ~/Downloads/llvm-3.8.0.src/lib/MC/MCDisassembler/Disassembler.h
-|4,57,1,0,0,"~/Downloads/llvm-3.8.0.src/lib/MC/MCDisassembler/Disassembler.h"
+'0  6  14  ~/.vim/README.md
+|4,48,6,14,1479912128,"~/.vim/README.md"
+'1  2  0  ~/.vim/install.sh
+|4,49,2,0,1479304464,"~/.vim/install.sh"
+'2  3  77  ~/.vim/install.sh
+|4,50,3,77,1479304409,"~/.vim/install.sh"
+'3  1  77  ~/.vim/install.sh
+|4,51,1,77,1479304409,"~/.vim/install.sh"
+'4  13  0  ~/.Xresources
+|4,52,13,0,1479304211,"~/.Xresources"
+'5  1  0  ~/a.cpp
+|4,53,1,0,0,"~/a.cpp"
+'6  1  0  ~/Documents/leetcode/README.md
+|4,54,1,0,0,"~/Documents/leetcode/README.md"
+'7  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
+|4,55,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
+'8  1  0  ~/Documents/cpp-primer/chapter08/8.6.cpp
+|4,56,1,0,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
+'9  1  23  ~/.bash_profile
+|4,57,1,23,0,"~/.bash_profile"
 
 # Jumplist (newest first):
+-'  6  14  ~/.vim/README.md
+|4,39,6,14,1479912128,"~/.vim/README.md"
+-'  1  0  ~/.vim/README.md
+|4,39,1,0,1479912034,"~/.vim/README.md"
+-'  2  0  ~/.vim/install.sh
+|4,39,2,0,1479304464,"~/.vim/install.sh"
 -'  2  0  ~/.vim/install.sh
 |4,39,2,0,1479304464,"~/.vim/install.sh"
 -'  3  0  ~/.vim/install.sh
 |4,39,3,0,1479304430,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1479304430,"~/.vim/install.sh"
+-'  1  77  ~/.vim/install.sh
+|4,39,1,77,1479304409,"~/.vim/install.sh"
 -'  1  77  ~/.vim/install.sh
 |4,39,1,77,1479304409,"~/.vim/install.sh"
 -'  13  0  ~/.Xresources
 |4,39,13,0,1479304211,"~/.Xresources"
 -'  13  0  ~/.Xresources
 |4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
 -'  1  0  ~/.Xresources
 |4,39,1,0,1479304126,"~/.Xresources"
 -'  1  0  ~/.Xresources
@@ -357,26 +375,15 @@ $
 |4,39,7,0,0,"~/Documents/cpp-primer/chapter08/8.2.cpp"
 -'  50  73  ~/Documents/electron-quick-start/main.js
 |4,39,50,73,0,"~/Documents/electron-quick-start/main.js"
--'  42  0  ~/Documents/electron-quick-start/main.js
-|4,39,42,0,0,"~/Documents/electron-quick-start/main.js"
--'  38  4  ~/Documents/electron-quick-start/main.js
-|4,39,38,4,0,"~/Documents/electron-quick-start/main.js"
--'  34  0  ~/Documents/electron-quick-start/main.js
-|4,39,34,0,0,"~/Documents/electron-quick-start/main.js"
--'  31  0  ~/Documents/electron-quick-start/main.js
-|4,39,31,0,0,"~/Documents/electron-quick-start/main.js"
--'  22  27  ~/Documents/electron-quick-start/main.js
-|4,39,22,27,0,"~/Documents/electron-quick-start/main.js"
--'  15  36  ~/Documents/electron-quick-start/main.js
-|4,39,15,36,0,"~/Documents/electron-quick-start/main.js"
--'  13  88  ~/Documents/electron-quick-start/main.js
-|4,39,13,88,0,"~/Documents/electron-quick-start/main.js"
--'  16  0  ~/Documents/electron-quick-start/index.html
-|4,39,16,0,0,"~/Documents/electron-quick-start/index.html"
--'  1  0  ~/Documents/electron-quick-start/index.html
-|4,39,1,0,0,"~/Documents/electron-quick-start/index.html"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/README.md
+	*	1479912124	0
+	"	6	14
+	^	6	15
+	.	6	14
+	+	6	14
 
 > ~/.vim/install.sh
 	*	1479304462	0
@@ -927,9 +934,6 @@ $
 	^	1	10
 	.	1	9
 	+	1	9
-
-> ~/.vim/README.md
-	"	3	1
 
 > ~/91porn.txt
 	"	1	14

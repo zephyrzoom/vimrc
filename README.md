@@ -2,5 +2,5 @@
 vim configuration
 - swap file need to be created urself.
 
-install
+## install
 copy to ~/.vim/

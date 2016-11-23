@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1479912128,,"wq"
+|2,0,1479912508,,"wq"
 :q
 |2,0,1479304464,,"q"
 :w
@@ -153,28 +153,34 @@ $
 |3,0,36,0,1,0,1479304162,"false"
 
 # File marks:
-'0  6  14  ~/.vim/README.md
-|4,48,6,14,1479912128,"~/.vim/README.md"
-'1  2  0  ~/.vim/install.sh
-|4,49,2,0,1479304464,"~/.vim/install.sh"
-'2  3  77  ~/.vim/install.sh
-|4,50,3,77,1479304409,"~/.vim/install.sh"
-'3  1  77  ~/.vim/install.sh
-|4,51,1,77,1479304409,"~/.vim/install.sh"
-'4  13  0  ~/.Xresources
-|4,52,13,0,1479304211,"~/.Xresources"
-'5  1  0  ~/a.cpp
-|4,53,1,0,0,"~/a.cpp"
-'6  1  0  ~/Documents/leetcode/README.md
-|4,54,1,0,0,"~/Documents/leetcode/README.md"
-'7  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,55,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
-'8  1  0  ~/Documents/cpp-primer/chapter08/8.6.cpp
-|4,56,1,0,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
-'9  1  23  ~/.bash_profile
-|4,57,1,23,0,"~/.bash_profile"
+'0  5  2  ~/.vim/README.md
+|4,48,5,2,1479912508,"~/.vim/README.md"
+'1  6  14  ~/.vim/README.md
+|4,49,6,14,1479912128,"~/.vim/README.md"
+'2  6  14  ~/.vim/README.md
+|4,50,6,14,1479912128,"~/.vim/README.md"
+'3  2  0  ~/.vim/install.sh
+|4,51,2,0,1479304464,"~/.vim/install.sh"
+'4  3  77  ~/.vim/install.sh
+|4,52,3,77,1479304409,"~/.vim/install.sh"
+'5  1  77  ~/.vim/install.sh
+|4,53,1,77,1479304409,"~/.vim/install.sh"
+'6  13  0  ~/.Xresources
+|4,54,13,0,1479304211,"~/.Xresources"
+'7  1  0  ~/a.cpp
+|4,55,1,0,0,"~/a.cpp"
+'8  1  0  ~/Documents/leetcode/README.md
+|4,56,1,0,0,"~/Documents/leetcode/README.md"
+'9  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
+|4,57,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
 
 # Jumplist (newest first):
+-'  5  2  ~/.vim/README.md
+|4,39,5,2,1479912508,"~/.vim/README.md"
+-'  1  0  ~/.vim/README.md
+|4,39,1,0,1479912495,"~/.vim/README.md"
+-'  6  14  ~/.vim/README.md
+|4,39,6,14,1479912128,"~/.vim/README.md"
 -'  6  14  ~/.vim/README.md
 |4,39,6,14,1479912128,"~/.vim/README.md"
 -'  1  0  ~/.vim/README.md
@@ -183,10 +189,22 @@ $
 |4,39,2,0,1479304464,"~/.vim/install.sh"
 -'  2  0  ~/.vim/install.sh
 |4,39,2,0,1479304464,"~/.vim/install.sh"
+-'  2  0  ~/.vim/install.sh
+|4,39,2,0,1479304464,"~/.vim/install.sh"
+-'  2  0  ~/.vim/install.sh
+|4,39,2,0,1479304464,"~/.vim/install.sh"
 -'  3  0  ~/.vim/install.sh
 |4,39,3,0,1479304430,"~/.vim/install.sh"
 -'  3  0  ~/.vim/install.sh
 |4,39,3,0,1479304430,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1479304430,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1479304430,"~/.vim/install.sh"
+-'  1  77  ~/.vim/install.sh
+|4,39,1,77,1479304409,"~/.vim/install.sh"
+-'  1  77  ~/.vim/install.sh
+|4,39,1,77,1479304409,"~/.vim/install.sh"
 -'  1  77  ~/.vim/install.sh
 |4,39,1,77,1479304409,"~/.vim/install.sh"
 -'  1  77  ~/.vim/install.sh
@@ -199,6 +217,22 @@ $
 |4,39,13,0,1479304211,"~/.Xresources"
 -'  13  0  ~/.Xresources
 |4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  13  0  ~/.Xresources
+|4,39,13,0,1479304211,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1479304126,"~/.Xresources"
 -'  1  0  ~/.Xresources
 |4,39,1,0,1479304126,"~/.Xresources"
 -'  1  0  ~/.Xresources
@@ -341,49 +375,16 @@ $
 |4,39,4,0,0,"~/Documents/cpp-primer/.git/index"
 -'  1  0  ~/Documents/cpp-primer/.git/index
 |4,39,1,0,0,"~/Documents/cpp-primer/.git/index"
--'  1  0  ~/Documents/cpp-primer/chapter08/8.4.cpp
-|4,39,1,0,0,"~/Documents/cpp-primer/chapter08/8.4.cpp"
--'  18  0  ~/Documents/NERD_tree_1
-|4,39,18,0,0,"~/Documents/NERD_tree_1"
--'  31  11  ~/Documents/cpp-primer/chapter08/8.6.cpp
-|4,39,31,11,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
--'  21  9  ~/Documents/cpp-primer/chapter08/8.6.cpp
-|4,39,21,9,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
--'  22  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,39,22,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
--'  17  0  ~/Documents/NERD_tree_1
-|4,39,17,0,0,"~/Documents/NERD_tree_1"
--'  9  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
-|4,39,9,0,0,"~/Documents/cpp-primer/chapter08/8.2.cpp"
--'  15  0  ~/Documents/NERD_tree_1
-|4,39,15,0,0,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/cpp-primer/chapter08/8.1.h
-|4,39,1,0,0,"~/Documents/cpp-primer/chapter08/8.1.h"
--'  14  0  ~/Documents/NERD_tree_1
-|4,39,14,0,0,"~/Documents/NERD_tree_1"
--'  17  8  ~/Documents/cpp-primer/chapter08/8.1.cpp
-|4,39,17,8,0,"~/Documents/cpp-primer/chapter08/8.1.cpp"
--'  13  0  ~/Documents/NERD_tree_1
-|4,39,13,0,0,"~/Documents/NERD_tree_1"
--'  16  8  ~/Documents/cpp-primer/chapter08/8.1.cpp
-|4,39,16,8,0,"~/Documents/cpp-primer/chapter08/8.1.cpp"
--'  21  2  ~/Documents/NERD_tree_1
-|4,39,21,2,0,"~/Documents/NERD_tree_1"
--'  1  0  ~/Documents/NERD_tree_1
-|4,39,1,0,0,"~/Documents/NERD_tree_1"
--'  7  0  ~/Documents/cpp-primer/chapter08/8.2.cpp
-|4,39,7,0,0,"~/Documents/cpp-primer/chapter08/8.2.cpp"
--'  50  73  ~/Documents/electron-quick-start/main.js
-|4,39,50,73,0,"~/Documents/electron-quick-start/main.js"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/README.md
-	*	1479912124	0
-	"	6	14
-	^	6	15
-	.	6	14
+	*	1479912507	0
+	"	5	2
+	^	5	3
+	.	5	2
 	+	6	14
+	+	5	2
 
 > ~/.vim/install.sh
 	*	1479304462	0

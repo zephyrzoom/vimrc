@@ -1,0 +1,13 @@
+#ifndef PE_PARSER_H_
+#define PE_PARSER_H_
+
+#include <iostream>
+#include <string>
+
+class PEFormat {
+    private:
+        std::string pe;
+
+};
+
+#endif

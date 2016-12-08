@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+    while (true) {
+        int pc = rand() % 10 + 1;
+        int mine = rand() % 10 + 1;
+        cout << "电脑的牌是" << pc << endl;
+        cout << "我的牌是" << mine << endl;
+        cout << (pc > mine ? "电脑赢了" : "你赢了"); 
+        getwchar();
+    }
+    return 0;
+}

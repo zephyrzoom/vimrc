@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/disas
+~MSle0~/highlight
 
 # Last Substitute Search Pattern:
 ~MSle0&sum
@@ -21,13 +21,31 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1479912508,,"wq"
+|2,0,1481192048,,"wq"
 :q
-|2,0,1479304464,,"q"
+|2,0,1481192022,,"q"
 :w
-|2,0,1479304462,,"w"
+|2,0,1481192021,,"w"
 :q!
-|2,0,0,,"q!"
+|2,0,1481191999,,"q!"
+:hi Normal ctermbg=none
+|2,0,1481191858,,"hi Normal ctermbg=none"
+:set hi Normal ctermbg=none
+|2,0,1481191839,,"set hi Normal ctermbg=none"
+:hi Normal guibg=NONE ctermbg=NONE
+|2,0,1481191543,,"hi Normal guibg=NONE ctermbg=NONE"
+:hi NonText ctermbg=none
+|2,0,1481191457,,"hi NonText ctermbg=none"
+:split index.html
+|2,0,1480749776,,"split index.html"
+:e index.html
+|2,0,1480747809,,"e index.html"
+:sp
+|2,0,1480747785,,"sp"
+:split ~/.xinitrc
+|2,0,1480004655,,"split ~/.xinitrc"
+:PluginInstall
+|2,0,1479914283,,"PluginInstall"
 :qq
 |2,0,0,,"qq"
 :Disa
@@ -44,8 +62,6 @@ $
 |2,0,0,,"//dev-bbs.douyutv.com/forum.php?mod=viewthread&tid=115&page=1#pid238http"
 ://dev-bbs.douyutv.com/forum.php?mod=viewthread&tid=115&page=1#pid238
 |2,0,0,,"//dev-bbs.douyutv.com/forum.php?mod=viewthread&tid=115&page=1#pid238"
-:PluginInstall
-|2,0,0,,"PluginInstall"
 :%!xxd
 |2,0,0,,"%!xxd"
 :!%xxd
@@ -62,6 +78,18 @@ $
 |2,0,0,,"tabedit"
 
 # Search String History (newest to oldest):
+?/highlight
+|2,1,1481191243,47,"highlight"
+?/hi
+|2,1,1481191214,47,"hi"
+?/shading
+|2,1,1481190832,47,"shading"
+?/about
+|2,1,1480747280,47,"about"
+?/About
+|2,1,1480746747,47,"About"
+? \<bin\>
+|2,1,1480745928,,"\\<bin\\>"
 ?/*
 |2,1,0,47,"*"
 ?/disas
@@ -111,272 +139,707 @@ $
 
 # Registers:
 "0	CHAR	0
-	hift+insert
+	<p>
+	      <a href="http://www.douyu.com/im707">斗鱼tv</a> |
+	      <a href="http://live.bilibili.com/15111">bilibili</a> |
+	      <a href="http://www.panda.tv/141173">熊猫tv</a>
+	    </p>
 	
-	vim复制到外部用鼠标左键选取，中健粘贴，
-	
-	编译选项支持clipboard的话，可以在v模式下选取然后"*y复制到系统粘贴版，然后复制到外部，或者复制外部内容*p复制到vim
-	
-|3,0,0,0,6,0,0,"hift+insert","","vim复制到外部用鼠标左键选取，中健粘贴，","","编译选项支持clipboard的话，可以在v模式下选取然后\"*y复制到系统粘贴版，然后复制到外部，或者复制外部内容*p复制到vim",""
+|3,0,0,0,6,0,1480749788,"<p>","      <a href=\"http://www.douyu.com/im707\">斗鱼tv</a> |","      <a href=\"http://live.bilibili.com/15111\">bilibili</a> |","      <a href=\"http://www.panda.tv/141173\">熊猫tv</a>","    </p>",""
 ""1	LINE	0
-	app.commandLine.appendArgument("--enable-transparent-visuals --disable-gpu");
-|3,1,1,1,1,0,0,"app.commandLine.appendArgument(\"--enable-transparent-visuals --disable-gpu\");"
-"2	LINE	0
-	app.commandLine.appendArgument("--enable-transparent-visuals --disable-gpu");
-|3,0,2,1,1,0,0,"app.commandLine.appendArgument(\"--enable-transparent-visuals --disable-gpu\");"
+	hi NonText ctermbg=none
+|3,1,1,1,1,0,1481192011,"hi NonText ctermbg=none"
+"2	CHAR	0
+	iifj
+	dfdf
+	df
+	d
+	f
+	df
+	
+	gf
+	g
+	f
+	g
+	fg
+	r
+	g
+	t
+	hg
+	g
+	g
+	f
+	g
+	f
+	g
+	fgfgrrrrrrrrrrrg
+	fffffffa
+	s
+	df
+	
+	df
+	
+	df
+	
+|3,0,2,0,31,0,1481191908,"iifj","dfdf","df","d","f","df","","gf","g","f","g","fg","r","g","t","hg","g","g","f","g","f","g","fgfgrrrrrrrrrrrg","fffffffa","s","df","","df","","df",""
 "3	LINE	0
-	
-|3,0,3,1,1,0,0,""
+	using namespace std::string;
+|3,0,3,1,1,0,1480933578,"using namespace std::string;"
 "4	LINE	0
-	// code. You can also put them in separate files and require them here.
-|3,0,4,1,1,0,0,"// code. You can also put them in separate files and require them here."
+	#program once
+|3,0,4,1,1,0,1480932822,"#program once"
 "5	LINE	0
-	// In this file you can include the rest of your app's specific main process
-|3,0,5,1,1,0,0,"// In this file you can include the rest of your app's specific main process"
+	        char tmp;
+|3,0,5,1,1,0,1480851732,"        char tmp;"
 "6	LINE	0
-	  // Open the DevTools.
-|3,0,6,1,1,0,0,"  // Open the DevTools."
+	        int tmp;
+|3,0,6,1,1,0,1480851709,"        int tmp;"
 "7	LINE	0
-	  mainWindow.webContents.openDevTools()
-|3,0,7,1,1,0,0,"  mainWindow.webContents.openDevTools()"
+	地上的蚂蚁，你爬来爬去，我都笑了。
+|3,0,7,1,1,0,1480749771,"地上的蚂蚁，你爬来爬去，我都笑了。"
 "8	LINE	0
-	
-|3,0,8,1,1,0,0,""
+	地上的蚂蚁，你爬来爬去，我都笑了。
+|3,0,8,1,1,0,1480749540,"地上的蚂蚁，你爬来爬去，我都笑了。"
 "9	LINE	0
-	- [Mac](https://github.com/zephyrzoom/douyu/releases/download/v0.1.0/707danmu-v0.1.0-darwin.zip)
-|3,0,9,1,1,0,0,"- [Mac](https://github.com/zephyrzoom/douyu/releases/download/v0.1.0/707danmu-v0.1.0-darwin.zip)"
+	
+|3,0,9,1,1,0,1480747896,""
 "q	CHAR	0
 	
 |3,0,26,0,1,0,0,""
 "-	CHAR	0
-	false
-|3,0,36,0,1,0,1479304162,"false"
+	"
+|3,0,36,0,1,0,1481191877,"\""
 
 # File marks:
-'0  5  2  ~/.vim/README.md
-|4,48,5,2,1479912508,"~/.vim/README.md"
-'1  6  14  ~/.vim/README.md
-|4,49,6,14,1479912128,"~/.vim/README.md"
-'2  6  14  ~/.vim/README.md
-|4,50,6,14,1479912128,"~/.vim/README.md"
-'3  2  0  ~/.vim/install.sh
-|4,51,2,0,1479304464,"~/.vim/install.sh"
-'4  3  77  ~/.vim/install.sh
-|4,52,3,77,1479304409,"~/.vim/install.sh"
-'5  1  77  ~/.vim/install.sh
-|4,53,1,77,1479304409,"~/.vim/install.sh"
-'6  13  0  ~/.Xresources
-|4,54,13,0,1479304211,"~/.Xresources"
-'7  1  0  ~/a.cpp
-|4,55,1,0,0,"~/a.cpp"
-'8  1  0  ~/Documents/leetcode/README.md
-|4,56,1,0,0,"~/Documents/leetcode/README.md"
-'9  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,57,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
+'0  93  0  ~/.vim/vimrc
+|4,48,93,0,1481192048,"~/.vim/vimrc"
+'1  99  0  ~/.vim/vimrc
+|4,49,99,0,1481192036,"~/.vim/vimrc"
+'2  99  0  ~/.vim/vimrc
+|4,50,99,0,1481192036,"~/.vim/vimrc"
+'3  98  16  ~/.vim/vimrc
+|4,51,98,16,1481192022,"~/.vim/vimrc"
+'4  98  16  ~/.vim/vimrc
+|4,52,98,16,1481192022,"~/.vim/vimrc"
+'5  98  16  ~/.vim/vimrc
+|4,53,98,16,1481192022,"~/.vim/vimrc"
+'6  98  16  ~/.vim/vimrc
+|4,54,98,16,1481192022,"~/.vim/vimrc"
+'7  100  22  ~/.vim/vimrc
+|4,55,100,22,1481191989,"~/.vim/vimrc"
+'8  100  22  ~/.vim/vimrc
+|4,56,100,22,1481191989,"~/.vim/vimrc"
+'9  99  22  ~/.vim/vimrc
+|4,57,99,22,1481191989,"~/.vim/vimrc"
 
 # Jumplist (newest first):
--'  5  2  ~/.vim/README.md
-|4,39,5,2,1479912508,"~/.vim/README.md"
--'  1  0  ~/.vim/README.md
-|4,39,1,0,1479912495,"~/.vim/README.md"
--'  6  14  ~/.vim/README.md
-|4,39,6,14,1479912128,"~/.vim/README.md"
--'  6  14  ~/.vim/README.md
-|4,39,6,14,1479912128,"~/.vim/README.md"
--'  1  0  ~/.vim/README.md
-|4,39,1,0,1479912034,"~/.vim/README.md"
--'  2  0  ~/.vim/install.sh
-|4,39,2,0,1479304464,"~/.vim/install.sh"
--'  2  0  ~/.vim/install.sh
-|4,39,2,0,1479304464,"~/.vim/install.sh"
--'  2  0  ~/.vim/install.sh
-|4,39,2,0,1479304464,"~/.vim/install.sh"
--'  2  0  ~/.vim/install.sh
-|4,39,2,0,1479304464,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1479304430,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1479304430,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1479304430,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1479304430,"~/.vim/install.sh"
--'  1  77  ~/.vim/install.sh
-|4,39,1,77,1479304409,"~/.vim/install.sh"
--'  1  77  ~/.vim/install.sh
-|4,39,1,77,1479304409,"~/.vim/install.sh"
--'  1  77  ~/.vim/install.sh
-|4,39,1,77,1479304409,"~/.vim/install.sh"
--'  1  77  ~/.vim/install.sh
-|4,39,1,77,1479304409,"~/.vim/install.sh"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  13  0  ~/.Xresources
-|4,39,13,0,1479304211,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/.Xresources
-|4,39,1,0,1479304126,"~/.Xresources"
--'  1  0  ~/a.cpp
-|4,39,1,0,0,"~/a.cpp"
--'  1  0  ~/Documents/leetcode/README.md
-|4,39,1,0,0,"~/Documents/leetcode/README.md"
--'  9  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,39,9,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
--'  1  1  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,39,1,1,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
--'  24  0  ~/Documents/cpp-primer/chapter08/8.5.cpp
-|4,39,24,0,0,"~/Documents/cpp-primer/chapter08/8.5.cpp"
--'  1  0  ~/Documents/cpp-primer/chapter08/8.6.cpp
-|4,39,1,0,0,"~/Documents/cpp-primer/chapter08/8.6.cpp"
--'  1  23  ~/.bash_profile
-|4,39,1,23,0,"~/.bash_profile"
--'  1  0  ~/Downloads/llvm-3.8.0.src/lib/MC/MCDisassembler/Disassembler.h
-|4,39,1,0,0,"~/Downloads/llvm-3.8.0.src/lib/MC/MCDisassembler/Disassembler.h"
--'  621  0  ~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td
-|4,39,621,0,0,"~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td"
--'  149  0  ~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td
-|4,39,149,0,0,"~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td"
--'  1  0  ~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td
-|4,39,1,0,0,"~/Downloads/llvm-3.8.0.src/lib/Target/X86/X86.td"
--'  1  0  ~/Documents/electron-quick-start/main.js
-|4,39,1,0,0,"~/Documents/electron-quick-start/main.js"
--'  7  0  ~/Documents/electron-quick-start/main.js
-|4,39,7,0,0,"~/Documents/electron-quick-start/main.js"
--'  51  73  ~/Documents/electron-quick-start/main.js
-|4,39,51,73,0,"~/Documents/electron-quick-start/main.js"
--'  44  54  ~/Documents/electron-quick-start/main.js
-|4,39,44,54,0,"~/Documents/electron-quick-start/main.js"
--'  43  0  ~/Documents/electron-quick-start/main.js
-|4,39,43,0,0,"~/Documents/electron-quick-start/main.js"
--'  39  4  ~/Documents/electron-quick-start/main.js
-|4,39,39,4,0,"~/Documents/electron-quick-start/main.js"
--'  36  30  ~/Documents/electron-quick-start/main.js
-|4,39,36,30,0,"~/Documents/electron-quick-start/main.js"
--'  35  0  ~/Documents/electron-quick-start/main.js
-|4,39,35,0,0,"~/Documents/electron-quick-start/main.js"
--'  32  0  ~/Documents/electron-quick-start/main.js
-|4,39,32,0,0,"~/Documents/electron-quick-start/main.js"
--'  23  27  ~/Documents/electron-quick-start/main.js
-|4,39,23,27,0,"~/Documents/electron-quick-start/main.js"
--'  16  36  ~/Documents/electron-quick-start/main.js
-|4,39,16,36,0,"~/Documents/electron-quick-start/main.js"
--'  3  21  ~/Documents/electron-quick-start/main.js
-|4,39,3,21,0,"~/Documents/electron-quick-start/main.js"
--'  2  21  ~/Documents/electron-quick-start/main.js
-|4,39,2,21,0,"~/Documents/electron-quick-start/main.js"
--'  14  88  ~/Documents/electron-quick-start/main.js
-|4,39,14,88,0,"~/Documents/electron-quick-start/main.js"
--'  6  0  ~/Documents/electron-quick-start/main.js
-|4,39,6,0,0,"~/Documents/electron-quick-start/main.js"
--'  16  0  ~/Documents/electron-quick-start/index.html
-|4,39,16,0,0,"~/Documents/electron-quick-start/index.html"
--'  1  0  ~/Documents/electron-quick-start/index.html
-|4,39,1,0,0,"~/Documents/electron-quick-start/index.html"
--'  3  2  ~/Documents/electron-quick-start/renderer.js
-|4,39,3,2,0,"~/Documents/electron-quick-start/renderer.js"
--'  1  0  ~/Documents/electron-quick-start/renderer.js
-|4,39,1,0,0,"~/Documents/electron-quick-start/renderer.js"
--'  18  11  ~/Documents/pandatv/README.md
-|4,39,18,11,0,"~/Documents/pandatv/README.md"
--'  1  0  ~/Documents/pandatv/README.md
-|4,39,1,0,0,"~/Documents/pandatv/README.md"
--'  23  20  ~/Documents/pandatv/README.md
-|4,39,23,20,0,"~/Documents/pandatv/README.md"
--'  8  0  ~/Documents/douyu/README.md
-|4,39,8,0,0,"~/Documents/douyu/README.md"
--'  1  0  ~/Documents/douyu/README.md
-|4,39,1,0,0,"~/Documents/douyu/README.md"
--'  22  1  ~/Documents/pandatv/README.md
-|4,39,22,1,0,"~/Documents/pandatv/README.md"
--'  14  0  ~/Documents/pandatv/README.md
-|4,39,14,0,0,"~/Documents/pandatv/README.md"
--'  1  0  ~/Documents/pandatv/node/R
-|4,39,1,0,0,"~/Documents/pandatv/node/R"
--'  151  0  ~/Documents/pandatv/node/app.js
-|4,39,151,0,0,"~/Documents/pandatv/node/app.js"
--'  17  0  ~/Documents/pandatv/node/app.js
-|4,39,17,0,0,"~/Documents/pandatv/node/app.js"
--'  1  0  ~/Documents/pandatv/node/app.js
-|4,39,1,0,0,"~/Documents/pandatv/node/app.js"
--'  16  0  ~/Documents/pandatv/README.md
-|4,39,16,0,0,"~/Documents/pandatv/README.md"
--'  7  30  ~/Documents/pandatv/README.md
-|4,39,7,30,0,"~/Documents/pandatv/README.md"
--'  7  13  ~/Documents/douyu/README.md
-|4,39,7,13,0,"~/Documents/douyu/README.md"
--'  2  184  ~/Documents/douyu/README.md
-|4,39,2,184,0,"~/Documents/douyu/README.md"
--'  8  4  ~/score.cpp
-|4,39,8,4,0,"~/score.cpp"
--'  1  0  ~/score.cpp
-|4,39,1,0,0,"~/score.cpp"
--'  99  0  ~/.vim/vimrc
-|4,39,99,0,0,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,0,"~/.vim/vimrc"
+-'  93  0  ~/.vim/vimrc
+|4,39,93,0,1481192048,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,0,"~/.vim/vimrc"
--'  17  0  ~/score.cpp
-|4,39,17,0,0,"~/score.cpp"
--'  14  0  ~/score.cpp
-|4,39,14,0,0,"~/score.cpp"
--'  30  0  ~/.vim/vimrc
-|4,39,30,0,0,"~/.vim/vimrc"
--'  47  0  ~/.vim/vimrc
-|4,39,47,0,0,"~/.vim/vimrc"
--'  14  0  ~/.vim/vimrc
-|4,39,14,0,0,"~/.vim/vimrc"
--'  1  0  ~/Desktop/hello.exe
-|4,39,1,0,0,"~/Desktop/hello.exe"
--'  16  0  ~/Documents/fracture/autoconf/AutoRegen.sh
-|4,39,16,0,0,"~/Documents/fracture/autoconf/AutoRegen.sh"
--'  1  0  ~/Documents/fracture/autoconf/AutoRegen.sh
-|4,39,1,0,0,"~/Documents/fracture/autoconf/AutoRegen.sh"
--'  26  0  ~/Documents/fracture/Makefile.common.in
-|4,39,26,0,0,"~/Documents/fracture/Makefile.common.in"
--'  1  0  ~/Documents/fracture/Makefile.common.in
-|4,39,1,0,0,"~/Documents/fracture/Makefile.common.in"
--'  17  0  ~/Documents/fracture/Makefile
-|4,39,17,0,0,"~/Documents/fracture/Makefile"
--'  1  0  ~/Documents/fracture/Makefile
-|4,39,1,0,0,"~/Documents/fracture/Makefile"
--'  1  0  fugitive:///home/zeek/Documents/cpp-primer/.git//0/.gitignore
-|4,39,1,0,0,"fugitive:///home/zeek/Documents/cpp-primer/.git//0/.gitignore"
--'  2  0  ~/Documents/cpp-primer/.gitignore
-|4,39,2,0,0,"~/Documents/cpp-primer/.gitignore"
--'  1  0  ~/Documents/cpp-primer/.gitignore
-|4,39,1,0,0,"~/Documents/cpp-primer/.gitignore"
--'  4  0  ~/Documents/cpp-primer/.git/index
-|4,39,4,0,0,"~/Documents/cpp-primer/.git/index"
--'  1  0  ~/Documents/cpp-primer/.git/index
-|4,39,1,0,0,"~/Documents/cpp-primer/.git/index"
+|4,39,1,0,1481192041,"~/.vim/vimrc"
+-'  99  0  ~/.vim/vimrc
+|4,39,99,0,1481192036,"~/.vim/vimrc"
+-'  99  0  ~/.vim/vimrc
+|4,39,99,0,1481192036,"~/.vim/vimrc"
+-'  98  9  ~/.vim/vimrc
+|4,39,98,9,1481192034,"~/.vim/vimrc"
+-'  98  9  ~/.vim/vimrc
+|4,39,98,9,1481192034,"~/.vim/vimrc"
+-'  38  0  ~/.vim/vimrc
+|4,39,38,0,1481192032,"~/.vim/vimrc"
+-'  38  0  ~/.vim/vimrc
+|4,39,38,0,1481192032,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1481192027,"~/.vim/vimrc"
+-'  98  16  ~/.vim/vimrc
+|4,39,98,16,1481192022,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1481192006,"~/.vim/vimrc"
+-'  100  22  ~/.vim/vimrc
+|4,39,100,22,1481191989,"~/.vim/vimrc"
+-'  100  22  ~/.vim/vimrc
+|4,39,100,22,1481191989,"~/.vim/vimrc"
+-'  99  22  ~/.vim/vimrc
+|4,39,99,22,1481191989,"~/.vim/vimrc"
+-'  99  22  ~/.vim/vimrc
+|4,39,99,22,1481191989,"~/.vim/vimrc"
+-'  99  22  ~/.vim/vimrc
+|4,39,99,22,1481191989,"~/.vim/vimrc"
+-'  4  0  ~/.vim/vimrc
+|4,39,4,0,1481191972,"~/.vim/vimrc"
+-'  4  0  ~/.vim/vimrc
+|4,39,4,0,1481191972,"~/.vim/vimrc"
+-'  4  0  ~/.vim/vimrc
+|4,39,4,0,1481191972,"~/.vim/vimrc"
+-'  4  0  ~/.vim/vimrc
+|4,39,4,0,1481191972,"~/.vim/vimrc"
+-'  4  0  ~/.vim/vimrc
+|4,39,4,0,1481191972,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1481191971,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1481191971,"~/.vim/vimrc"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  3  0  ~/.vim/install.sh
+|4,39,3,0,1481191947,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  1  0  ~/.vim/install.sh
+|4,39,1,0,1481191939,"~/.vim/install.sh"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
+-'  91  0  ~/.vim/vimrc
+|4,39,91,0,1481191878,"~/.vim/vimrc"
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/vimrc
+	*	1481192045	0
+	"	93	0
+	^	98	17
+	.	99	0
+	+	97	0
+	+	97	13
+	+	97	5
+	+	28	11
+	+	29	0
+	+	29	29
+	+	28	10
+	+	28	0
+	+	26	17
+	+	28	0
+	+	15	30
+	+	25	0
+	+	16	0
+	+	16	31
+	+	25	0
+	+	97	0
+	+	25	29
+	+	97	20
+	+	97	15
+	+	97	0
+	+	25	30
+	+	97	0
+	+	87	13
+	+	87	18
+	+	97	0
+	+	87	18
+	+	97	0
+	+	25	0
+	+	17	29
+	+	87	106
+	+	97	0
+	+	89	5
+	+	25	40
+	+	87	20
+	+	87	0
+	+	25	0
+	+	87	0
+	+	25	22
+	+	86	0
+	+	34	17
+	+	34	0
+	+	25	0
+	+	87	0
+	+	19	31
+	+	20	27
+	+	18	0
+	+	21	27
+	+	97	0
+	+	91	18
+	+	86	0
+	+	22	27
+	+	88	31
+	+	25	0
+	+	93	10
+	+	96	41
+	+	23	0
+	+	24	0
+	+	94	0
+	+	95	0
+	+	96	0
+	+	91	0
+	+	36	77
+	+	36	160
+	+	37	0
+	+	98	0
+	+	91	0
+	+	100	0
+	+	99	0
+
+> ~/.vim/install.sh
+	*	1481191946	0
+	"	3	0
+	^	2	0
+	.	2	0
+	+	3	77
+	+	1	18
+	+	2	0
+
+> ~/.vim/bundle/YouCompleteMe/install.py
+	*	1481191710	0
+	"	51	2
+
+> ~/.Xresources
+	*	1481190891	0
+	"	21	29
+	^	21	30
+	.	21	29
+	+	13	21
+	+	45	0
+	+	33	37
+	+	34	41
+	+	33	21
+	+	34	25
+	+	33	31
+	+	34	35
+	+	20	31
+	+	21	29
+
+> ~/.xinitrc
+	*	1481190804	0
+	"	4	0
+	^	10	33
+	.	10	32
+	+	4	0
+	+	7	28
+	+	11	0
+	+	9	6
+	+	10	32
+
+> ~/.zprofile
+	*	1481190771	0
+	"	3	0
+	^	5	7
+	.	5	6
+	+	5	6
+
+> ~/.zshrc
+	*	1481190763	0
+	"	52	0
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-11-22-archlinux-install.md
+	*	1481189609	0
+	"	78	0
+	^	70	24
+	.	70	23
+	+	1	0
+	+	1	31
+	+	1	41
+	+	55	245
+	+	56	0
+	+	73	0
+	+	62	0
+	+	65	0
+	+	63	0
+	+	64	0
+	+	73	0
+	+	60	0
+	+	75	72
+	+	76	0
+	+	77	0
+	+	59	8
+	+	77	18
+	+	79	5
+	+	83	2
+	+	77	25
+	+	59	24
+	+	86	0
+	+	2	0
+	+	85	57
+	+	55	248
+	+	70	23
+
+> ~/Documents/zephyrzoom.github.io/index.md
+	*	1481189164	0
+	"	5	1
+
+> ~/Tmp/a
+	*	1480935679	0
+	"	1	0
+
+> ~/Documents/decompiler/src/disassembler/pe_parser.h
+	*	1480934037	0
+	"	9	12
+	^	9	13
+	.	9	0
+	+	2	20
+	+	13	5
+	+	12	0
+	+	11	1
+	+	10	0
+	+	4	19
+	+	9	8
+	+	5	16
+	+	9	13
+	+	6	0
+	+	9	0
+
+> ~/Documents/decompiler/src/disassembler/pe.h
+	*	1480932824	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/kunte/kunte.cpp
+	*	1480851999	0
+	"	12	18
+	^	11	66
+	.	11	65
+	+	15	0
+	+	13	0
+	+	10	55
+	+	14	12
+	+	10	49
+	+	2	17
+	+	10	26
+	+	8	34
+	+	9	38
+	+	10	37
+	+	12	17
+	+	12	0
+	+	12	11
+	+	11	65
+
+> ~/Documents/test/blog/Gemfile
+	*	1480846848	0
+	"	19	0
+
+> ~/Documents/blog/Gemfile
+	*	1480839946	0
+	"	19	0
+	^	12	1
+	.	19	0
+	+	12	0
+	+	19	0
+
+> ~/Documents/blog/Gemfile.lock
+	*	1480839868	0
+	"	10	0
+
+> ~/Documents/blog/Gemfilem
+	*	1480839858	0
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_includes/icon-github.html
+	*	1480750165	0
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_includes/icon-github.
+	*	1480750153	0
+	"	1	0
+
+> ~/Documents/zephyrzoom.github.io/_includes/footer.html
+	*	1480750136	0
+	"	16	0
+
+> ~/Documents/zephyrzoom.github.io/index.html
+	*	1480750098	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/Documents/zephyrzoom.github.io/broadcast.md
+	*	1480749808	0
+	"	11	0
+	^	6	0
+	.	11	0
+	+	3	13
+	+	4	20
+	+	8	0
+	+	7	0
+	+	6	0
+	+	8	2
+	+	9	2
+	+	10	2
+	+	11	0
+
+> ~/Documents/zephyrzoom.github.io/blog.md
+	*	1480749708	0
+	"	4	15
+	^	4	16
+	.	4	15
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	6	0
+	+	3	13
+	+	4	15
+
+> ~/Documents/zephyrzoom.github.io/_layouts/post.html
+	*	1480749435	0
+	"	27	0
+
+> ~/Documents/zephyrzoom.github.io/_layouts/page.html
+	*	1480749418	0
+	"	8	0
+
+> ~/Documents/zephyrzoom.github.io/_layouts/default.html
+	*	1480749395	0
+	"	16	0
+
+> ~/Documents/zephyrzoom.github.io/_config.yml
+	*	1480749376	0
+	"	16	0
+
+> ~/Documents/zephyrzoom.github.io/feed.xml
+	*	1480749352	0
+	"	22	0
+
+> ~/Documents/zephyrzoom.github.io/aptana.md
+	*	1480748664	0
+	"	6	1
+	.	6	0
+	+	3	12
+	+	4	17
+	+	6	0
+
+> ~/Documents/blog/_config.yml
+	*	1480748042	0
+	"	29	0
+
+> ~/Documents/zephyrzoom.github.io/about.md
+	*	1480747439	0
+	"	7	0
+
+> ~/Documents/blog/test.md
+	*	1480747332	0
+	"	4	15
+	^	4	16
+	.	4	15
+	+	3	10
+	+	4	15
+
+> ~/Documents/blog/about.md
+	*	1480747299	0
+	"	11	1
+
+> ~/Documents/blog/index.md
+	*	1480747062	0
+	"	6	1
+
+> ~/Documents/zephyrzoom.github.io/.gitignore
+	*	1480747046	0
+	"	1	0
+
+> ~/Documents/blog/.gitignore
+	*	1480747032	0
+	"	3	0
+
+> ~/Documents/blog/_site/index.html
+	*	1480746912	0
+	"	15	0
+
+> ~/Documents/blog/_posts/2016-12-03-welcome-to-jekyll.markdown
+	*	1480746890	0
+	"	25	1
+
+> ~/GemRB.log
+	*	1480745586	0
+	"	35	0
+
+> ~/Downloads/raw.txt
+	*	1480688514	0
+	"	95	0
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-07-26-vmware-mac.md
+	*	1480686730	0
+	"	8	1
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-04-30-how-to-use-jekyll.md
+	*	1480686713	0
+	"	7	0
+
+> /etc/locale.conf
+	*	1480056580	0
+	"	1	0
+
+> ~/Downloads/yaourt/package/PKGBUILD
+	*	1480007046	0
+	"	1	0
+
+> /usr/local/lib/yaourt/util.sh
+	*	1480006161	0
+	"	133	0
+
+> ~/Downloads/yaourt/README.pod
+	*	1480005962	0
+	"	124	0
+
+> ~/Downloads/yaourt/src/INSTALL
+	*	1480005601	0
+	"	3	0
+
+> /usr/share/fonts/misc/fonts.alias
+	*	1479916267	0
+	"	9	0
+
+> /usr/share/fonts/cyrillic/fonts.alias
+	*	1479915882	0
+	"	51	0
+
+> /usr/share/fonts/75dpi/fonts.alias
+	*	1479915859	0
+	"	36	0
+
+> /usr/share/fonts/100dpi/fonts.alias
+	*	1479915841	0
+	"	36	0
+
+> ~/.vim/[Vundle] Installer
+	*	1479912579	0
+	"	12	0
+	.	1	0
+	+	1	0
 
 > ~/.vim/README.md
 	*	1479912507	0
@@ -385,23 +848,6 @@ $
 	.	5	2
 	+	6	14
 	+	5	2
-
-> ~/.vim/install.sh
-	*	1479304462	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	3	77
-	+	1	18
-	+	2	0
-
-> ~/.Xresources
-	*	1479304210	0
-	"	13	0
-	^	44	0
-	.	44	0
-	+	13	21
-	+	44	0
 
 > ~/a.cpp
 	"	1	0
@@ -512,74 +958,6 @@ $
 	+	18	0
 	+	17	0
 	+	9	0
-
-> ~/.vim/vimrc
-	"	99	0
-	^	99	1
-	.	99	0
-	+	100	0
-	+	100	13
-	+	100	5
-	+	28	11
-	+	29	0
-	+	29	29
-	+	28	10
-	+	28	0
-	+	26	17
-	+	28	0
-	+	15	30
-	+	25	0
-	+	16	0
-	+	16	0
-	+	16	31
-	+	25	0
-	+	100	0
-	+	25	29
-	+	100	20
-	+	100	15
-	+	100	0
-	+	25	30
-	+	100	0
-	+	90	13
-	+	90	18
-	+	100	0
-	+	90	18
-	+	100	0
-	+	25	0
-	+	17	29
-	+	90	106
-	+	100	0
-	+	92	5
-	+	25	40
-	+	90	20
-	+	90	0
-	+	90	0
-	+	25	0
-	+	90	0
-	+	90	0
-	+	25	22
-	+	89	0
-	+	34	17
-	+	34	0
-	+	25	0
-	+	90	0
-	+	19	31
-	+	20	27
-	+	18	0
-	+	21	27
-	+	100	0
-	+	94	18
-	+	89	0
-	+	22	27
-	+	91	31
-	+	25	0
-	+	96	10
-	+	99	41
-	+	23	0
-	+	24	0
-	+	97	0
-	+	98	0
-	+	99	0
 
 > ~/Desktop/hello.exe
 	"	1	0
@@ -704,245 +1082,3 @@ $
 
 > ~/Documents/sss/o.sss
 	"	1	0
-
-> ~/Documents/fracture/INSTALL.md
-	"	39	0
-
-> ~/Documents/ss/i.sss
-	"	1	0
-
-> ~/Documents/Random/README.md
-	"	2	0
-
-> ~/Documents/douyu/electron/js/jquery.js
-	"	1	0
-
-> ~/Public/photon-0.1.2-alpha/dist/template-app/index.html
-	"	1	0
-
-> ~/Documents/llvm-pass-skeleton/skeleton/Skeleton.cpp
-	"	13	0
-
-> ~/Downloads/llvm-3.8.0.src/README.txt
-	"	6	0
-
-> /usr/lib/llvm-3.6/build/Makefile.config
-	"	297	0
-
-> /usr/lib/llvm-3.6/build/Makefile.co
-	"	1	0
-
-> /usr/share/llvm-3.6/cmake/LLVMConfig.cmake
-	"	3	30
-	^	3	35
-	.	3	0
-	+	3	0
-
-> ~/Documents/llvm-pass-skeleton/build/CMakeFiles/CMakeOutput.log
-	"	40	0
-
-> ~/Documents/douyu/electron/main.js
-	"	1	0
-
-> ~/Public/photon-0.1.2-alpha/dist/template-app/app.js
-	"	3	18
-	^	3	19
-	.	3	18
-	+	1	36
-	+	2	20
-	+	3	18
-
-> ~/.vim/bundle/YouCompleteMe/README.md
-	"	217	2
-
-> ~/.vim/bundle/YouCompleteMe/install.sh
-	"	3	0
-
-> ~/Documents/douyu/electron/package.json
-	"	2	23
-	^	2	26
-	.	2	23
-	+	2	23
-
-> ~/Documents/douyu/LICENSE
-	"	21	0
-
-> ~/Documents/steam-price/LICENSE
-	"	21	0
-
-> ~/Public/707弹幕助手/resources/electron.asar
-	"	5577	0
-
-> ~/Documents/douyu/app.asar
-	"	114	0
-
-> ~/Documents/douyu/notification.py
-	"	4	0
-
-> ~/Downloads/get_dy_barrage/get_dy_barrage/Makefile
-	"	1	0
-
-> ~/Documents/douyu/nodejs/app.js
-	"	3	0
-	^	3	0
-	.	2	25
-	+	2	25
-
-> ~/Documents/douyu/nodejs/package.json
-	"	12	2
-	^	9	16
-	.	12	0
-	+	9	15
-	+	12	0
-
-> ~/Documents/douyu/nodejs/node_modules/http/package.json
-	"	59	0
-
-> ~/Downloads/danmu.fm-master/danmufm/client/douyu_danmu_manager.py
-	"	224	12
-
-> ~/Downloads/danmu.fm-master/danmufm/danmu.py
-	"	92	0
-
-> ~/Downloads/danmu.fm-master/sh.py
-	"	5	0
-
-> ~/Downloads/douyu-master/danmu.cc
-	"	94	0
-
-> ~/Documents/test-electron/main.js
-	"	8	21
-	^	28	3
-	.	8	26
-	+	14	0
-	+	13	6
-	+	21	0
-	+	28	2
-	+	3	12
-	+	8	26
-
-> ~/Documents/test-electron/index.html
-	"	12	10
-	^	12	11
-	.	12	10
-	+	13	6
-	+	6	0
-	+	11	79
-	+	12	10
-
-> ~/Documents/test-electron/package.json
-	"	5	0
-	^	5	1
-	.	5	0
-	+	4	21
-	+	5	0
-
-> ~/Documents/test/admin/dashboard.html
-	"	1	0
-
-> ~/Documents/test/product.rb
-	"	1	0
-
-> ~/Documents/test/extra.txt
-	"	1	0
-
-> ~/Documents/test/gerbil.html
-	"	1	0
-
-> ~/Documents/test/todo.txt
-	"	1	0
-
-> ~/Documents/test/temp.txt
-	"	1	0
-	^	1	1
-	.	1	1
-	+	1	1
-
-> ~/Documents/test/store.rb
-	"	1	0
-
-> ~/Documents/test/mv_number.c
-	"	14	0
-
-> ~/Documents/pandatv-node/app.js
-	"	75	0
-
-> ~/Downloads/electron-sample-master/script/bootstrap
-	"	1	0
-
-> ~/Documents/zephyrzoom.github.io/_site/css/main.css
-	"	61	0
-
-> ~/Documents/zephyrzoom.github.io/index.html
-	"	33	0
-	^	14	8
-	.	14	6
-	+	31	0
-	+	7	33
-	+	30	0
-	+	21	15
-	+	21	42
-	+	23	42
-	+	24	52
-	+	29	6
-	+	21	7
-	+	23	0
-	+	21	7
-	+	21	0
-	+	25	7
-	+	22	5
-	+	23	6
-	+	24	6
-	+	28	6
-	+	34	7
-	+	29	5
-	+	30	5
-	+	31	5
-	+	32	5
-	+	33	5
-	+	11	74
-	+	11	146
-	+	11	85
-	+	11	151
-	+	11	81
-	+	11	6
-	+	11	10
-	+	12	71
-	+	13	77
-	+	14	6
-
-> ~/Documents/zephyrzoom.github.io/_config.yml
-	"	10	0
-	.	12	16
-	+	10	22
-	+	9	9
-	+	14	32
-	+	15	17
-	+	19	0
-	+	12	8
-	+	12	25
-	+	12	14
-	+	19	0
-	+	12	25
-	+	14	0
-	+	12	16
-
-> ~/Documents/zephyrzoom.github.io/css/main.scss
-	"	53	0
-
-> ~/.vim/.gitignore
-	"	1	9
-	^	1	10
-	.	1	9
-	+	1	9
-
-> ~/91porn.txt
-	"	1	14
-	^	1	15
-	.	1	14
-	+	1	14
-
-> ~/Documents/zephyrzoom.github.io/NERD_tree_1
-	"	7	0
-	.	1	0
-	+	1	0

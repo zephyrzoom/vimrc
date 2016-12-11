@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/highlight
+~MSle0~/last
 
 # Last Substitute Search Pattern:
 ~MSle0&sum
@@ -20,14 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1481192048,,"wq"
 :q
-|2,0,1481192022,,"q"
+|2,0,1481440051,,"q"
+:wq
+|2,0,1481440043,,"wq"
 :w
-|2,0,1481192021,,"w"
+|2,0,1481439892,,"w"
 :q!
-|2,0,1481191999,,"q!"
+|2,0,1481276459,,"q!"
+:PluginInstall
+|2,0,1481274541,,"PluginInstall"
 :hi Normal ctermbg=none
 |2,0,1481191858,,"hi Normal ctermbg=none"
 :set hi Normal ctermbg=none
@@ -44,8 +46,6 @@ $
 |2,0,1480747785,,"sp"
 :split ~/.xinitrc
 |2,0,1480004655,,"split ~/.xinitrc"
-:PluginInstall
-|2,0,1479914283,,"PluginInstall"
 :qq
 |2,0,0,,"qq"
 :Disa
@@ -78,6 +78,8 @@ $
 |2,0,0,,"tabedit"
 
 # Search String History (newest to oldest):
+?/last
+|2,1,1481439754,47,"last"
 ?/highlight
 |2,1,1481191243,47,"highlight"
 ?/hi
@@ -146,382 +148,423 @@ $
 	    </p>
 	
 |3,0,0,0,6,0,1480749788,"<p>","      <a href=\"http://www.douyu.com/im707\">斗鱼tv</a> |","      <a href=\"http://live.bilibili.com/15111\">bilibili</a> |","      <a href=\"http://www.panda.tv/141173\">熊猫tv</a>","    </p>",""
-""1	LINE	0
-	hi NonText ctermbg=none
-|3,1,1,1,1,0,1481192011,"hi NonText ctermbg=none"
+"1	LINE	0
+	    cou
+|3,0,1,1,1,0,1481375897,"    cou"
 "2	CHAR	0
-	iifj
-	dfdf
-	df
-	d
-	f
-	df
+	"
+	" A (not so) minimal vimrc.
+	"
 	
-	gf
-	g
-	f
-	g
-	fg
-	r
-	g
-	t
-	hg
-	g
-	g
-	f
-	g
-	f
-	g
-	fgfgrrrrrrrrrrrg
-	fffffffa
-	s
-	df
+	" You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.
+	" We set it explicitely to make our position clear!
+	set nocompatible
 	
-	df
+	filetype off
 	
-	df
 	
-|3,0,2,0,31,0,1481191908,"iifj","dfdf","df","d","f","df","","gf","g","f","g","fg","r","g","t","hg","g","g","f","g","f","g","fgfgrrrrrrrrrrrg","fffffffa","s","df","","df","","df",""
+|3,0,2,0,11,0,1481277681,"\"","\" A (not so) minimal vimrc.","\"","","\" You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.","\" We set it explicitely to make our position clear!","set nocompatible","","filetype off","",""
 "3	LINE	0
-	using namespace std::string;
-|3,0,3,1,1,0,1480933578,"using namespace std::string;"
-"4	LINE	0
-	#program once
-|3,0,4,1,1,0,1480932822,"#program once"
-"5	LINE	0
-	        char tmp;
-|3,0,5,1,1,0,1480851732,"        char tmp;"
-"6	LINE	0
-	        int tmp;
-|3,0,6,1,1,0,1480851709,"        int tmp;"
-"7	LINE	0
-	地上的蚂蚁，你爬来爬去，我都笑了。
-|3,0,7,1,1,0,1480749771,"地上的蚂蚁，你爬来爬去，我都笑了。"
-"8	LINE	0
-	地上的蚂蚁，你爬来爬去，我都笑了。
-|3,0,8,1,1,0,1480749540,"地上的蚂蚁，你爬来爬去，我都笑了。"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1480747896,""
+|3,0,3,1,1,0,1481277668,""
+"4	LINE	0
+	
+|3,0,4,1,1,0,1481277666,""
+"5	LINE	0
+	Plugin 'VundleVim/Vundle.vim'
+|3,0,5,1,1,0,1481277665,"Plugin 'VundleVim/Vundle.vim'"
+"6	LINE	0
+	Plugin 'Valloric/YouCompleteMe'
+|3,0,6,1,1,0,1481277665,"Plugin 'Valloric/YouCompleteMe'"
+"7	LINE	0
+	Plugin 'rdnetto/YCM-Generator'
+|3,0,7,1,1,0,1481277664,"Plugin 'rdnetto/YCM-Generator'"
+"8	LINE	0
+	Plugin 'godlygeek/tabular'
+|3,0,8,1,1,0,1481277663,"Plugin 'godlygeek/tabular'"
+"9	LINE	0
+	Plugin 'plasticboy/vim-markdown'
+|3,0,9,1,1,0,1481277663,"Plugin 'plasticboy/vim-markdown'"
 "q	CHAR	0
 	
 |3,0,26,0,1,0,0,""
-"-	CHAR	0
-	"
-|3,0,36,0,1,0,1481191877,"\""
+""-	CHAR	0
+	    
+|3,1,36,0,1,0,1481439884,"    "
 
 # File marks:
-'0  93  0  ~/.vim/vimrc
-|4,48,93,0,1481192048,"~/.vim/vimrc"
-'1  99  0  ~/.vim/vimrc
-|4,49,99,0,1481192036,"~/.vim/vimrc"
-'2  99  0  ~/.vim/vimrc
-|4,50,99,0,1481192036,"~/.vim/vimrc"
-'3  98  16  ~/.vim/vimrc
-|4,51,98,16,1481192022,"~/.vim/vimrc"
-'4  98  16  ~/.vim/vimrc
-|4,52,98,16,1481192022,"~/.vim/vimrc"
-'5  98  16  ~/.vim/vimrc
-|4,53,98,16,1481192022,"~/.vim/vimrc"
-'6  98  16  ~/.vim/vimrc
-|4,54,98,16,1481192022,"~/.vim/vimrc"
-'7  100  22  ~/.vim/vimrc
-|4,55,100,22,1481191989,"~/.vim/vimrc"
-'8  100  22  ~/.vim/vimrc
-|4,56,100,22,1481191989,"~/.vim/vimrc"
-'9  99  22  ~/.vim/vimrc
-|4,57,99,22,1481191989,"~/.vim/vimrc"
+'0  3  0  ~/.vim/vimrc
+|4,48,3,0,1481440051,"~/.vim/vimrc"
+'1  34  0  ~/.vim/vimrc
+|4,49,34,0,1481440043,"~/.vim/vimrc"
+'2  34  0  ~/.vim/vimrc
+|4,50,34,0,1481440043,"~/.vim/vimrc"
+'3  37  19  ~/.vim/vimrc
+|4,51,37,19,1481439894,"~/.vim/vimrc"
+'4  37  19  ~/.vim/vimrc
+|4,52,37,19,1481439894,"~/.vim/vimrc"
+'5  37  19  ~/.vim/vimrc
+|4,53,37,19,1481439894,"~/.vim/vimrc"
+'6  37  19  ~/.vim/vimrc
+|4,54,37,19,1481439894,"~/.vim/vimrc"
+'7  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,55,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+'8  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,56,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+'9  5  0  ~/Tmp/test.cpp
+|4,57,5,0,1481375912,"~/Tmp/test.cpp"
 
 # Jumplist (newest first):
--'  93  0  ~/.vim/vimrc
-|4,39,93,0,1481192048,"~/.vim/vimrc"
+-'  3  0  ~/.vim/vimrc
+|4,39,3,0,1481440051,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1481192041,"~/.vim/vimrc"
--'  99  0  ~/.vim/vimrc
-|4,39,99,0,1481192036,"~/.vim/vimrc"
--'  99  0  ~/.vim/vimrc
-|4,39,99,0,1481192036,"~/.vim/vimrc"
--'  98  9  ~/.vim/vimrc
-|4,39,98,9,1481192034,"~/.vim/vimrc"
--'  98  9  ~/.vim/vimrc
-|4,39,98,9,1481192034,"~/.vim/vimrc"
--'  38  0  ~/.vim/vimrc
-|4,39,38,0,1481192032,"~/.vim/vimrc"
--'  38  0  ~/.vim/vimrc
-|4,39,38,0,1481192032,"~/.vim/vimrc"
+|4,39,1,0,1481440048,"~/.vim/vimrc"
+-'  34  0  ~/.vim/vimrc
+|4,39,34,0,1481440043,"~/.vim/vimrc"
+-'  34  0  ~/.vim/vimrc
+|4,39,34,0,1481440043,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1481192027,"~/.vim/vimrc"
--'  98  16  ~/.vim/vimrc
-|4,39,98,16,1481192022,"~/.vim/vimrc"
+|4,39,1,0,1481439896,"~/.vim/vimrc"
+-'  37  19  ~/.vim/vimrc
+|4,39,37,19,1481439894,"~/.vim/vimrc"
+-'  37  19  ~/.vim/vimrc
+|4,39,37,19,1481439894,"~/.vim/vimrc"
+-'  37  19  ~/.vim/vimrc
+|4,39,37,19,1481439894,"~/.vim/vimrc"
+-'  19  9  ~/.vim/vimrc
+|4,39,19,9,1481439762,"~/.vim/vimrc"
+-'  19  9  ~/.vim/vimrc
+|4,39,19,9,1481439762,"~/.vim/vimrc"
+-'  19  9  ~/.vim/vimrc
+|4,39,19,9,1481439762,"~/.vim/vimrc"
+-'  39  61  ~/.vim/vimrc
+|4,39,39,61,1481439761,"~/.vim/vimrc"
+-'  39  61  ~/.vim/vimrc
+|4,39,39,61,1481439761,"~/.vim/vimrc"
+-'  39  61  ~/.vim/vimrc
+|4,39,39,61,1481439761,"~/.vim/vimrc"
+-'  36  166  ~/.vim/vimrc
+|4,39,36,166,1481439760,"~/.vim/vimrc"
+-'  36  166  ~/.vim/vimrc
+|4,39,36,166,1481439760,"~/.vim/vimrc"
+-'  36  166  ~/.vim/vimrc
+|4,39,36,166,1481439760,"~/.vim/vimrc"
+-'  102  0  ~/.vim/vimrc
+|4,39,102,0,1481439750,"~/.vim/vimrc"
+-'  102  0  ~/.vim/vimrc
+|4,39,102,0,1481439750,"~/.vim/vimrc"
+-'  102  0  ~/.vim/vimrc
+|4,39,102,0,1481439750,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1481192006,"~/.vim/vimrc"
--'  100  22  ~/.vim/vimrc
-|4,39,100,22,1481191989,"~/.vim/vimrc"
--'  100  22  ~/.vim/vimrc
-|4,39,100,22,1481191989,"~/.vim/vimrc"
--'  99  22  ~/.vim/vimrc
-|4,39,99,22,1481191989,"~/.vim/vimrc"
--'  99  22  ~/.vim/vimrc
-|4,39,99,22,1481191989,"~/.vim/vimrc"
--'  99  22  ~/.vim/vimrc
-|4,39,99,22,1481191989,"~/.vim/vimrc"
--'  4  0  ~/.vim/vimrc
-|4,39,4,0,1481191972,"~/.vim/vimrc"
--'  4  0  ~/.vim/vimrc
-|4,39,4,0,1481191972,"~/.vim/vimrc"
--'  4  0  ~/.vim/vimrc
-|4,39,4,0,1481191972,"~/.vim/vimrc"
--'  4  0  ~/.vim/vimrc
-|4,39,4,0,1481191972,"~/.vim/vimrc"
--'  4  0  ~/.vim/vimrc
-|4,39,4,0,1481191972,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1481191971,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1481191971,"~/.vim/vimrc"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  3  0  ~/.vim/install.sh
-|4,39,3,0,1481191947,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  1  0  ~/.vim/install.sh
-|4,39,1,0,1481191939,"~/.vim/install.sh"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
--'  91  0  ~/.vim/vimrc
-|4,39,91,0,1481191878,"~/.vim/vimrc"
+|4,39,1,0,1481439745,"~/.vim/vimrc"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+|4,39,1,0,1481387782,"~/.vim/bundle/YouCompleteMe/install.py"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
+-'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+|4,39,31,0,1481375948,"~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1481192045	0
-	"	93	0
-	^	98	17
-	.	99	0
-	+	97	0
-	+	97	13
-	+	97	5
-	+	28	11
-	+	29	0
-	+	29	29
-	+	28	10
-	+	28	0
-	+	26	17
-	+	28	0
-	+	15	30
-	+	25	0
-	+	16	0
-	+	16	31
-	+	25	0
-	+	97	0
-	+	25	29
-	+	97	20
-	+	97	15
-	+	97	0
-	+	25	30
-	+	97	0
-	+	87	13
-	+	87	18
-	+	97	0
-	+	87	18
-	+	97	0
-	+	25	0
-	+	17	29
-	+	87	106
-	+	97	0
-	+	89	5
-	+	25	40
-	+	87	20
-	+	87	0
-	+	25	0
-	+	87	0
-	+	25	22
-	+	86	0
-	+	34	17
-	+	34	0
-	+	25	0
-	+	87	0
-	+	19	31
-	+	20	27
-	+	18	0
-	+	21	27
-	+	97	0
-	+	91	18
-	+	86	0
-	+	22	27
-	+	88	31
-	+	25	0
-	+	93	10
-	+	96	41
-	+	23	0
-	+	24	0
-	+	94	0
-	+	95	0
-	+	96	0
-	+	91	0
-	+	36	77
-	+	36	160
-	+	37	0
-	+	98	0
-	+	91	0
-	+	100	0
-	+	99	0
+	*	1481440050	0
+	"	3	0
+	^	42	0
+	.	38	16
+	+	5	0
+	+	5	13
+	+	5	5
+	+	5	11
+	+	5	0
+	+	5	29
+	+	5	10
+	+	5	0
+	+	4	17
+	+	5	0
+	+	3	30
+	+	4	0
+	+	3	0
+	+	3	31
+	+	4	0
+	+	5	0
+	+	4	29
+	+	5	20
+	+	5	15
+	+	5	0
+	+	4	30
+	+	5	0
+	+	5	13
+	+	5	18
+	+	5	0
+	+	5	18
+	+	5	0
+	+	4	0
+	+	4	29
+	+	5	106
+	+	5	0
+	+	5	5
+	+	4	40
+	+	5	20
+	+	5	0
+	+	4	0
+	+	5	0
+	+	4	22
+	+	5	0
+	+	5	17
+	+	5	0
+	+	4	0
+	+	5	0
+	+	4	31
+	+	4	27
+	+	4	0
+	+	4	27
+	+	5	0
+	+	5	18
+	+	5	0
+	+	4	27
+	+	5	31
+	+	4	0
+	+	5	10
+	+	5	41
+	+	4	0
+	+	5	0
+	+	5	77
+	+	5	160
+	+	5	0
+	+	5	43
+	+	5	0
+	+	3	0
+	+	5	0
+	+	3	0
+	+	5	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	2	0
+	+	36	181
+	+	36	79
+	+	37	83
+	+	38	16
+
+> ~/.vim/bundle/YouCompleteMe/install.py
+	*	1481387101	0
+	"	1	0
+
+> ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
+	*	1481375947	0
+	"	31	0
+	.	1	0
+	+	1	0
+
+> ~/Tmp/test.cpp
+	*	1481375911	0
+	"	5	0
+	.	5	0
+	+	5	0
+	+	4	7
+	+	5	0
+
+> ~/.zprofile
+	*	1481276474	0
+	"	2	0
+	^	2	1
+	.	2	0
+	+	5	6
+	+	2	0
+
+> ~/.bash_profile
+	*	1481276411	0
+	"	3	0
+
+> ~/.zshrc
+	*	1481276361	0
+	"	1	0
+
+> ~/.xinitrc
+	*	1481276215	0
+	"	11	0
+	.	12	0
+	+	4	0
+	+	7	28
+	+	11	0
+	+	9	6
+	+	10	32
+	+	12	0
+
+> ~/.vim/bundle/NERD_tree_1
+	*	1481274516	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.vim/install.sh
-	*	1481191946	0
-	"	3	0
+	*	1481273290	0
+	"	1	10
 	^	2	0
 	.	2	0
 	+	3	77
 	+	1	18
 	+	2	0
 
-> ~/.vim/bundle/YouCompleteMe/install.py
-	*	1481191710	0
-	"	51	2
+> ~/.vim/README.md
+	*	1481273103	0
+	"	1	1
+	^	5	3
+	.	5	2
+	+	6	14
+	+	5	2
 
 > ~/.Xresources
 	*	1481190891	0
@@ -538,28 +581,6 @@ $
 	+	34	35
 	+	20	31
 	+	21	29
-
-> ~/.xinitrc
-	*	1481190804	0
-	"	4	0
-	^	10	33
-	.	10	32
-	+	4	0
-	+	7	28
-	+	11	0
-	+	9	6
-	+	10	32
-
-> ~/.zprofile
-	*	1481190771	0
-	"	3	0
-	^	5	7
-	.	5	6
-	+	5	6
-
-> ~/.zshrc
-	*	1481190763	0
-	"	52	0
 
 > ~/Documents/zephyrzoom.github.io/_posts/2016-11-22-archlinux-install.md
 	*	1481189609	0
@@ -841,14 +862,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.vim/README.md
-	*	1479912507	0
-	"	5	2
-	^	5	3
-	.	5	2
-	+	6	14
-	+	5	2
-
 > ~/a.cpp
 	"	1	0
 	^	1	0
@@ -869,9 +882,6 @@ $
 
 > ~/Documents/cpp-primer/chapter08/8.6.cpp
 	"	1	0
-
-> ~/.bash_profile
-	"	1	23
 
 > ~/Downloads/llvm-3.8.0.src/lib/MC/MCDisassembler/Disassembler.h
 	"	1	0
@@ -1066,19 +1076,3 @@ $
 
 > ~/Documents/test/README.md
 	"	2	0
-
-> ~/Public/electron/package.json
-	"	2	18
-	^	2	19
-	.	2	18
-	+	2	18
-
-> ~/Documents/sss/i.sss
-	"	9	0
-	^	1	1
-	.	1	0
-	+	1	0
-	+	1	0
-
-> ~/Documents/sss/o.sss
-	"	1	0

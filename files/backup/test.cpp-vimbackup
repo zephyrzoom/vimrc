@@ -1,6 +1,5 @@
-int main()
-{
-    int ia[4*7-14];
-    int i[txt()];
-    return 0;
+#include <iostream>
+using namespace std;
+int main() {
+    cout << 123;
 }

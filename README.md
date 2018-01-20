@@ -3,4 +3,4 @@ vim configuration
 - swap file need to be created urself.
 
 ## install
-copy to ~/.vim/
+git clone git@github.com:zephyrzoom/vimrc.git ~/.vim

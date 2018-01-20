@@ -47,6 +47,7 @@ $
 :tabedit
 
 # Search String History (newest to oldest):
+? @$
 ?/last
 ?/highlight
 ?/hi
@@ -83,15 +84,12 @@ $
 
 # Registers:
 "0	CHAR	0
-	<p>
-	      <a href="http://www.douyu.com/im707">斗鱼tv</a> |
-	      <a href="http://live.bilibili.com/15111">bilibili</a> |
-	      <a href="http://www.panda.tv/141173">熊猫tv</a>
-	    </p>
-	
-"1	LINE	0
+	w
+""1	LINE	0
+	copy to ~/.vim/
+"2	LINE	0
 	    cou
-"2	CHAR	0
+"3	CHAR	0
 	"
 	" A (not so) minimal vimrc.
 	"
@@ -103,38 +101,39 @@ $
 	filetype off
 	
 	
-"3	LINE	0
-	
 "4	LINE	0
 	
 "5	LINE	0
-	Plugin 'VundleVim/Vundle.vim'
+	
 "6	LINE	0
-	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'VundleVim/Vundle.vim'
 "7	LINE	0
-	Plugin 'rdnetto/YCM-Generator'
+	Plugin 'Valloric/YouCompleteMe'
 "8	LINE	0
-	Plugin 'godlygeek/tabular'
+	Plugin 'rdnetto/YCM-Generator'
 "9	LINE	0
-	Plugin 'plasticboy/vim-markdown'
+	Plugin 'godlygeek/tabular'
 "q	CHAR	0
 	
-""-	CHAR	0
+"-	CHAR	0
 	w
 
 # File marks:
-'0  4  28  ~/.vim/install.sh
-'1  3  0  ~/.vim/install.sh
-'2  3  0  ~/.vim/vimrc
-'3  34  0  ~/.vim/vimrc
+'0  6  0  ~/.vim/README.md
+'1  4  28  ~/.vim/install.sh
+'2  3  0  ~/.vim/install.sh
+'3  3  0  ~/.vim/vimrc
 '4  34  0  ~/.vim/vimrc
-'5  37  19  ~/.vim/vimrc
+'5  34  0  ~/.vim/vimrc
 '6  37  19  ~/.vim/vimrc
 '7  37  19  ~/.vim/vimrc
 '8  37  19  ~/.vim/vimrc
-'9  1  0  ~/.vim/bundle/YouCompleteMe/install.py
+'9  37  19  ~/.vim/vimrc
 
 # Jumplist (newest first):
+-'  6  0  ~/.vim/README.md
+-'  1  0  ~/.vim/README.md
+-'  1  0  ~/.vim
 -'  4  28  ~/.vim/install.sh
 -'  1  0  ~/.vim/install.sh
 -'  3  0  ~/.vim/install.sh
@@ -191,8 +190,6 @@ $
 -'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
 -'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
 -'  1  0  ~/.vim/bundle/YouCompleteMe/install.py
--'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
--'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
 -'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
 -'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
 -'  31  0  ~/.vim/bundle/YouCompleteMe/third_party/NERD_tree_1
@@ -416,6 +413,14 @@ $
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/README.md
+	"	6	0
+	^	6	52
+	.	6	0
+	+	6	14
+	+	5	2
+	+	6	0
+
 > ~/.vim/install.sh
 	"	4	28
 	^	4	29
@@ -564,14 +569,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.vim/README.md
-	*	1481273103	0
-	"	1	1
-	^	5	3
-	.	5	2
-	+	6	14
-	+	5	2
 
 > ~/.Xresources
 	*	1481190891	0

@@ -20,6 +20,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sickill/vim-monokai'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
 "Plugin 'SirVer/ultisnips'
 "Plugin 'honza/vim-snippets'
 

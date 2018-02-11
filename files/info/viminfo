@@ -21,15 +21,19 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1518361067,,"q"
+|2,0,1518361510,,"q"
 :PluginInstall
-|2,0,1518360828,,"PluginInstall"
+|2,0,1518361493,,"PluginInstall"
 :wq
-|2,0,1518360823,,"wq"
+|2,0,1518361486,,"wq"
+:w
+|2,0,1518361383,,"w"
+:bn
+|2,0,1518361319,,"bn"
+:n
+|2,0,1518361247,,"n"
 :q!
 |2,0,1518360813,,"q!"
-:w
-|2,0,1481439892,,"w"
 :hi Normal ctermbg=none
 |2,0,1481191858,,"hi Normal ctermbg=none"
 :set hi Normal ctermbg=none
@@ -143,17 +147,21 @@ $
 
 # Registers:
 "0	CHAR	0
-	<p>
-	      <a href="http://www.douyu.com/im707">斗鱼tv</a> |
-	      <a href="http://live.bilibili.com/15111">bilibili</a> |
-	      <a href="http://www.panda.tv/141173">熊猫tv</a>
-	    </p>
+	---
+	layout: post
+	title: C++
+	date: 2016-08-11 16:34:00 +0800
+	---
 	
-|3,0,0,0,6,0,1480749788,"<p>","      <a href=\"http://www.douyu.com/im707\">斗鱼tv</a> |","      <a href=\"http://live.bilibili.com/15111\">bilibili</a> |","      <a href=\"http://www.panda.tv/141173\">熊猫tv</a>","    </p>",""
+	
+|3,0,0,0,7,0,1518361238,"---","layout: post","title: C++","date: 2016-08-11 16:34:00 +0800","---","",""
 "1	LINE	0
+	
+|3,0,1,1,1,0,1518361308,""
+"2	LINE	0
 	    cou
-|3,0,1,1,1,0,1481375897,"    cou"
-"2	CHAR	0
+|3,0,2,1,1,0,1481375897,"    cou"
+"3	CHAR	0
 	"
 	" A (not so) minimal vimrc.
 	"
@@ -165,62 +173,168 @@ $
 	filetype off
 	
 	
-|3,0,2,0,11,0,1481277681,"\"","\" A (not so) minimal vimrc.","\"","","\" You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.","\" We set it explicitely to make our position clear!","set nocompatible","","filetype off","",""
-"3	LINE	0
-	
-|3,0,3,1,1,0,1481277668,""
+|3,0,3,0,11,0,1481277681,"\"","\" A (not so) minimal vimrc.","\"","","\" You want Vim, not vi. When Vim finds a vimrc, 'nocomptaible' is set anyway.","\" We set it explicitely to make our position clear!","set nocompatible","","filetype off","",""
 "4	LINE	0
 	
-|3,0,4,1,1,0,1481277666,""
+|3,0,4,1,1,0,1481277668,""
 "5	LINE	0
-	Plugin 'VundleVim/Vundle.vim'
-|3,0,5,1,1,0,1481277665,"Plugin 'VundleVim/Vundle.vim'"
+	
+|3,0,5,1,1,0,1481277666,""
 "6	LINE	0
-	Plugin 'Valloric/YouCompleteMe'
-|3,0,6,1,1,0,1481277665,"Plugin 'Valloric/YouCompleteMe'"
+	Plugin 'VundleVim/Vundle.vim'
+|3,0,6,1,1,0,1481277665,"Plugin 'VundleVim/Vundle.vim'"
 "7	LINE	0
-	Plugin 'rdnetto/YCM-Generator'
-|3,0,7,1,1,0,1481277664,"Plugin 'rdnetto/YCM-Generator'"
+	Plugin 'Valloric/YouCompleteMe'
+|3,0,7,1,1,0,1481277665,"Plugin 'Valloric/YouCompleteMe'"
 "8	LINE	0
-	Plugin 'godlygeek/tabular'
-|3,0,8,1,1,0,1481277663,"Plugin 'godlygeek/tabular'"
+	Plugin 'rdnetto/YCM-Generator'
+|3,0,8,1,1,0,1481277664,"Plugin 'rdnetto/YCM-Generator'"
 "9	LINE	0
-	Plugin 'plasticboy/vim-markdown'
-|3,0,9,1,1,0,1481277663,"Plugin 'plasticboy/vim-markdown'"
-"q	CHAR	0
-	
-|3,0,26,0,1,0,0,""
+	Plugin 'godlygeek/tabular'
+|3,0,9,1,1,0,1481277663,"Plugin 'godlygeek/tabular'"
 ""-	CHAR	0
-	    
-|3,1,36,0,1,0,1481439884,"    "
+	kien
+|3,1,36,0,1,0,1518361471,"kien"
 
 # File marks:
-'0  23  9  ~/.vim/vimrc
-|4,48,23,9,1518360823,"~/.vim/vimrc"
-'1  25  16  ~/.vim/vimrc
-|4,49,25,16,1518360758,"~/.vim/vimrc"
-'2  25  16  ~/.vim/vimrc
-|4,50,25,16,1518360758,"~/.vim/vimrc"
-'3  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,51,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
-'4  1  0  ~/Documents/ssh
-|4,52,1,0,1518360011,"~/Documents/ssh"
-'5  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,53,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
-'6  4  0  ~/.vim/install.sh
-|4,54,4,0,1517931963,"~/.vim/install.sh"
-'7  3  0  ~/.vim/vimrc
-|4,55,3,0,1481440051,"~/.vim/vimrc"
-'8  3  0  ~/.vim/vimrc
-|4,56,3,0,1481440051,"~/.vim/vimrc"
-'9  3  0  ~/.vim/vimrc
-|4,57,3,0,1481440051,"~/.vim/vimrc"
+'0  23  15  ~/.vim/vimrc
+|4,48,23,15,1518361486,"~/.vim/vimrc"
+'1  15  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,49,15,0,1518361395,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+'2  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,50,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+'3  23  9  ~/.vim/vimrc
+|4,51,23,9,1518360823,"~/.vim/vimrc"
+'4  25  16  ~/.vim/vimrc
+|4,52,25,16,1518360758,"~/.vim/vimrc"
+'5  25  16  ~/.vim/vimrc
+|4,53,25,16,1518360758,"~/.vim/vimrc"
+'6  25  16  ~/.vim/vimrc
+|4,54,25,16,1518360758,"~/.vim/vimrc"
+'7  25  16  ~/.vim/vimrc
+|4,55,25,16,1518360758,"~/.vim/vimrc"
+'8  7  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,56,7,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+'9  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,57,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
 
 # Jumplist (newest first):
+-'  23  15  ~/.vim/vimrc
+|4,39,23,15,1518361486,"~/.vim/vimrc"
+-'  23  15  ~/.vim/vimrc
+|4,39,23,15,1518361486,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518361464,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518361464,"~/.vim/vimrc"
+-'  15  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,15,0,1518361395,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  15  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,15,0,1518361395,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  15  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,15,0,1518361395,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  15  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,15,0,1518361395,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md
+|4,39,2,0,1518361319,"~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md"
+-'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md
+|4,39,2,0,1518361319,"~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md"
+-'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md
+|4,39,2,0,1518361319,"~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md"
+-'  2  0  ~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md
+|4,39,2,0,1518361319,"~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md"
+-'  3  7  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,3,7,1518361316,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  3  7  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,3,7,1518361316,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  3  7  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,3,7,1518361316,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  3  7  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,3,7,1518361316,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  7  1  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,7,1,1518361298,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  7  1  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,7,1,1518361298,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  7  1  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,7,1,1518361298,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  7  1  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
+|4,39,7,1,1518361298,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
+-'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018
+|4,39,1,0,1518361208,"~/Documents/zephyrzoom.github.io/_posts/2018"
 -'  23  9  ~/.vim/vimrc
 |4,39,23,9,1518360823,"~/.vim/vimrc"
 -'  23  9  ~/.vim/vimrc
 |4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  23  9  ~/.vim/vimrc
+|4,39,23,9,1518360823,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1518360817,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1518360817,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
@@ -237,192 +351,80 @@ $
 |4,39,25,16,1518360758,"~/.vim/vimrc"
 -'  25  16  ~/.vim/vimrc
 |4,39,25,16,1518360758,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1518360721,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1518360721,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1518360721,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1518360721,"~/.vim/vimrc"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-|4,39,1,0,1518360703,"~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  1  0  ~/Documents/ssh
-|4,39,1,0,1518360011,"~/Documents/ssh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
--'  82  0  ~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh
-|4,39,82,0,1518008602,"~/Public/ideaIC-2017.3.4/idea-IC-173.4548.28/bin/idea.sh"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
+-'  25  16  ~/.vim/vimrc
+|4,39,25,16,1518360758,"~/.vim/vimrc"
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1518360823	0
-	"	23	9
-	^	23	23
-	.	23	9
+	*	1518361482	0
+	"	23	15
+	^	23	16
+	.	23	15
 	+	5	0
 	+	5	13
 	+	5	5
@@ -497,10 +499,32 @@ $
 	+	37	79
 	+	38	83
 	+	39	16
-	+	23	9
+	+	23	15
 
 > ~/Documents/zephyrzoom.github.io/_posts/2018-02-11-add-ssh.md
-	*	1518360602	0
+	*	1518361392	0
+	"	15	0
+	^	3	24
+	.	4	21
+	+	8	0
+	+	1	0
+	+	6	0
+	+	3	23
+	+	4	21
+
+> ~/Documents/zephyrzoom.github.io/_posts/2016-08-11-cpp.md
+	*	1518361316	0
+	"	2	0
+
+> ~/Documents/zephyrzoom.github.io/_posts/ControlP
+	*	1518361229	0
+	"	5	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/Documents/zephyrzoom.github.io/_posts/2018
+	*	1518361206	0
 	"	1	0
 
 > ~/Documents/ssh
@@ -1073,12 +1097,3 @@ $
 
 > ~/.vim/bundle/YCM-Generator/README.md
 	"	21	112
-
-> ~/Documents/douyu/comment-douyu.py
-	"	93	4
-
-> ~/Documents/fracture/ROADMAP.md
-	"	6	0
-
-> ~/Documents/fracture/README.md
-	"	1	3
